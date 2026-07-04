@@ -1,0 +1,52 @@
+name: Monitoraggio annunci Padova
+
+on:
+  schedule:
+    # Ogni 30 minuti. Modifica il cron se vuoi una frequenza diversa
+    # (attenzione: troppo frequente = più carico sui siti target, evitare).
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}  # permette anche l'avvio manuale da GitHub
+
+# Necessario per poter fare commit del file di stato aggiornato
+permissions:
+  contents: write
+
+concurrency:
+  group: padova-scraper
+  cancel-in-progress: false  # evita run sovrapposti, ma senza troncare quello in corso
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installa dipendenze Python
+        run: pip install -r requirements.txt
+
+      - name: Installa Chromium per Playwright
+        run: playwright install --with-deps chromium
+
+      - name: Esegui lo scraper
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python main.py
+
+      - name: Commit dello stato aggiornato
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "Padova Scraper Bot"
+          git add data/state.json
+          git diff --quiet --cached || git commit -m "Aggiorna stato annunci [skip ci]"
+          git push
