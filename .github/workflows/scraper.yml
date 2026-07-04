@@ -41,7 +41,17 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SCRAPER_DEBUG: "1"
         run: python main.py
+
+      - name: Carica HTML di debug come artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-html
+          path: debug/
+          retention-days: 3
+          if-no-files-found: ignore
 
       - name: Commit dello stato aggiornato
         run: |
