@@ -4,12 +4,17 @@ annunci provenienti da Immobiliare.it e Subito.it. A differenza di Subito.it,
 Mitula renderizza i contenuti lato server: bastano requests + BeautifulSoup.
 """
 import hashlib
+import os
+import re
 import time
 
 import requests
 from bs4 import BeautifulSoup
 
 from config import USER_AGENT, REQUEST_DELAY_SECONDS
+
+DEBUG = os.environ.get("SCRAPER_DEBUG") == "1"
+DEBUG_DIR = "debug"
 
 
 def _make_id(url: str) -> str:
@@ -84,11 +89,27 @@ def scrape_mitula_search(name: str, url: str) -> list:
     resp = requests.get(url, headers=headers, timeout=20)
     resp.raise_for_status()
 
+    if DEBUG:
+        os.makedirs(DEBUG_DIR, exist_ok=True)
+        safe_name = re.sub(r"[^a-zA-Z0-9]+", "_", name)
+        debug_path = os.path.join(DEBUG_DIR, f"mitula_{safe_name}.html")
+        with open(debug_path, "w", encoding="utf-8") as f:
+            f.write(resp.text)
+        print(
+            f"[Mitula][DEBUG] status={resp.status_code} HTML salvato in "
+            f"{debug_path} ({len(resp.text)} caratteri)"
+        )
+
     soup = BeautifulSoup(resp.text, "html.parser")
 
     listings = _extract_via_microdata(soup, name)
+    if DEBUG:
+        print(f"[Mitula][DEBUG] Estrazione via microdati: {len(listings)} risultati")
+
     if not listings:
         listings = _extract_via_generic_cards(soup, name)
+        if DEBUG:
+            print(f"[Mitula][DEBUG] Estrazione via card generiche: {len(listings)} risultati")
 
     return listings
 

@@ -12,12 +12,16 @@ come farebbe una persona che visita il sito con un browser normale.
 """
 import hashlib
 import json
+import os
 import re
 import time
 
 from playwright.sync_api import sync_playwright
 
 from config import USER_AGENT
+
+DEBUG = os.environ.get("SCRAPER_DEBUG") == "1"
+DEBUG_DIR = "debug"
 
 
 def _make_id(url: str) -> str:
@@ -121,14 +125,49 @@ def scrape_subito_search(name: str, url: str) -> list:
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page(user_agent=USER_AGENT)
-        page.goto(url, wait_until="networkidle", timeout=30000)
-        # piccola attesa extra per eventuale rendering lazy
+
+        # "domcontentloaded" invece di "networkidle": subito.it fa polling/
+        # richieste continue in background che con networkidle non
+        # terminerebbero mai entro il timeout, lasciandoci con la pagina
+        # ancora vuota.
+        page.goto(url, wait_until="domcontentloaded", timeout=30000)
+
+        # Aspettiamo esplicitamente che compaia un link ad un annuncio reale,
+        # invece di una sleep fissa alla cieca. Se non compare entro 15s,
+        # proseguiamo comunque e diagnostichiamo cosa è successo.
+        try:
+            page.wait_for_selector("a[href*='.htm']", timeout=15000)
+        except Exception:
+            pass
+
+        # Piccolo scroll: molti siti caricano gli annunci solo quando la
+        # card entra nel viewport (lazy loading).
+        page.mouse.wheel(0, 3000)
         time.sleep(2)
+
         html = page.content()
 
+        if DEBUG:
+            os.makedirs(DEBUG_DIR, exist_ok=True)
+            safe_name = re.sub(r"[^a-zA-Z0-9]+", "_", name)
+            debug_path = os.path.join(DEBUG_DIR, f"subito_{safe_name}.html")
+            with open(debug_path, "w", encoding="utf-8") as f:
+                f.write(html)
+            print(f"[Subito][DEBUG] HTML salvato in {debug_path} ({len(html)} caratteri)")
+
         listings = _extract_from_next_data(html, name)
+        if DEBUG:
+            print(f"[Subito][DEBUG] Estrazione via __NEXT_DATA__: {len(listings)} risultati")
+
         if not listings:
             listings = _extract_from_dom(page, name)
+            if DEBUG:
+                anchors_total = len(page.query_selector_all("a"))
+                anchors_htm = len(page.query_selector_all("a[href*='.htm']"))
+                print(
+                    f"[Subito][DEBUG] Estrazione via DOM: {len(listings)} risultati "
+                    f"(link totali: {anchors_total}, link con '.htm': {anchors_htm})"
+                )
 
         browser.close()
 
