@@ -2,23 +2,21 @@ name: Monitoraggio annunci Padova
 
 on:
   schedule:
-    # Ogni 30 minuti. Modifica il cron se vuoi una frequenza diversa
-    # (attenzione: troppo frequente = più carico sui siti target, evitare).
-    - cron: "*/30 * * * *"
-  workflow_dispatch: {}  # permette anche l'avvio manuale da GitHub
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}  # permette l'avvio manuale da GitHub (Actions -> Run workflow)
 
-# Necessario per poter fare commit del file di stato aggiornato
+# Necessario per poter fare commit del file di stato aggiornato (dedup Mitula)
 permissions:
   contents: write
 
 concurrency:
   group: padova-scraper
-  cancel-in-progress: false  # evita run sovrapposti, ma senza troncare quello in corso
+  cancel-in-progress: false
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 8
 
     steps:
       - name: Checkout repository
@@ -32,11 +30,10 @@ jobs:
       - name: Installa dipendenze Python
         run: pip install -r requirements.txt
 
-      - name: Installa Chromium per Playwright
-        run: playwright install --with-deps chromium
-
-      - name: Esegui lo scraper
+      - name: Esegui il bot
         env:
+          IMAP_EMAIL: ${{ secrets.IMAP_EMAIL }}
+          IMAP_APP_PASSWORD: ${{ secrets.IMAP_APP_PASSWORD }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -44,7 +41,7 @@ jobs:
           SCRAPER_DEBUG: "1"
         run: python main.py
 
-      - name: Carica HTML di debug come artifact
+      - name: Carica debug (HTML/email) come artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -53,7 +50,7 @@ jobs:
           retention-days: 3
           if-no-files-found: ignore
 
-      - name: Commit dello stato aggiornato
+      - name: Commit dello stato aggiornato (Mitula)
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "Padova Scraper Bot"
