@@ -1,64 +1,97 @@
 """
-Bot di monitoraggio annunci immobiliari Padova (Subito.it + Mitula).
+Bot di monitoraggio annunci immobiliari Padova.
+Fonti: alert email (Idealista, Immobiliare.it, Casa.it, Bakeca, Wikicasa) +
+Mitula (scraping diretto, supplementare).
 Punto di ingresso eseguito da GitHub Actions ad ogni schedulazione.
 """
+import os
 import sys
 
 from config import (
-    SUBITO_SEARCHES,
     MITULA_SEARCHES,
     AI_FILTER_ENABLED,
     AI_MIN_SCORE,
+    MAX_BUDGET_EUR,
     MAX_NEW_LISTINGS_PER_RUN,
     STATE_FILE,
 )
-from scraper import subito_scraper, mitula_scraper, telegram_notify
+from scraper import mitula_scraper, email_alerts, telegram_notify
 from scraper.state import load_state, save_state, filter_new
+from scraper.utils import parse_price_eur
 
 if AI_FILTER_ENABLED:
     from scraper.ai_filter import evaluate_all
 
 
-def main():
-    print("=== Avvio scraping annunci Padova ===")
+def apply_budget_filter(listings: list) -> list:
+    """Scarta solo gli annunci per cui riusciamo a leggere un prezzo chiaro
+    che supera il budget. Se il prezzo non è interpretabile, lo lasciamo
+    passare: meglio un falso positivo in più che perdere un annuncio buono."""
+    kept = []
+    dropped = 0
+    for listing in listings:
+        price_value = parse_price_eur(listing.get("price", ""))
+        if price_value is not None and price_value > MAX_BUDGET_EUR:
+            dropped += 1
+            continue
+        kept.append(listing)
 
+    if dropped:
+        print(f"Filtro budget: scartati {dropped} annunci sopra {MAX_BUDGET_EUR}€")
+    return kept
+
+
+def main():
+    print("=== Avvio monitoraggio annunci Padova ===")
+
+    # --- Fonte 1: alert email (Idealista, Immobiliare.it, Casa.it, Bakeca, Wikicasa) ---
+    imap_email = os.environ.get("IMAP_EMAIL")
+    imap_app_password = os.environ.get("IMAP_APP_PASSWORD")
+
+    email_listings = []
+    if imap_email and imap_app_password:
+        email_listings = email_alerts.fetch_new_listings(imap_email, imap_app_password)
+        print(f"[Email] Totale link candidati estratti: {len(email_listings)}")
+    else:
+        print("[Email] IMAP_EMAIL / IMAP_APP_PASSWORD non configurati, salto questa fonte.")
+
+    # --- Fonte 2: Mitula (supplementare, con dedup basato su state.json) ---
     state = load_state(STATE_FILE)
     seen_ids = set(state.get("seen_ids", []))
     is_first_run = state.get("last_run") is None
 
-    all_listings = []
-    all_listings.extend(subito_scraper.scrape_all(SUBITO_SEARCHES))
-    all_listings.extend(mitula_scraper.scrape_all(MITULA_SEARCHES))
-
-    print(f"Totale annunci scansionati: {len(all_listings)}")
+    mitula_listings = mitula_scraper.scrape_all(MITULA_SEARCHES)
+    print(f"[Mitula] Totale annunci scansionati: {len(mitula_listings)}")
 
     if is_first_run:
         print(
-            "Primo avvio rilevato: memorizzo gli annunci attuali come 'già "
-            "visti' senza inviare notifiche di massa. Dal prossimo run "
-            "riceverai solo i NUOVI annunci."
+            "Primo avvio rilevato per Mitula: memorizzo gli annunci attuali "
+            "come 'già visti' senza notificarli tutti insieme."
         )
-        seen_ids.update(l["id"] for l in all_listings if l.get("id"))
+        seen_ids.update(l["id"] for l in mitula_listings if l.get("id"))
         save_state(STATE_FILE, seen_ids)
-        telegram_notify.notify_run_summary(
-            total_found=len(all_listings), total_new=0, total_sent=0
-        )
-        print("=== Fine esecuzione (setup iniziale) ===")
-        return
+        mitula_new = []
+    else:
+        mitula_new = filter_new(mitula_listings, seen_ids)
+        print(f"[Mitula] Nuovi annunci: {len(mitula_new)}")
 
-    new_listings = filter_new(all_listings, seen_ids)
-    print(f"Nuovi annunci (mai visti prima): {len(new_listings)}")
+    # --- Unione delle due fonti ---
+    # Le email sono già "nuove per definizione" (erano email non lette,
+    # marcate lette solo dopo il parsing): non passano dal dedup su state.json.
+    new_listings = email_listings + mitula_new
+    print(f"Totale nuovi annunci da valutare: {len(new_listings)}")
 
-    # Tetto di sicurezza: se per qualche motivo troviamo un numero enorme di
-    # "nuovi" annunci (es. primo run, o un selettore cambiato che rompe il
-    # dedup), evitiamo di spammare centinaia di notifiche in un colpo solo.
     if len(new_listings) > MAX_NEW_LISTINGS_PER_RUN:
         print(
             f"Attenzione: {len(new_listings)} nuovi annunci superano il limite "
-            f"di sicurezza ({MAX_NEW_LISTINGS_PER_RUN}). Notifico solo i più recenti."
+            f"di sicurezza ({MAX_NEW_LISTINGS_PER_RUN}). Notifico solo i primi."
         )
         new_listings = new_listings[:MAX_NEW_LISTINGS_PER_RUN]
 
+    # --- Filtro budget deterministico (prima dell'IA, più affidabile per i numeri) ---
+    new_listings = apply_budget_filter(new_listings)
+
+    # --- Filtro IA qualitativo ---
     to_notify = new_listings
     if AI_FILTER_ENABLED and new_listings:
         print("Valutazione IA in corso...")
@@ -67,16 +100,21 @@ def main():
         print(f"Annunci che superano la soglia IA ({AI_MIN_SCORE}/10): {len(to_notify)}")
 
     telegram_notify.notify_new_listings(to_notify)
-    telegram_notify.notify_run_summary(
-        total_found=len(all_listings),
-        total_new=len(new_listings),
-        total_sent=len(to_notify),
-    )
 
-    # Aggiorniamo lo stato con TUTTI gli annunci visti in questo run (non solo
-    # quelli notificati), così non li rivalutiamo mai più.
-    seen_ids.update(l["id"] for l in all_listings if l.get("id"))
-    save_state(STATE_FILE, seen_ids)
+    # Niente riepilogo se non c'è nulla di nuovo: con un run ogni 15 minuti,
+    # un messaggio "0 nuovi" ripetuto diventerebbe rumore inutile su Telegram.
+    if new_listings:
+        telegram_notify.notify_run_summary(
+            total_found=len(email_listings) + len(mitula_listings),
+            total_new=len(new_listings),
+            total_sent=len(to_notify),
+        )
+
+    # Aggiorniamo lo stato SOLO con gli id di Mitula (l'email si auto-gestisce
+    # tramite il flag "letta" della casella IMAP).
+    if not is_first_run:
+        seen_ids.update(l["id"] for l in mitula_listings if l.get("id"))
+        save_state(STATE_FILE, seen_ids)
 
     print("=== Fine esecuzione ===")
 

@@ -1,9 +1,12 @@
 """
 Scraper per Mitula (immobiliare.mitula.it), aggregatore che include anche
-annunci provenienti da Immobiliare.it e Subito.it. A differenza di Subito.it,
-Mitula renderizza i contenuti lato server: bastano requests + BeautifulSoup.
+annunci provenienti da Immobiliare.it e Subito.it.
+
+Selettori verificati direttamente sull'HTML reale del sito (luglio 2026):
+ogni annuncio è un tag <article class="listing listing-card ..."> con i dati
+principali già disponibili come attributi data-* (niente bisogno di parsing
+fragile del testo visibile).
 """
-import hashlib
 import os
 import re
 import time
@@ -17,66 +20,46 @@ DEBUG = os.environ.get("SCRAPER_DEBUG") == "1"
 DEBUG_DIR = "debug"
 
 
-def _make_id(url: str) -> str:
-    return hashlib.sha1(url.encode("utf-8")).hexdigest()[:16]
-
-
-def _extract_via_microdata(soup: BeautifulSoup, base_name: str) -> list:
-    """Tentativo #1: molti aggregatori usano microdati schema.org per la SEO
-    (rich snippets) — è la fonte più stabile se presente."""
+def _extract_listings(soup: BeautifulSoup, base_name: str) -> list:
     listings = []
-    items = soup.select("[itemtype*='schema.org']")
 
-    for item in items:
-        title_el = item.select_one("[itemprop='name']")
-        price_el = item.select_one("[itemprop='price']")
-        link_el = item if item.name == "a" else item.find("a", href=True)
-
-        if not title_el or not link_el:
+    for article in soup.select("article.listing-card"):
+        listing_id = article.get("data-listingid")
+        if not listing_id:
             continue
 
-        href = link_el.get("href", "")
-        if not href:
-            continue
+        price = article.get("data-price", "")
+        currency = article.get("data-currency", "")
+        location = article.get("data-location", "")
+        area = article.get("data-floorarea", "")
+        rooms = article.get("data-rooms", "")
+
+        ptype_el = article.select_one(".tag--listing--property-type")
+        property_type = ptype_el.get_text(strip=True) if ptype_el else "Immobile"
+
+        desc_el = article.select_one(".listing-card__description__text")
+        description = desc_el.get_text(strip=True) if desc_el else ""
+
+        # Titolo leggibile costruito dai dati strutturati (il sito non ha un
+        # vero e proprio campo "titolo" separato dalla location)
+        title_parts = [property_type, "-", location]
+        if area:
+            title_parts.append(f"({area})")
+        title = " ".join(p for p in title_parts if p)
+
+        price_str = f"{price} {currency}".strip() if price else ""
 
         listings.append(
             {
-                "id": _make_id(href),
-                "source": base_name,
-                "title": title_el.get_text(strip=True),
-                "price": price_el.get_text(strip=True) if price_el else "",
-                "url": href if href.startswith("http") else f"https://immobiliare.mitula.it{href}",
-                "raw": {},
-            }
-        )
-
-    return listings
-
-
-def _extract_via_generic_cards(soup: BeautifulSoup, base_name: str) -> list:
-    """Tentativo #2 (fallback): card generiche con link a dettaglio annuncio."""
-    listings = []
-    seen = set()
-
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if "/detalle/" not in href and "/dettaglio/" not in href and "/annuncio/" not in href:
-            continue
-        if href in seen:
-            continue
-        seen.add(href)
-
-        title = a.get_text(strip=True)
-        if not title or len(title) < 5:
-            continue
-
-        listings.append(
-            {
-                "id": _make_id(href),
+                "id": listing_id,
                 "source": base_name,
                 "title": title,
-                "price": "",
-                "url": href if href.startswith("http") else f"https://immobiliare.mitula.it{href}",
+                "price": price_str,
+                "location": location,
+                "rooms": rooms,
+                "area": area,
+                "description": description,
+                "url": f"https://immobiliare.mitula.it/adclickdetail/{listing_id}",
                 "raw": {},
             }
         )
@@ -88,6 +71,11 @@ def scrape_mitula_search(name: str, url: str) -> list:
     headers = {"User-Agent": USER_AGENT, "Accept-Language": "it-IT,it;q=0.9"}
     resp = requests.get(url, headers=headers, timeout=20)
     resp.raise_for_status()
+
+    # Il server spesso non dichiara il charset nell'header Content-Type,
+    # e requests di default assume ISO-8859-1 in quel caso, producendo
+    # caratteri accentati corrotti anche se la pagina è in realtà UTF-8.
+    resp.encoding = "utf-8"
 
     if DEBUG:
         os.makedirs(DEBUG_DIR, exist_ok=True)
@@ -101,15 +89,10 @@ def scrape_mitula_search(name: str, url: str) -> list:
         )
 
     soup = BeautifulSoup(resp.text, "html.parser")
+    listings = _extract_listings(soup, name)
 
-    listings = _extract_via_microdata(soup, name)
     if DEBUG:
-        print(f"[Mitula][DEBUG] Estrazione via microdati: {len(listings)} risultati")
-
-    if not listings:
-        listings = _extract_via_generic_cards(soup, name)
-        if DEBUG:
-            print(f"[Mitula][DEBUG] Estrazione via card generiche: {len(listings)} risultati")
+        print(f"[Mitula][DEBUG] Annunci estratti: {len(listings)}")
 
     return listings
 

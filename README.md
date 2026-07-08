@@ -1,111 +1,133 @@
 # Bot monitoraggio annunci immobiliari Padova
 
-Monitora Subito.it e Mitula (che aggrega anche Immobiliare.it) per nuovi
-annunci a Padova, li filtra con un'IA gratuita in base alle tue preferenze,
-e ti notifica su Telegram solo quelli rilevanti.
+Legge gli alert email nativi di Idealista, Immobiliare.it, Casa.it, Bakeca e
+Wikicasa (più Mitula come fonte supplementare via scraping leggero), filtra
+per budget e con un'IA gratuita in base alle tue preferenze, e ti notifica
+su Telegram solo gli annunci rilevanti. Gira su GitHub Actions ogni 15 minuti,
+zero costi, zero server da gestire.
 
-## Cosa NON fa (e perché)
+## Come funziona (in breve)
 
-Questo bot **non include Idealista.it, Immobiliare.it diretto o Casa.it**.
-Questi siti usano sistemi anti-bot enterprise (es. DataDome) pensati per
-bloccare esplicitamente lo scraping automatizzato. Aggirarli richiederebbe
-tecniche di evasione della sicurezza che non è cosa che questo progetto fa.
-Per quei siti, usa la funzione nativa "Salva ricerca + notifica email/app"
-(gratuita e ufficiale).
+Idealista e Immobiliare.it usano sistemi anti-bot enterprise pensati per
+bloccare lo scraping diretto. Invece di combatterli, usiamo la loro stessa
+funzionalità ufficiale di **alert via email** — quella che chiunque può
+attivare da "salva ricerca" — puntata su un Gmail dedicato. Il bot legge
+quella casella (con le tue credenziali, via App Password), estrae i link
+agli annunci dalle email, e li rilancia su Telegram. Nessun accesso non
+autorizzato a nessun sito: solo lettura della tua posta.
 
 ## Setup
 
-### 1. Configura le tue ricerche e preferenze
+### 1. L'account Gmail dedicato (hai già fatto la parte "alert attivi" ✅)
 
-Apri `config.py` e modifica:
-- `SUBITO_SEARCHES` / `MITULA_SEARCHES`: incolla gli URL delle tue ricerche
-  (vai sul sito, imposta i filtri che vuoi — prezzo, zona, mq — e copia l'URL
-  della pagina risultati).
-- `USER_PREFERENCES`: descrivi in linguaggio naturale cosa cerchi. Questo
-  testo viene usato dall'IA per valutare ogni annuncio.
-- `AI_MIN_SCORE`: soglia (0-10) sotto la quale un annuncio non ti viene
-  notificato. Metti `0` se vuoi ricevere comunque tutto.
+Ti serve ancora:
+1. **Verifica in 2 passaggi** attiva su quel Gmail: vai su
+   `myaccount.google.com/security` → "Verifica in due passaggi" → attivala.
+2. **App Password**: dopo aver attivato la verifica in 2 passaggi, vai su
+   `myaccount.google.com/apppasswords` → crea una password per "Mail" →
+   copiala subito (Google la mostra una volta sola).
+3. L'IMAP è **già attivo di default** su Gmail dal 2025, nessun altro
+   passaggio necessario.
 
-### 2. Crea le chiavi API necessarie
+⚠️ Importante: se questo Gmail ha già email vecchie non lette in arrivo dagli
+alert (essendo attivi da un po'), il primo run del bot le processerà tutte
+insieme. Se vuoi evitare una raffica di notifiche al primo avvio, apri
+l'inbox una volta e segna tutto come "già letto" prima di attivare il bot.
+In ogni caso c'è un tetto di sicurezza (`MAX_NEW_LISTINGS_PER_RUN` in
+`config.py`) che limita le notifiche in un singolo run.
 
-**Telegram** (hai già fatto):
-- Token del bot da @BotFather
-- Chat ID (se non lo hai: scrivi un messaggio al tuo bot, poi visita
-  `https://api.telegram.org/bot<TOKEN>/getUpdates` e cerca `"chat":{"id":...}`)
+### 2. Configura le tue preferenze
 
-**IA gratuita** — scegli UNA delle due:
-- **Groq** (consigliato, molto veloce): registrati su https://console.groq.com
-  → crea una API key. Tier gratuito generoso.
-- **Gemini**: registrati su https://aistudio.google.com/apikey → crea una
-  API key. Tier gratuito Gemini 1.5 Flash.
+Apri `config.py` (tramite l'editor web di GitHub, matita in alto a destra sul
+file) e modifica se vuoi:
+- `MAX_BUDGET_EUR`: già impostato a 250.000
+- `USER_PREFERENCES`: descrizione libera di cosa cerchi (per il filtro IA)
+- `MITULA_SEARCHES`: URL delle ricerche Mitula per Padova
 
-Se usi Gemini invece di Groq, cambia `AI_PROVIDER = "gemini"` in `config.py`.
+### 3. Crea la API key IA gratuita
 
-### 3. Aggiungi i secret su GitHub
+Registrati su **console.groq.com** → crea una API key (tier gratuito
+generoso, modelli Llama velocissimi). In alternativa Gemini
+(`aistudio.google.com/apikey`) cambiando `AI_PROVIDER = "gemini"` in
+`config.py`.
 
-Nel tuo repository: **Settings → Secrets and variables → Actions → New
-repository secret**. Aggiungi:
+### 4. Aggiungi i secret su GitHub
+
+Dal tuo repository, anche da iPhone Safari: **Settings → Secrets and
+variables → Actions → New repository secret**. Aggiungi questi 5:
 
 | Nome | Valore |
 |---|---|
+| `IMAP_EMAIL` | l'indirizzo Gmail dedicato |
+| `IMAP_APP_PASSWORD` | la App Password a 16 caratteri generata sopra |
 | `TELEGRAM_BOT_TOKEN` | il token del tuo bot |
 | `TELEGRAM_CHAT_ID` | il tuo chat id |
-| `GROQ_API_KEY` | (se usi Groq) |
-| `GEMINI_API_KEY` | (se usi Gemini) |
+| `GROQ_API_KEY` | la key creata su console.groq.com |
 
-### 4. Push del codice
+### 5. Carica i file nel repository
 
-Carica tutti questi file nel tuo repository GitHub (rispettando la struttura
-delle cartelle, specialmente `.github/workflows/scraper.yml`).
+**Da iPhone, senza terminale:**
+- Scarica lo zip che ti ho preparato, aprilo con l'app **File** di iOS
+  (tap sul file → "Decomprimi") per ottenere la cartella con tutti i file.
+- Su GitHub, nel tuo repo, usa **Add file → Upload files**: Safari ti fa
+  scegliere più file insieme dall'app File. Ricrea la stessa struttura di
+  cartelle (`.github/workflows/`, `scraper/`, `data/`).
+- In alternativa, per singoli file, usa **Add file → Create new file** e
+  incolla il contenuto a mano (funziona bene per file piccoli come
+  `config.py`).
 
-### 5. Primo avvio
+### 6. Rendi il repository privato (fortemente consigliato)
 
-Vai su **Actions** nel tuo repo → seleziona "Monitoraggio annunci Padova" →
-**Run workflow** per un test manuale immediato (invece di aspettare i 30
-minuti del cron).
+**Settings → General → Danger Zone → Change visibility → Private.** A
+differenza del vecchio approccio (solo scraping di pagine pubbliche), questo
+bot maneggia contenuti della tua posta elettronica. Su un repo pubblico, i
+log e gli artifact di GitHub Actions sono visibili a chiunque — meglio di
+no, anche se le password vere restano comunque mascherate come secret. I
+repository privati sono gratuiti e illimitati su GitHub, e i minuti gratuiti
+di Actions (2.000/mese) bastano ampiamente per un run leggero ogni 15 minuti.
 
-**Il primo run è speciale**: registra tutti gli annunci esistenti come "già
-visti" senza notificarli tutti insieme (altrimenti riceveresti centinaia di
-messaggi in un colpo solo). Riceverai solo un messaggio di riepilogo. Dal
-secondo run in poi, riceverai le notifiche per i NUOVI annunci.
+### 7. Primo avvio
 
-## Se qualcosa non funziona al primo run reale
+**Actions → "Monitoraggio annunci Padova" → Run workflow.**
 
-I siti web cambiano struttura HTML periodicamente, quindi è possibile che
-alcuni selettori vadano aggiustati. Controlla i log del run su GitHub Actions:
+## Se i link estratti dalle email non sono giusti
 
-- Se vedi `0 annunci trovati` per Subito.it → il sito potrebbe aver cambiato
-  la struttura di `__NEXT_DATA__`. Serve aggiornare `subito_scraper.py`.
-- Se vedi `0 annunci trovati` per Mitula → potrebbero aver cambiato i
-  microdati schema.org. Serve aggiornare `mitula_scraper.py`.
+Non avendo un esempio reale delle email di alert dei 5 portali, l'estrazione
+per Casa.it, Bakeca e Wikicasa parte con una logica generica (prende i link
+che sembrano puntare a un singolo annuncio, scarta quelli di navigazione).
+Dopo il primo run reale:
 
-Portami i log dell'errore e sistemiamo insieme il selettore.
+1. Vai sul run completato in **Actions**, scarica l'artifact **debug-html**
+   in fondo alla pagina (contiene l'HTML delle email processate, con nomi
+   tipo `email_0_Casa_it.html`)
+2. Caricamelo qui in chat
+3. Ti scrivo un pattern regex preciso per quel portale, esattamente come
+   abbiamo già fatto per Mitula
 
-## Personalizzare la frequenza
-
-Nel file `.github/workflows/scraper.yml`, modifica la riga cron:
-
-```yaml
-- cron: "*/30 * * * *"   # ogni 30 minuti (default)
-- cron: "0 * * * *"      # ogni ora
-- cron: "*/15 * * * *"   # ogni 15 minuti (più aggressivo, valuta se necessario)
-```
-
-Nota: GitHub Actions su piano gratuito ha un limite di minuti di esecuzione
-mensili. Con run di ~1-2 minuti ogni 30 minuti, resti ampiamente dentro il
-limite gratuito per un repository privato o pubblico.
+Stesso discorso se dopo un po' iniziano ad arrivare troppi falsi positivi
+(link non pertinenti): mandami un run recente e affiniamo il filtro.
 
 ## Struttura del progetto
 
 ```
-config.py                    # tutte le impostazioni personalizzabili
+config.py                    # fonti, budget, preferenze IA — il file che modifichi di più
 main.py                      # orchestratore principale
 scraper/
-  subito_scraper.py          # Playwright, rendering JS
-  mitula_scraper.py          # requests + BeautifulSoup
-  ai_filter.py                # valutazione IA (Groq/Gemini)
-  telegram_notify.py         # invio notifiche
-  state.py                    # dedup tra run successivi
-data/state.json              # stato persistente (annunci già visti)
-.github/workflows/scraper.yml  # schedulazione automatica
+  email_alerts.py             # legge Gmail via IMAP, estrae link dagli alert
+  mitula_scraper.py           # requests + BeautifulSoup, fonte supplementare
+  ai_filter.py                 # valutazione IA (Groq/Gemini)
+  telegram_notify.py          # invio notifiche
+  state.py                     # dedup per Mitula (l'email si autogestisce via IMAP)
+  utils.py                     # parsing prezzi, filtro link di navigazione
+data/state.json               # stato persistente (solo id Mitula)
+.github/workflows/scraper.yml   # schedulazione ogni 15 minuti
 ```
+
+## Nota su Subito.it
+
+Subito.it è stato rimosso dallo scraping diretto: i test hanno mostrato un
+blocco esplicito di **Akamai Bot Manager** (stessa categoria di protezione
+di Idealista/Immobiliare.it) contro le richieste automatizzate da GitHub
+Actions. Se attivi anche lì l'alert via email con lo stesso Gmail dedicato,
+aggiungilo a `EMAIL_SOURCES` in `config.py` — il bot lo tratterà esattamente
+come gli altri 5.

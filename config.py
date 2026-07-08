@@ -1,27 +1,53 @@
 """
 Configurazione centrale del bot di monitoraggio annunci Padova.
-Modifica questo file per personalizzare ricerche e preferenze.
+Modifica questo file per personalizzare fonti, filtri e preferenze.
 """
+import re
 
 # ---------------------------------------------------------------------------
-# RICERCHE SUBITO.IT
-# Ogni URL è una ricerca già filtrata su subito.it (categoria, zona, prezzo...).
-# Vai su subito.it, imposta i filtri che vuoi, copia l'URL della pagina risultati.
+# BUDGET MASSIMO (filtro deterministico, applicato PRIMA dell'IA)
 # ---------------------------------------------------------------------------
-SUBITO_SEARCHES = [
-    {
-        "name": "Appartamenti in affitto - Padova",
-        "url": "https://www.subito.it/annunci-veneto/affitto/appartamenti/padova/",
-    },
-    {
-        "name": "Appartamenti in vendita - Padova",
-        "url": "https://www.subito.it/annunci-veneto/vendita/appartamenti/padova/",
-    },
-]
+MAX_BUDGET_EUR = 250_000
 
 # ---------------------------------------------------------------------------
-# RICERCHE MITULA (aggrega anche annunci di Immobiliare.it)
-# Stessa logica: costruisci la ricerca su immobiliare.mitula.it e incolla l'URL.
+# FONTI VIA EMAIL ALERT
+# Per ogni portale: domini mittente per riconoscerlo, e (opzionale) un
+# pattern regex specifico per i link agli annunci. Se 'listing_url_pattern'
+# è None, viene usata l'estrazione generica (tutti i link "specifici",
+# scartando quelli di navigazione tramite denylist in scraper/utils.py).
+#
+# I pattern specifici per Idealista e Immobiliare.it sono basati sulla
+# struttura nota dei loro URL pubblici; per Casa.it, Bakeca e Wikicasa
+# partiamo con l'estrazione generica e li affiniamo dopo aver visto le
+# prime email reali (modalità debug).
+# ---------------------------------------------------------------------------
+EMAIL_SOURCES = {
+    "Idealista": {
+        "sender_domains": ["idealista.it"],
+        "listing_url_pattern": re.compile(r"https?://(?:www\.)?idealista\.it/immobile/\d+[^\s\"'<>]*"),
+    },
+    "Immobiliare.it": {
+        "sender_domains": ["immobiliare.it"],
+        "listing_url_pattern": re.compile(r"https?://(?:www\.)?immobiliare\.it/annunci/\d+[^\s\"'<>]*"),
+    },
+    "Casa.it": {
+        "sender_domains": ["casa.it"],
+        "listing_url_pattern": None,  # da affinare con email reale
+    },
+    "Bakeca": {
+        "sender_domains": ["bakeca.it"],
+        "listing_url_pattern": None,  # da affinare con email reale
+    },
+    "Wikicasa": {
+        "sender_domains": ["wikicasa.it"],
+        "listing_url_pattern": None,  # da affinare con email reale
+    },
+}
+
+# ---------------------------------------------------------------------------
+# FONTE SUPPLEMENTARE: MITULA (scraping diretto, requests + BeautifulSoup)
+# Aggrega anche annunci di Immobiliare.it/Subito.it, utile come copertura
+# extra oltre agli alert email. Nessuna protezione anti-bot nota.
 # ---------------------------------------------------------------------------
 MITULA_SEARCHES = [
     {
@@ -35,9 +61,7 @@ MITULA_SEARCHES = [
 ]
 
 # ---------------------------------------------------------------------------
-# FILTRO IA (opzionale ma attivo di default)
-# Descrivi in linguaggio naturale cosa cerchi. Il modello valuterà ogni nuovo
-# annuncio contro questa descrizione e assegnerà un punteggio di rilevanza.
+# FILTRO IA (Groq o Gemini, entrambi gratuiti)
 # ---------------------------------------------------------------------------
 AI_FILTER_ENABLED = True
 
@@ -48,22 +72,20 @@ Cerco un appartamento a Padova con queste caratteristiche, in ordine di importan
 - Piano preferibilmente non terra
 - Evita: annunci di sole camere singole, uffici, box/garage travestiti da "immobili"
 - Va bene sia da privato che da agenzia
+- Budget massimo 250.000€ (già filtrato automaticamente, ma tienilo presente
+  nella valutazione qualitativa)
 """
 
-# Punteggio minimo (0-10) sotto il quale l'annuncio NON viene notificato.
-# Metti 0 se vuoi ricevere comunque tutti gli annunci nuovi (l'IA aggiunge solo un commento).
 AI_MIN_SCORE = 5
-
-# Provider IA gratuito: "groq" oppure "gemini"
 AI_PROVIDER = "groq"
 AI_MODEL_GROQ = "llama-3.1-8b-instant"
 AI_MODEL_GEMINI = "gemini-1.5-flash"
 
 # ---------------------------------------------------------------------------
-# COMPORTAMENTO SCRAPER (rispetto rate-limit, buona educazione verso i siti)
+# COMPORTAMENTO GENERALE
 # ---------------------------------------------------------------------------
-REQUEST_DELAY_SECONDS = 8          # pausa minima tra una richiesta e l'altra
-MAX_NEW_LISTINGS_PER_RUN = 30      # tetto di sicurezza per singola esecuzione
+REQUEST_DELAY_SECONDS = 8
+MAX_NEW_LISTINGS_PER_RUN = 30
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
