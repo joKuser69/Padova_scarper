@@ -11,6 +11,7 @@ Le chiavi vanno messe come secret GitHub Actions: GROQ_API_KEY / GEMINI_API_KEY
 """
 import json
 import os
+import time
 
 import requests
 
@@ -134,7 +135,7 @@ def evaluate_listing(listing: dict) -> dict:
                 pass
 
     except Exception as e:
-        print(f"[AI] Errore valutazione annuncio '{listing.get('title')}': {e}")
+        print(f"[AI] Errore valutazione annuncio '{listing.get('title')}': {type(e).__name__}: {e}")
         # In caso di errore IA, non blocchiamo la notifica: punteggio neutro
         listing["ai_score"] = 5.0
         listing["ai_comment"] = "(valutazione IA non riuscita)"
@@ -143,4 +144,9 @@ def evaluate_listing(listing: dict) -> dict:
 
 
 def evaluate_all(listings: list) -> list:
-    return [evaluate_listing(l) for l in listings]
+    results = []
+    for i, listing in enumerate(listings):
+        results.append(evaluate_listing(listing))
+        if i < len(listings) - 1:
+            time.sleep(2)  # rispetta il rate-limit del tier gratuito
+    return results

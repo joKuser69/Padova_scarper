@@ -127,9 +127,35 @@ def _get_email_body(msg) -> str:
 def _identify_source(from_header: str) -> str:
     from_lower = from_header.lower()
     for source_name, cfg in EMAIL_SOURCES.items():
-        if any(domain in from_lower for domain in cfg["sender_domains"]):
-            return source_name
+        for domain in cfg["sender_domains"]:
+            # Lookbehind negativo: il carattere subito prima del dominio non
+            # deve essere una lettera/cifra, altrimenti "casa.it" combacerebbe
+            # anche dentro "wikicasa.it" (bug reale riscontrato in produzione).
+            pattern = r"(?<![a-z0-9])" + re.escape(domain.lower())
+            if re.search(pattern, from_lower):
+                return source_name
     return ""
+
+
+def _unwrap_redirect(url: str) -> str:
+    """Molti link di email marketing sono redirect di tracciamento che
+    portano la vera destinazione in un parametro di query (es.
+    '?u=https%3A%2F%2Fsito.it%2F...'). Se lo troviamo, usiamo direttamente
+    quella destinazione: link più pulito e più facile da classificare
+    correttamente a valle."""
+    from urllib.parse import urlparse, parse_qs
+
+    try:
+        parsed = urlparse(url)
+        qs = parse_qs(parsed.query)
+        for key in ("u", "url", "redirect", "r", "dest", "target"):
+            if key in qs and qs[key]:
+                candidate = qs[key][0]
+                if candidate.startswith("http://") or candidate.startswith("https://"):
+                    return candidate
+    except Exception:
+        pass
+    return url
 
 
 def _extract_price_near(body: str, position: int, window: int = 250) -> str:
@@ -180,6 +206,7 @@ def _extract_listings_from_email(source: str, subject: str, body: str) -> list:
     if not candidate_urls:
         all_hrefs = HREF_PATTERN.findall(body)
         for href in all_hrefs:
+            href = _unwrap_redirect(href)
             if looks_like_navigation_link(href):
                 continue
             if not has_enough_specificity(href):

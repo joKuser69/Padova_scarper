@@ -40,6 +40,10 @@ LINK_DENYLIST_FRAGMENTS = [
     # portano a pagine "le mie ricerche", non a un singolo annuncio.
     "autologin", "session/callback", "editalert", "edit-alert",
     "/my/", "/mio/", "/preferiti", "/ricerche-salvate",
+    # Reti pubblicitarie/tracking note che comparivano in email reali,
+    # NON sono mai link ad annunci (es. banner pubblicitari nelle email)
+    "doubleclick.net", "googlesyndication.com", "google-analytics.com",
+    "googletagmanager.com", "pubads.g.doubleclick",
 ]
 
 
