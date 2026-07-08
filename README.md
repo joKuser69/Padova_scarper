@@ -3,8 +3,28 @@
 Legge gli alert email nativi di Idealista, Immobiliare.it, Casa.it, Bakeca e
 Wikicasa (più Mitula come fonte supplementare via scraping leggero), filtra
 per budget e con un'IA gratuita in base alle tue preferenze, e ti notifica
-su Telegram solo gli annunci rilevanti. Gira su GitHub Actions ogni 15 minuti,
-zero costi, zero server da gestire.
+su Telegram solo gli annunci rilevanti — con foto, mq, locali, prezzo/mq,
+confronto con la media di zona, e variazioni di prezzo nel tempo sullo
+stesso annuncio. Gira su GitHub Actions ogni 15 minuti, zero costi.
+
+## Funzionalità
+
+- **Storico prezzi**: ogni annuncio è tracciato nel tempo in `data/state.json`
+  (ora un vero mini-database, non solo un elenco di id). Se lo stesso
+  annuncio ricompare con un prezzo diverso, te lo segnala esplicitamente
+  ("🔻 Prezzo sceso da 180.000€ a 165.000€").
+- **Media prezzo/mq per zona**: calcolata sugli annunci già tracciati nella
+  stessa zona. Serve un minimo di 3 annunci comparabili prima di mostrare
+  una media (altrimenti dice onestamente "dati insufficienti") — la qualità
+  di questo confronto migliora con il tempo, man mano che il bot accumula
+  storico.
+- **Foto**: se disponibile un'immagine (da Mitula o dall'email di alert),
+  viene inviata come foto con i dettagli come didascalia.
+- **Limite noto**: il numero di locali (es. "trilocale" = 3) è disponibile,
+  ma la suddivisione stanza per stanza (cucina/camere/bagno elencati
+  singolarmente) no — quel dettaglio esiste solo nella pagina protetta del
+  singolo annuncio, che il bot non visita di proposito (vedi sezione sotto
+  sul perché non facciamo scraping diretto di Idealista/Immobiliare.it).
 
 ## Come funziona (in breve)
 
@@ -110,18 +130,27 @@ Stesso discorso se dopo un po' iniziano ad arrivare troppi falsi positivi
 ## Struttura del progetto
 
 ```
-config.py                    # fonti, budget, preferenze IA — il file che modifichi di più
+config.py                    # fonti, budget, quartieri, preferenze IA
 main.py                      # orchestratore principale
 scraper/
-  email_alerts.py             # legge Gmail via IMAP, estrae link dagli alert
+  email_alerts.py             # legge Gmail via IMAP, estrae link+dati dagli alert
   mitula_scraper.py           # requests + BeautifulSoup, fonte supplementare
-  ai_filter.py                 # valutazione IA (Groq/Gemini)
-  telegram_notify.py          # invio notifiche
-  state.py                     # dedup per Mitula (l'email si autogestisce via IMAP)
-  utils.py                     # parsing prezzi, filtro link di navigazione
-data/state.json               # stato persistente (solo id Mitula)
+  ai_filter.py                 # valutazione IA (Groq/Gemini) + completamento zona/mq/locali
+  telegram_notify.py          # invio notifiche (testo o foto), formattazione ricca
+  db.py                        # database persistente: storico prezzi, media di zona
+  utils.py                     # parsing prezzi/mq/locali, normalizzazione annunci
+data/state.json                # database persistente (storico completo, non solo id)
 .github/workflows/scraper.yml   # schedulazione ogni 15 minuti
 ```
+
+## Se hai già un `data/state.json` dalla versione precedente
+
+Nessuna azione richiesta: il bot rileva automaticamente il vecchio formato
+(un semplice elenco di id) e lo converte al primo run col nuovo codice,
+senza notificarti di nuovo i 60 annunci Mitula già visti in blocco. Vedrai
+un log tipo `[DB] Migrati N id dal vecchio formato state.json` — è normale,
+succede una volta sola.
+
 
 ## Nota su Subito.it
 

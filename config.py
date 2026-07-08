@@ -5,6 +5,18 @@ Modifica questo file per personalizzare fonti, filtri e preferenze.
 import re
 
 # ---------------------------------------------------------------------------
+# QUARTIERI DI PADOVA (per riconoscere la zona nel testo di email/annunci
+# quando non è già disponibile come dato strutturato)
+# ---------------------------------------------------------------------------
+PADOVA_ZONES = [
+    "Centro Storico", "Centro", "Santo", "Portello", "Arcella", "Santa Croce",
+    "Santa Rita", "San Carlo", "Forcellini", "Stanga", "Voltabarozzo",
+    "Chiesanuova", "Guizza", "Mortise", "Brentella", "Bassanello",
+    "Palestro", "Sacra Famiglia", "Montà", "Salboro", "Camin", "Terranegra",
+    "Pontevigodarzere", "Torre", "San Lazzaro",
+]
+
+# ---------------------------------------------------------------------------
 # BUDGET MASSIMO (filtro deterministico, applicato PRIMA dell'IA)
 # ---------------------------------------------------------------------------
 MAX_BUDGET_EUR = 250_000

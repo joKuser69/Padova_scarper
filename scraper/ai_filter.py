@@ -23,14 +23,24 @@ PREFERENZE DELL'UTENTE:
 {preferences}
 
 ANNUNCIO DA VALUTARE:
-Titolo: {title}
+Titolo/estratto: {title}
+Descrizione aggiuntiva: {description}
 Prezzo: {price}
+Zona (n/d se non ancora nota): {zone}
+Mq (n/d se non ancora noti): {area_sqm}
+Locali (n/d se non ancora noti): {rooms}
 Fonte: {source}
 
-Valuta quanto questo annuncio corrisponde alle preferenze, su una scala da 0 a 10
-(10 = corrispondenza perfetta, 0 = totalmente irrilevante o categoria sbagliata).
+Compiti:
+1. Valuta quanto questo annuncio corrisponde alle preferenze, su una scala da
+   0 a 10 (10 = corrispondenza perfetta, 0 = totalmente irrilevante o
+   categoria sbagliata, es. non è un immobile residenziale in vendita/affitto).
+2. Se zona, mq o locali sono segnati "n/d" sopra MA riesci a dedurli dal
+   titolo/descrizione, indicali nella risposta; altrimenti lascia null.
+   Non inventare: se non c'è abbastanza informazione, usa null.
+
 Rispondi SOLO con un oggetto JSON, senza testo aggiuntivo, in questo formato esatto:
-{{"score": <numero 0-10>, "comment": "<massimo 20 parole in italiano>"}}
+{{"score": <numero 0-10>, "comment": "<massimo 20 parole in italiano>", "zone": <stringa o null>, "area_sqm": <numero o null>, "rooms": <numero intero o null>}}
 """
 
 
@@ -46,7 +56,7 @@ def _call_groq(prompt: str) -> str:
             "model": AI_MODEL_GROQ,
             "messages": [{"role": "user", "content": prompt}],
             "temperature": 0.2,
-            "max_tokens": 100,
+            "max_tokens": 200,
         },
         timeout=20,
     )
@@ -84,11 +94,17 @@ def _parse_json_response(text: str) -> dict:
 
 
 def evaluate_listing(listing: dict) -> dict:
-    """Aggiunge 'ai_score' e 'ai_comment' al dizionario dell'annuncio."""
+    """Aggiunge 'ai_score' e 'ai_comment' al dizionario dell'annuncio, e
+    prova a colmare zona/mq/locali se non erano già stati determinati
+    dall'estrazione deterministica (regex)."""
     prompt = PROMPT_TEMPLATE.format(
         preferences=USER_PREFERENCES.strip(),
         title=listing.get("title", ""),
-        price=listing.get("price", "n/d"),
+        description=listing.get("description", "")[:400],
+        price=listing.get("price", "n/d") or "n/d",
+        zone=listing.get("zone") or "n/d",
+        area_sqm=listing.get("area_sqm") or "n/d",
+        rooms=listing.get("rooms") or "n/d",
         source=listing.get("source", ""),
     )
 
@@ -103,6 +119,20 @@ def evaluate_listing(listing: dict) -> dict:
         result = _parse_json_response(raw)
         listing["ai_score"] = float(result.get("score", 5))
         listing["ai_comment"] = result.get("comment", "")
+
+        if not listing.get("zone") and result.get("zone"):
+            listing["zone"] = result["zone"]
+        if not listing.get("area_sqm") and result.get("area_sqm"):
+            try:
+                listing["area_sqm"] = float(result["area_sqm"])
+            except (TypeError, ValueError):
+                pass
+        if not listing.get("rooms") and result.get("rooms"):
+            try:
+                listing["rooms"] = int(result["rooms"])
+            except (TypeError, ValueError):
+                pass
+
     except Exception as e:
         print(f"[AI] Errore valutazione annuncio '{listing.get('title')}': {e}")
         # In caso di errore IA, non blocchiamo la notifica: punteggio neutro

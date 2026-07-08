@@ -40,7 +40,33 @@ DEBUG_DIR = "debug"
 IMAP_SERVER = "imap.gmail.com"
 
 PRICE_PATTERN = re.compile(r"(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?)\s*€|€\s*(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?)")
+AREA_PATTERN = re.compile(r"(\d+(?:[.,]\d+)?)\s*(?:m²|mq|m2)", re.IGNORECASE)
 HREF_PATTERN = re.compile(r'href=["\']([^"\']+)["\']', re.IGNORECASE)
+IMG_SRC_PATTERN = re.compile(r'<img[^>]+src=["\']([^"\']+)["\']', re.IGNORECASE)
+TAG_PATTERN = re.compile(r"<[^>]+>")
+
+# Email transazionali/di onboarding note: NON sono alert di nuovi annunci,
+# vanno ignorate anche se arrivano da un mittente riconosciuto. Lista non
+# esaustiva: verrà affinata quando vedremo i soggetti reali degli alert veri.
+TRANSACTIONAL_SUBJECT_KEYWORDS = [
+    "benvenut",              # "Benvenuto su...", "Ti diamo il benvenuto..."
+    "la tua ricerca è stata salvata",
+    "ricerca salvata",
+    "conferma la tua email",
+    "conferma il tuo indirizzo",
+    "verifica il tuo",
+    "attiva il tuo account",
+    "hai creato un account",
+    "password dimenticata",
+    "reimposta la tua password",
+    "modifica le tue preferenze",
+    "iscrizione newsletter",
+]
+
+
+def _is_transactional_email(subject: str) -> bool:
+    subject_lower = subject.lower()
+    return any(kw in subject_lower for kw in TRANSACTIONAL_SUBJECT_KEYWORDS)
 
 
 def _decode_mime_header(value: str) -> str:
@@ -114,6 +140,32 @@ def _extract_price_near(body: str, position: int, window: int = 250) -> str:
     return (match.group(1) or match.group(2) or "").strip()
 
 
+def _extract_context(body: str, position: int, window: int = 350) -> dict:
+    """Estrae tutto quello che riusciamo a dedurre nell'intorno testuale di
+    un link ad annuncio: prezzo, mq, immagine, e un breve estratto di testo
+    pulito (utile sia come titolo più specifico che come contesto per l'IA)."""
+    start = max(0, position - window)
+    end = position + window
+    snippet_html = body[start:end]
+
+    price_match = PRICE_PATTERN.search(snippet_html)
+    price = (price_match.group(1) or price_match.group(2) or "").strip() if price_match else ""
+
+    area_match = AREA_PATTERN.search(snippet_html)
+    area = area_match.group(0) if area_match else ""
+
+    img_match = IMG_SRC_PATTERN.search(snippet_html)
+    image_url = img_match.group(1) if img_match else ""
+    # scarta pixel di tracciamento / icone minuscole ovvie
+    if image_url and any(kw in image_url.lower() for kw in ("pixel", "tracking", "1x1", "spacer")):
+        image_url = ""
+
+    plain_text = TAG_PATTERN.sub(" ", snippet_html)
+    plain_text = re.sub(r"\s+", " ", plain_text).strip()
+
+    return {"price": price, "area": area, "image_url": image_url, "description": plain_text[:300]}
+
+
 def _extract_listings_from_email(source: str, subject: str, body: str) -> list:
     cfg = EMAIL_SOURCES[source]
     tight_pattern = cfg.get("listing_url_pattern")
@@ -143,14 +195,23 @@ def _extract_listings_from_email(source: str, subject: str, body: str) -> list:
         seen_urls.add(url)
 
         position = body.find(url)
-        price = _extract_price_near(body, position) if position >= 0 else ""
+        context = _extract_context(body, position) if position >= 0 else {
+            "price": "", "area": "", "image_url": "", "description": ""
+        }
+
+        # Titolo più specifico possibile: usa l'estratto di testo vicino al
+        # link se abbastanza informativo, altrimenti torna al soggetto email.
+        title = context["description"][:80] if len(context["description"]) >= 15 else subject
 
         listings.append(
             {
                 "id": url,
                 "source": f"{source} (email)",
-                "title": subject,
-                "price": price,
+                "title": title,
+                "description": context["description"],
+                "price": context["price"],
+                "area": context["area"],
+                "image_url": context["image_url"],
                 "url": url,
                 "raw": {},
             }
@@ -201,6 +262,11 @@ def fetch_new_listings(imap_email: str, imap_app_password: str) -> list:
                 # posta normale o un mittente non ancora mappato in
                 # config.EMAIL_SOURCES.
                 print(f"[Email] Mittente non riconosciuto, salto: {from_header[:60]}")
+                continue
+
+            if _is_transactional_email(subject):
+                print(f"[Email] Email transazionale (non è un alert), ignoro: '{subject[:60]}' ({source})")
+                conn.store(eid, "+FLAGS", "\\Seen")
                 continue
 
             body = _get_email_body(msg)

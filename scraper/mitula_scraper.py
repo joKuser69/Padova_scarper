@@ -40,6 +40,11 @@ def _extract_listings(soup: BeautifulSoup, base_name: str) -> list:
         desc_el = article.select_one(".listing-card__description__text")
         description = desc_el.get_text(strip=True) if desc_el else ""
 
+        img_el = article.select_one("img")
+        image_url = ""
+        if img_el:
+            image_url = img_el.get("data-src") or img_el.get("src") or img_el.get("data-srcset", "").split(" ")[0]
+
         # Titolo leggibile costruito dai dati strutturati (il sito non ha un
         # vero e proprio campo "titolo" separato dalla location)
         title_parts = [property_type, "-", location]
@@ -60,6 +65,7 @@ def _extract_listings(soup: BeautifulSoup, base_name: str) -> list:
                 "area": area,
                 "description": description,
                 "url": f"https://immobiliare.mitula.it/adclickdetail/{listing_id}",
+                "image_url": image_url,
                 "raw": {},
             }
         )

@@ -2,7 +2,15 @@
 Bot di monitoraggio annunci immobiliari Padova.
 Fonti: alert email (Idealista, Immobiliare.it, Casa.it, Bakeca, Wikicasa) +
 Mitula (scraping diretto, supplementare).
-Punto di ingresso eseguito da GitHub Actions ad ogni schedulazione.
+
+Ogni annuncio (di qualunque fonte) passa da:
+1. normalizzazione campi (prezzo/mq/locali/zona in formato standard)
+2. upsert nel database persistente -> rileva se è nuovo o se il prezzo è
+   cambiato rispetto all'ultima volta che lo abbiamo visto
+3. filtro budget deterministico
+4. filtro IA (rilevanza + eventuale completamento zona/mq/locali mancanti)
+5. calcolo confronto con la media prezzo/mq della zona
+6. notifica Telegram (con foto se disponibile)
 """
 import os
 import sys
@@ -13,11 +21,11 @@ from config import (
     AI_MIN_SCORE,
     MAX_BUDGET_EUR,
     MAX_NEW_LISTINGS_PER_RUN,
+    PADOVA_ZONES,
     STATE_FILE,
 )
-from scraper import mitula_scraper, email_alerts, telegram_notify
-from scraper.state import load_state, save_state, filter_new
-from scraper.utils import parse_price_eur
+from scraper import mitula_scraper, email_alerts, telegram_notify, db
+from scraper.utils import normalize_listing
 
 if AI_FILTER_ENABLED:
     from scraper.ai_filter import evaluate_all
@@ -30,7 +38,7 @@ def apply_budget_filter(listings: list) -> list:
     kept = []
     dropped = 0
     for listing in listings:
-        price_value = parse_price_eur(listing.get("price", ""))
+        price_value = listing.get("price_eur")
         if price_value is not None and price_value > MAX_BUDGET_EUR:
             dropped += 1
             continue
@@ -41,10 +49,22 @@ def apply_budget_filter(listings: list) -> list:
     return kept
 
 
+def attach_zone_stats(listings: list, database: dict) -> None:
+    """Aggiunge a ogni annuncio la media prezzo/mq della sua zona (se
+    disponibile), calcolata sul database storico."""
+    for listing in listings:
+        avg, count = db.zone_price_per_sqm_stats(database, listing.get("zone"), exclude_id=listing.get("id"))
+        listing["zone_avg_price_sqm"] = avg
+        listing["zone_sample_count"] = count
+
+
 def main():
     print("=== Avvio monitoraggio annunci Padova ===")
 
-    # --- Fonte 1: alert email (Idealista, Immobiliare.it, Casa.it, Bakeca, Wikicasa) ---
+    database = db.load_db(STATE_FILE)
+    first_run = db.is_first_run(database)
+
+    # --- Fonte 1: alert email ---
     imap_email = os.environ.get("IMAP_EMAIL")
     imap_app_password = os.environ.get("IMAP_APP_PASSWORD")
 
@@ -55,66 +75,80 @@ def main():
     else:
         print("[Email] IMAP_EMAIL / IMAP_APP_PASSWORD non configurati, salto questa fonte.")
 
-    # --- Fonte 2: Mitula (supplementare, con dedup basato su state.json) ---
-    state = load_state(STATE_FILE)
-    seen_ids = set(state.get("seen_ids", []))
-    is_first_run = state.get("last_run") is None
-
+    # --- Fonte 2: Mitula ---
     mitula_listings = mitula_scraper.scrape_all(MITULA_SEARCHES)
     print(f"[Mitula] Totale annunci scansionati: {len(mitula_listings)}")
 
-    if is_first_run:
+    # --- Normalizzazione: ogni annuncio, di qualunque fonte, ottiene gli
+    # stessi campi standard (price_eur, area_sqm, rooms, zone) ---
+    all_scanned = email_listings + mitula_listings
+    for listing in all_scanned:
+        normalize_listing(listing, PADOVA_ZONES)
+
+    # --- Upsert nel database: rileva nuovi annunci e variazioni di prezzo ---
+    # Mitula = scan dell'intero catalogo attuale: al primissimo run lo
+    # registriamo silenziosamente (senza notificare tutto) per non fare un
+    # flood. Le email invece rappresentano già "eventi" (alert veri e propri
+    # dai portali), quindi passano sempre, anche al primo run.
+    candidates = []
+
+    for listing in email_listings:
+        result = db.upsert_listing(database, listing)
+        if result["is_new"] or result["price_changed"]:
+            if result["price_changed"]:
+                listing["price_change"] = {"old": result["old_price"], "new": result["new_price"]}
+            candidates.append(listing)
+
+    for listing in mitula_listings:
+        result = db.upsert_listing(database, listing)
+        if first_run:
+            continue  # solo registrazione silenziosa al primo avvio
+        if result["is_new"] or result["price_changed"]:
+            if result["price_changed"]:
+                listing["price_change"] = {"old": result["old_price"], "new": result["new_price"]}
+            candidates.append(listing)
+
+    if first_run:
         print(
-            "Primo avvio rilevato per Mitula: memorizzo gli annunci attuali "
-            "come 'già visti' senza notificarli tutti insieme."
+            "Primo avvio rilevato: catalogo Mitula registrato silenziosamente "
+            "senza notificare tutto in blocco. Le email (alert veri) sono "
+            "comunque state processate normalmente."
         )
-        seen_ids.update(l["id"] for l in mitula_listings if l.get("id"))
-        save_state(STATE_FILE, seen_ids)
-        mitula_new = []
-    else:
-        mitula_new = filter_new(mitula_listings, seen_ids)
-        print(f"[Mitula] Nuovi annunci: {len(mitula_new)}")
 
-    # --- Unione delle due fonti ---
-    # Le email sono già "nuove per definizione" (erano email non lette,
-    # marcate lette solo dopo il parsing): non passano dal dedup su state.json.
-    new_listings = email_listings + mitula_new
-    print(f"Totale nuovi annunci da valutare: {len(new_listings)}")
+    print(f"Totale annunci nuovi o con prezzo variato: {len(candidates)}")
 
-    if len(new_listings) > MAX_NEW_LISTINGS_PER_RUN:
+    if len(candidates) > MAX_NEW_LISTINGS_PER_RUN:
         print(
-            f"Attenzione: {len(new_listings)} nuovi annunci superano il limite "
-            f"di sicurezza ({MAX_NEW_LISTINGS_PER_RUN}). Notifico solo i primi."
+            f"Attenzione: {len(candidates)} annunci superano il limite di "
+            f"sicurezza ({MAX_NEW_LISTINGS_PER_RUN}). Notifico solo i primi."
         )
-        new_listings = new_listings[:MAX_NEW_LISTINGS_PER_RUN]
+        candidates = candidates[:MAX_NEW_LISTINGS_PER_RUN]
 
-    # --- Filtro budget deterministico (prima dell'IA, più affidabile per i numeri) ---
-    new_listings = apply_budget_filter(new_listings)
+    # --- Filtro budget deterministico ---
+    candidates = apply_budget_filter(candidates)
 
-    # --- Filtro IA qualitativo ---
-    to_notify = new_listings
-    if AI_FILTER_ENABLED and new_listings:
+    # --- Filtro IA qualitativo (completa anche zona/mq/locali se mancanti) ---
+    to_notify = candidates
+    if AI_FILTER_ENABLED and candidates:
         print("Valutazione IA in corso...")
-        evaluated = evaluate_all(new_listings)
-        to_notify = [l for l in evaluated if l.get("ai_score", 0) >= AI_MIN_SCORE]
+        candidates = evaluate_all(candidates)
+        to_notify = [l for l in candidates if l.get("ai_score", 0) >= AI_MIN_SCORE]
         print(f"Annunci che superano la soglia IA ({AI_MIN_SCORE}/10): {len(to_notify)}")
 
-    telegram_notify.notify_new_listings(to_notify)
+    # --- Confronto con la media di zona (ora che zona/mq sono più completi
+    # possibile grazie anche al passaggio IA) ---
+    attach_zone_stats(to_notify, database)
 
-    # Niente riepilogo se non c'è nulla di nuovo: con un run ogni 15 minuti,
-    # un messaggio "0 nuovi" ripetuto diventerebbe rumore inutile su Telegram.
-    if new_listings:
+    sent = telegram_notify.notify_new_listings(to_notify)
+
+    if candidates:
         telegram_notify.notify_run_summary(
             total_found=len(email_listings) + len(mitula_listings),
-            total_new=len(new_listings),
-            total_sent=len(to_notify),
+            total_new=len(candidates),
+            total_sent=sent,
         )
 
-    # Aggiorniamo lo stato SOLO con gli id di Mitula (l'email si auto-gestisce
-    # tramite il flag "letta" della casella IMAP).
-    if not is_first_run:
-        seen_ids.update(l["id"] for l in mitula_listings if l.get("id"))
-        save_state(STATE_FILE, seen_ids)
+    db.save_db(STATE_FILE, database)
 
     print("=== Fine esecuzione ===")
 
