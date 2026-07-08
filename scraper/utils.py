@@ -27,7 +27,8 @@ def parse_price_eur(price_str: str):
 
 
 # Frammenti che, se presenti in un URL, indicano quasi certamente un link
-# di utilità/navigazione e NON un singolo annuncio (footer, social, legali...)
+# di utilità/navigazione e NON un singolo annuncio (footer, social, legali,
+# gestione account/alert...)
 LINK_DENYLIST_FRAGMENTS = [
     "unsubscribe", "disiscriv", "cancella-iscrizione", "preferenze-email",
     "privacy", "cookie", "termini", "condizioni", "assistenza", "help.",
@@ -35,6 +36,10 @@ LINK_DENYLIST_FRAGMENTS = [
     "linkedin.com", "youtube.com", "tiktok.com", "mailto:", "tel:",
     "google.com/maps", "apps.apple.com", "play.google.com",
     "/login", "/logout", "/registrati", "/account", "/impostazioni",
+    # Link di gestione alert/account visti in email reali (es. Casa.it):
+    # portano a pagine "le mie ricerche", non a un singolo annuncio.
+    "autologin", "session/callback", "editalert", "edit-alert",
+    "/my/", "/mio/", "/preferiti", "/ricerche-salvate",
 ]
 
 
@@ -45,10 +50,13 @@ def looks_like_navigation_link(url: str) -> bool:
 
 def has_enough_specificity(url: str) -> bool:
     """Un link a un singolo annuncio di solito ha un ID numerico lungo nel
-    path, oppure parole chiave tipiche di una pagina di dettaglio."""
-    if re.search(r"\d{4,}", url):
+    PERCORSO dell'URL. Controlliamo solo il percorso (prima del '?') e non
+    la query string, perché lì spesso vivono token di sessione/tracciamento
+    lunghi (es. 't=...', 'aid=...') che sembrano ID ma non lo sono."""
+    path = url.split("?", 1)[0]
+    if re.search(r"\d{4,}", path):
         return True
-    if any(kw in url.lower() for kw in ("/annuncio/", "/annunci/", "/immobile/", "/immobili/", "/dettaglio/", "/detalle/")):
+    if any(kw in path.lower() for kw in ("/annuncio/", "/annunci/", "/immobile/", "/immobili/", "/dettaglio/", "/detalle/")):
         return True
     return False
 
