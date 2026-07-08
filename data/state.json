@@ -1,4 +1,1080 @@
 {
-  "seen_ids": [],
-  "last_run": null
+  "last_run": "2026-07-08T18:55:45.264130+00:00",
+  "listings": {
+    "mitula-IT-4920000783505783982": {
+      "first_seen": "2026-07-08T18:55:45.263854+00:00",
+      "last_seen": "2026-07-08T18:55:45.263854+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Cave, Padova (30 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-4920000783505783982",
+      "zone": "Cave, Padova",
+      "price_eur": 550,
+      "area_sqm": 30.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263854+00:00",
+          "price_eur": 550
+        }
+      ]
+    },
+    "mitula-IT-3450000783419385163": {
+      "first_seen": "2026-07-08T18:55:45.263879+00:00",
+      "last_seen": "2026-07-08T18:55:45.263879+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - San Giuseppe, Padova (75 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-3450000783419385163",
+      "zone": "San Giuseppe, Padova",
+      "price_eur": 559,
+      "area_sqm": 75.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263879+00:00",
+          "price_eur": 559
+        }
+      ]
+    },
+    "mitula-IT-2140000783160123092": {
+      "first_seen": "2026-07-08T18:55:45.263884+00:00",
+      "last_seen": "2026-07-08T18:55:45.263884+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Stanga, Padova (30 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-2140000783160123092",
+      "zone": "Stanga, Padova",
+      "price_eur": 500,
+      "area_sqm": 30.0,
+      "rooms": 1,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263884+00:00",
+          "price_eur": 500
+        }
+      ]
+    },
+    "mitula-IT-2000000782641999305": {
+      "first_seen": "2026-07-08T18:55:45.263888+00:00",
+      "last_seen": "2026-07-08T18:55:45.263888+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - San Carlo, Padova (125 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-2000000782641999305",
+      "zone": "San Carlo, Padova",
+      "price_eur": 370,
+      "area_sqm": 125.0,
+      "rooms": 5,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263888+00:00",
+          "price_eur": 370
+        }
+      ]
+    },
+    "mitula-IT-3220000782555495970": {
+      "first_seen": "2026-07-08T18:55:45.263891+00:00",
+      "last_seen": "2026-07-08T18:55:45.263891+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (40 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-3220000782555495970",
+      "zone": "Padova, Veneto",
+      "price_eur": 700,
+      "area_sqm": 40.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263891+00:00",
+          "price_eur": 700
+        }
+      ]
+    },
+    "mitula-IT-6880000782209202565": {
+      "first_seen": "2026-07-08T18:55:45.263895+00:00",
+      "last_seen": "2026-07-08T18:55:45.263895+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - San Giuseppe, Padova (45 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-6880000782209202565",
+      "zone": "San Giuseppe, Padova",
+      "price_eur": 650,
+      "area_sqm": 45.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263895+00:00",
+          "price_eur": 650
+        }
+      ]
+    },
+    "mitula-IT-1540000781345874646": {
+      "first_seen": "2026-07-08T18:55:45.263898+00:00",
+      "last_seen": "2026-07-08T18:55:45.263898+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Sant'Osvaldo, Padova (50 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-1540000781345874646",
+      "zone": "Sant'Osvaldo, Padova",
+      "price_eur": 650,
+      "area_sqm": 50.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263898+00:00",
+          "price_eur": 650
+        }
+      ]
+    },
+    "mitula-IT-6800000781086665713": {
+      "first_seen": "2026-07-08T18:55:45.263903+00:00",
+      "last_seen": "2026-07-08T18:55:45.263903+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (82 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-6800000781086665713",
+      "zone": "Padova, Veneto",
+      "price_eur": 550,
+      "area_sqm": 82.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263903+00:00",
+          "price_eur": 550
+        }
+      ]
+    },
+    "mitula-IT-8230000778753509632": {
+      "first_seen": "2026-07-08T18:55:45.263911+00:00",
+      "last_seen": "2026-07-08T18:55:45.263911+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Stanga, Padova (30 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-8230000778753509632",
+      "zone": "Stanga, Padova",
+      "price_eur": 400,
+      "area_sqm": 30.0,
+      "rooms": 1,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263911+00:00",
+          "price_eur": 400
+        }
+      ]
+    },
+    "mitula-IT-1950005763723175921": {
+      "first_seen": "2026-07-08T18:55:45.263914+00:00",
+      "last_seen": "2026-07-08T18:55:45.263914+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Sant'Osvaldo, Padova (107 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-1950005763723175921",
+      "zone": "Sant'Osvaldo, Padova",
+      "price_eur": 650,
+      "area_sqm": 107.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263914+00:00",
+          "price_eur": 650
+        }
+      ]
+    },
+    "mitula-IT-7300005758797081736": {
+      "first_seen": "2026-07-08T18:55:45.263917+00:00",
+      "last_seen": "2026-07-08T18:55:45.263917+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - San Giuseppe, Padova (60 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-7300005758797081736",
+      "zone": "San Giuseppe, Padova",
+      "price_eur": null,
+      "area_sqm": 60.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": []
+    },
+    "mitula-IT-8740000783505783719": {
+      "first_seen": "2026-07-08T18:55:45.263921+00:00",
+      "last_seen": "2026-07-08T18:55:45.263921+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Stanga, Padova (45 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-8740000783505783719",
+      "zone": "Stanga, Padova",
+      "price_eur": 750,
+      "area_sqm": 45.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263921+00:00",
+          "price_eur": 750
+        }
+      ]
+    },
+    "mitula-IT-7930000783505781284": {
+      "first_seen": "2026-07-08T18:55:45.263925+00:00",
+      "last_seen": "2026-07-08T18:55:45.263925+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Paltana, Padova (73 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-7930000783505781284",
+      "zone": "Paltana, Padova",
+      "price_eur": 755,
+      "area_sqm": 73.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263925+00:00",
+          "price_eur": 755
+        }
+      ]
+    },
+    "mitula-IT-7290000783505525394": {
+      "first_seen": "2026-07-08T18:55:45.263928+00:00",
+      "last_seen": "2026-07-08T18:55:45.263928+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (68 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-7290000783505525394",
+      "zone": "Padova, Veneto",
+      "price_eur": 680,
+      "area_sqm": 68.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263928+00:00",
+          "price_eur": 680
+        }
+      ]
+    },
+    "mitula-IT-7260000783505579603": {
+      "first_seen": "2026-07-08T18:55:45.263931+00:00",
+      "last_seen": "2026-07-08T18:55:45.263931+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Madonna Pellegrina, Padova (65 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-7260000783505579603",
+      "zone": "Madonna Pellegrina, Padova",
+      "price_eur": 715,
+      "area_sqm": 65.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263931+00:00",
+          "price_eur": 715
+        }
+      ]
+    },
+    "mitula-IT-6490000783505783092": {
+      "first_seen": "2026-07-08T18:55:45.263935+00:00",
+      "last_seen": "2026-07-08T18:55:45.263935+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Stanga, Padova (40 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-6490000783505783092",
+      "zone": "Stanga, Padova",
+      "price_eur": 760,
+      "area_sqm": 40.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263935+00:00",
+          "price_eur": 760
+        }
+      ]
+    },
+    "mitula-IT-1670000783505794903": {
+      "first_seen": "2026-07-08T18:55:45.263938+00:00",
+      "last_seen": "2026-07-08T18:55:45.263938+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - San Giuseppe, Padova (40 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-1670000783505794903",
+      "zone": "San Giuseppe, Padova",
+      "price_eur": 650,
+      "area_sqm": 40.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263938+00:00",
+          "price_eur": 650
+        }
+      ]
+    },
+    "mitula-IT-1640000778062673762": {
+      "first_seen": "2026-07-08T18:55:45.263944+00:00",
+      "last_seen": "2026-07-08T18:55:45.263944+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Stanga, Padova (70 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-1640000778062673762",
+      "zone": "Stanga, Padova",
+      "price_eur": 870,
+      "area_sqm": 70.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263944+00:00",
+          "price_eur": 870
+        }
+      ]
+    },
+    "mitula-IT-3550000783418881972": {
+      "first_seen": "2026-07-08T18:55:45.263948+00:00",
+      "last_seen": "2026-07-08T18:55:45.263948+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Sacra Famiglia, Padova (100 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-3550000783418881972",
+      "zone": "Sacra Famiglia, Padova",
+      "price_eur": 1,
+      "area_sqm": 100.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263948+00:00",
+          "price_eur": 1
+        }
+      ]
+    },
+    "mitula-IT-5860000783333077185": {
+      "first_seen": "2026-07-08T18:55:45.263951+00:00",
+      "last_seen": "2026-07-08T18:55:45.263951+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (76 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-5860000783333077185",
+      "zone": "Padova, Veneto",
+      "price_eur": 650,
+      "area_sqm": 76.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263951+00:00",
+          "price_eur": 650
+        }
+      ]
+    },
+    "mitula-IT-1260000783246693886": {
+      "first_seen": "2026-07-08T18:55:45.263954+00:00",
+      "last_seen": "2026-07-08T18:55:45.263954+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (40 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-1260000783246693886",
+      "zone": "Padova, Veneto",
+      "price_eur": 900,
+      "area_sqm": 40.0,
+      "rooms": 1,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263954+00:00",
+          "price_eur": 900
+        }
+      ]
+    },
+    "mitula-IT-2950000779185882202": {
+      "first_seen": "2026-07-08T18:55:45.263957+00:00",
+      "last_seen": "2026-07-08T18:55:45.263957+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Sant'Osvaldo, Padova (88 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-2950000779185882202",
+      "zone": "Sant'Osvaldo, Padova",
+      "price_eur": 370,
+      "area_sqm": 88.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263957+00:00",
+          "price_eur": 370
+        }
+      ]
+    },
+    "mitula-IT-2150000783160123093": {
+      "first_seen": "2026-07-08T18:55:45.263961+00:00",
+      "last_seen": "2026-07-08T18:55:45.263961+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Stanga, Padova (25 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-2150000783160123093",
+      "zone": "Stanga, Padova",
+      "price_eur": 500,
+      "area_sqm": 25.0,
+      "rooms": 1,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263961+00:00",
+          "price_eur": 500
+        }
+      ]
+    },
+    "mitula-IT-4010000783073756289": {
+      "first_seen": "2026-07-08T18:55:45.263964+00:00",
+      "last_seen": "2026-07-08T18:55:45.263964+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Sant'Osvaldo, Padova (90 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-4010000783073756289",
+      "zone": "Sant'Osvaldo, Padova",
+      "price_eur": 850,
+      "area_sqm": 90.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263964+00:00",
+          "price_eur": 850
+        }
+      ]
+    },
+    "mitula-IT-1930000782987542833": {
+      "first_seen": "2026-07-08T18:55:45.263967+00:00",
+      "last_seen": "2026-07-08T18:55:45.263967+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Forcellini, Padova (86 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-1930000782987542833",
+      "zone": "Forcellini, Padova",
+      "price_eur": 850,
+      "area_sqm": 86.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263967+00:00",
+          "price_eur": 850
+        }
+      ]
+    },
+    "mitula-IT-3530000782901120920": {
+      "first_seen": "2026-07-08T18:55:45.263970+00:00",
+      "last_seen": "2026-07-08T18:55:45.263970+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Sant'Osvaldo, Padova (48 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-3530000782901120920",
+      "zone": "Sant'Osvaldo, Padova",
+      "price_eur": 740,
+      "area_sqm": 48.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263970+00:00",
+          "price_eur": 740
+        }
+      ]
+    },
+    "mitula-IT-1720000782901123885": {
+      "first_seen": "2026-07-08T18:55:45.263973+00:00",
+      "last_seen": "2026-07-08T18:55:45.263973+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Sant'Ignazio, Padova (86 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-1720000782901123885",
+      "zone": "Sant'Ignazio, Padova",
+      "price_eur": 900,
+      "area_sqm": 86.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263973+00:00",
+          "price_eur": 900
+        }
+      ]
+    },
+    "mitula-IT-6500000782728231569": {
+      "first_seen": "2026-07-08T18:55:45.263976+00:00",
+      "last_seen": "2026-07-08T18:55:45.263976+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Cave, Padova (112 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-6500000782728231569",
+      "zone": "Cave, Padova",
+      "price_eur": 1,
+      "area_sqm": 112.0,
+      "rooms": 5,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263976+00:00",
+          "price_eur": 1
+        }
+      ]
+    },
+    "mitula-IT-8830000779963491870": {
+      "first_seen": "2026-07-08T18:55:45.263981+00:00",
+      "last_seen": "2026-07-08T18:55:45.263981+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (120 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-8830000779963491870",
+      "zone": "Padova, Veneto",
+      "price_eur": 400,
+      "area_sqm": 120.0,
+      "rooms": 6,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263981+00:00",
+          "price_eur": 400
+        }
+      ]
+    },
+    "mitula-IT-5680000782295683197": {
+      "first_seen": "2026-07-08T18:55:45.263984+00:00",
+      "last_seen": "2026-07-08T18:55:45.263984+00:00",
+      "source": "Appartamenti in affitto - Padova (Mitula)",
+      "title": "Appartamento - San Giuseppe, Padova (53 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-5680000782295683197",
+      "zone": "San Giuseppe, Padova",
+      "price_eur": 770,
+      "area_sqm": 53.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263984+00:00",
+          "price_eur": 770
+        }
+      ]
+    },
+    "mitula-IT-6260004782382616086": {
+      "first_seen": "2026-07-08T18:55:45.263987+00:00",
+      "last_seen": "2026-07-08T18:55:45.263987+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (160 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-6260004782382616086",
+      "zone": "Padova, Veneto",
+      "price_eur": 1,
+      "area_sqm": 160.0,
+      "rooms": 6,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263987+00:00",
+          "price_eur": 1
+        }
+      ]
+    },
+    "mitula-IT-3800002777111966386": {
+      "first_seen": "2026-07-08T18:55:45.263990+00:00",
+      "last_seen": "2026-07-08T18:55:45.263990+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Sant'Osvaldo, Padova (102 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-3800002777111966386",
+      "zone": "Sant'Osvaldo, Padova",
+      "price_eur": 325,
+      "area_sqm": 102.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263990+00:00",
+          "price_eur": 325
+        }
+      ]
+    },
+    "mitula-IT-6090000760095242155": {
+      "first_seen": "2026-07-08T18:55:45.263993+00:00",
+      "last_seen": "2026-07-08T18:55:45.263993+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Madonna Pellegrina, Padova (140 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-6090000760095242155",
+      "zone": "Madonna Pellegrina, Padova",
+      "price_eur": 480,
+      "area_sqm": 140.0,
+      "rooms": 6,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263993+00:00",
+          "price_eur": 480
+        }
+      ]
+    },
+    "mitula-IT-8090001771413248083": {
+      "first_seen": "2026-07-08T18:55:45.263996+00:00",
+      "last_seen": "2026-07-08T18:55:45.263996+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - San Giuseppe, Padova (110 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-8090001771413248083",
+      "zone": "San Giuseppe, Padova",
+      "price_eur": 450,
+      "area_sqm": 110.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263996+00:00",
+          "price_eur": 450
+        }
+      ]
+    },
+    "mitula-IT-3990001783505212275": {
+      "first_seen": "2026-07-08T18:55:45.263999+00:00",
+      "last_seen": "2026-07-08T18:55:45.263999+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Voltabarozzo, Padova (83 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-3990001783505212275",
+      "zone": "Voltabarozzo, Padova",
+      "price_eur": 66,
+      "area_sqm": 83.0,
+      "rooms": 5,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.263999+00:00",
+          "price_eur": 66
+        }
+      ]
+    },
+    "mitula-IT-7760002783419101882": {
+      "first_seen": "2026-07-08T18:55:45.264002+00:00",
+      "last_seen": "2026-07-08T18:55:45.264002+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Pontevigodarzere, Padova (60 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-7760002783419101882",
+      "zone": "Pontevigodarzere, Padova",
+      "price_eur": 30,
+      "area_sqm": 60.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264002+00:00",
+          "price_eur": 30
+        }
+      ]
+    },
+    "mitula-IT-4920002783418917859": {
+      "first_seen": "2026-07-08T18:55:45.264006+00:00",
+      "last_seen": "2026-07-08T18:55:45.264006+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (45 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-4920002783418917859",
+      "zone": "Padova, Veneto",
+      "price_eur": 48,
+      "area_sqm": 45.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264006+00:00",
+          "price_eur": 48
+        }
+      ]
+    },
+    "mitula-IT-3520002783419027242": {
+      "first_seen": "2026-07-08T18:55:45.264009+00:00",
+      "last_seen": "2026-07-08T18:55:45.264009+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Pontevigodarzere, Padova (62 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-3520002783419027242",
+      "zone": "Pontevigodarzere, Padova",
+      "price_eur": 30,
+      "area_sqm": 62.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264009+00:00",
+          "price_eur": 30
+        }
+      ]
+    },
+    "mitula-IT-4620001783332423508": {
+      "first_seen": "2026-07-08T18:55:45.264013+00:00",
+      "last_seen": "2026-07-08T18:55:45.264013+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Pontevigodarzere, Padova (60 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-4620001783332423508",
+      "zone": "Pontevigodarzere, Padova",
+      "price_eur": 30,
+      "area_sqm": 60.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264013+00:00",
+          "price_eur": 30
+        }
+      ]
+    },
+    "mitula-IT-8690002783246292481": {
+      "first_seen": "2026-07-08T18:55:45.264016+00:00",
+      "last_seen": "2026-07-08T18:55:45.264016+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Pontevigodarzere, Padova (65 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-8690002783246292481",
+      "zone": "Pontevigodarzere, Padova",
+      "price_eur": 20,
+      "area_sqm": 65.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264016+00:00",
+          "price_eur": 20
+        }
+      ]
+    },
+    "mitula-IT-4530002783246098008": {
+      "first_seen": "2026-07-08T18:55:45.264019+00:00",
+      "last_seen": "2026-07-08T18:55:45.264019+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Pontevigodarzere, Padova (60 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-4530002783246098008",
+      "zone": "Pontevigodarzere, Padova",
+      "price_eur": 29,
+      "area_sqm": 60.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264019+00:00",
+          "price_eur": 29
+        }
+      ]
+    },
+    "mitula-IT-8420000783160205774": {
+      "first_seen": "2026-07-08T18:55:45.264022+00:00",
+      "last_seen": "2026-07-08T18:55:45.264022+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Pontevigodarzere, Padova (72 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-8420000783160205774",
+      "zone": "Pontevigodarzere, Padova",
+      "price_eur": 30,
+      "area_sqm": 72.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264022+00:00",
+          "price_eur": 30
+        }
+      ]
+    },
+    "mitula-IT-7100001783159846568": {
+      "first_seen": "2026-07-08T18:55:45.264025+00:00",
+      "last_seen": "2026-07-08T18:55:45.264025+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Pontevigodarzere, Padova (62 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-7100001783159846568",
+      "zone": "Pontevigodarzere, Padova",
+      "price_eur": 30,
+      "area_sqm": 62.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264025+00:00",
+          "price_eur": 30
+        }
+      ]
+    },
+    "mitula-IT-5170001783159835954": {
+      "first_seen": "2026-07-08T18:55:45.264029+00:00",
+      "last_seen": "2026-07-08T18:55:45.264029+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Pontevigodarzere, Padova (100 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-5170001783159835954",
+      "zone": "Pontevigodarzere, Padova",
+      "price_eur": 30,
+      "area_sqm": 100.0,
+      "rooms": 1,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264029+00:00",
+          "price_eur": 30
+        }
+      ]
+    },
+    "mitula-IT-4770001783159693928": {
+      "first_seen": "2026-07-08T18:55:45.264032+00:00",
+      "last_seen": "2026-07-08T18:55:45.264032+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Pontevigodarzere, Padova (60 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-4770001783159693928",
+      "zone": "Pontevigodarzere, Padova",
+      "price_eur": 30,
+      "area_sqm": 60.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264032+00:00",
+          "price_eur": 30
+        }
+      ]
+    },
+    "mitula-IT-9200002782986891028": {
+      "first_seen": "2026-07-08T18:55:45.264035+00:00",
+      "last_seen": "2026-07-08T18:55:45.264035+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Brentelle di Sopra, Padova (54 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-9200002782986891028",
+      "zone": "Brentelle di Sopra, Padova",
+      "price_eur": 45,
+      "area_sqm": 54.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264035+00:00",
+          "price_eur": 45
+        }
+      ]
+    },
+    "mitula-IT-8810002782986805222": {
+      "first_seen": "2026-07-08T18:55:45.264038+00:00",
+      "last_seen": "2026-07-08T18:55:45.264038+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (38 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-8810002782986805222",
+      "zone": "Padova, Veneto",
+      "price_eur": 48,
+      "area_sqm": 38.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264038+00:00",
+          "price_eur": 48
+        }
+      ]
+    },
+    "mitula-IT-8610002782987078704": {
+      "first_seen": "2026-07-08T18:55:45.264042+00:00",
+      "last_seen": "2026-07-08T18:55:45.264042+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (105 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-8610002782987078704",
+      "zone": "Padova, Veneto",
+      "price_eur": 56,
+      "area_sqm": 105.0,
+      "rooms": 5,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264042+00:00",
+          "price_eur": 56
+        }
+      ]
+    },
+    "mitula-IT-7700002782987092591": {
+      "first_seen": "2026-07-08T18:55:45.264047+00:00",
+      "last_seen": "2026-07-08T18:55:45.264047+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (38 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-7700002782987092591",
+      "zone": "Padova, Veneto",
+      "price_eur": 47,
+      "area_sqm": 38.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264047+00:00",
+          "price_eur": 47
+        }
+      ]
+    },
+    "mitula-IT-7650002782987084853": {
+      "first_seen": "2026-07-08T18:55:45.264050+00:00",
+      "last_seen": "2026-07-08T18:55:45.264050+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (48 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-7650002782987084853",
+      "zone": "Padova, Veneto",
+      "price_eur": 47,
+      "area_sqm": 48.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264050+00:00",
+          "price_eur": 47
+        }
+      ]
+    },
+    "mitula-IT-7640002782987047329": {
+      "first_seen": "2026-07-08T18:55:45.264053+00:00",
+      "last_seen": "2026-07-08T18:55:45.264053+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (39 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-7640002782987047329",
+      "zone": "Padova, Veneto",
+      "price_eur": 48,
+      "area_sqm": 39.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264053+00:00",
+          "price_eur": 48
+        }
+      ]
+    },
+    "mitula-IT-7400002782987094837": {
+      "first_seen": "2026-07-08T18:55:45.264056+00:00",
+      "last_seen": "2026-07-08T18:55:45.264056+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (100 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-7400002782987094837",
+      "zone": "Padova, Veneto",
+      "price_eur": 63,
+      "area_sqm": 100.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264056+00:00",
+          "price_eur": 63
+        }
+      ]
+    },
+    "mitula-IT-6330002782986894546": {
+      "first_seen": "2026-07-08T18:55:45.264059+00:00",
+      "last_seen": "2026-07-08T18:55:45.264059+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (73 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-6330002782986894546",
+      "zone": "Padova, Veneto",
+      "price_eur": 63,
+      "area_sqm": 73.0,
+      "rooms": 5,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264059+00:00",
+          "price_eur": 63
+        }
+      ]
+    },
+    "mitula-IT-5960002782986906954": {
+      "first_seen": "2026-07-08T18:55:45.264062+00:00",
+      "last_seen": "2026-07-08T18:55:45.264062+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (131 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-5960002782986906954",
+      "zone": "Padova, Veneto",
+      "price_eur": 56,
+      "area_sqm": 131.0,
+      "rooms": 5,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264062+00:00",
+          "price_eur": 56
+        }
+      ]
+    },
+    "mitula-IT-5130002782986814709": {
+      "first_seen": "2026-07-08T18:55:45.264064+00:00",
+      "last_seen": "2026-07-08T18:55:45.264064+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (82 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-5130002782986814709",
+      "zone": "Padova, Veneto",
+      "price_eur": 56,
+      "area_sqm": 82.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264064+00:00",
+          "price_eur": 56
+        }
+      ]
+    },
+    "mitula-IT-4560002782986962631": {
+      "first_seen": "2026-07-08T18:55:45.264067+00:00",
+      "last_seen": "2026-07-08T18:55:45.264067+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Stanga, Padova (35 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-4560002782986962631",
+      "zone": "Stanga, Padova",
+      "price_eur": 25,
+      "area_sqm": 35.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264067+00:00",
+          "price_eur": 25
+        }
+      ]
+    },
+    "mitula-IT-4150002782987024209": {
+      "first_seen": "2026-07-08T18:55:45.264070+00:00",
+      "last_seen": "2026-07-08T18:55:45.264070+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - San Bellino, Padova (121 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-4150002782987024209",
+      "zone": "San Bellino, Padova",
+      "price_eur": 66,
+      "area_sqm": 121.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264070+00:00",
+          "price_eur": 66
+        }
+      ]
+    },
+    "mitula-IT-3360002782987173615": {
+      "first_seen": "2026-07-08T18:55:45.264073+00:00",
+      "last_seen": "2026-07-08T18:55:45.264073+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (75 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-3360002782987173615",
+      "zone": "Padova, Veneto",
+      "price_eur": 63,
+      "area_sqm": 75.0,
+      "rooms": 5,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264073+00:00",
+          "price_eur": 63
+        }
+      ]
+    },
+    "mitula-IT-3060002782987055471": {
+      "first_seen": "2026-07-08T18:55:45.264078+00:00",
+      "last_seen": "2026-07-08T18:55:45.264078+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Stanga, Padova (50 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-3060002782987055471",
+      "zone": "Stanga, Padova",
+      "price_eur": 21,
+      "area_sqm": 50.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264078+00:00",
+          "price_eur": 21
+        }
+      ]
+    },
+    "mitula-IT-2210002782986873011": {
+      "first_seen": "2026-07-08T18:55:45.264081+00:00",
+      "last_seen": "2026-07-08T18:55:45.264081+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (38 m²)",
+      "url": "https://immobiliare.mitula.it/adclickdetail/mitula-IT-2210002782986873011",
+      "zone": "Padova, Veneto",
+      "price_eur": 48,
+      "area_sqm": 38.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "price_history": [
+        {
+          "date": "2026-07-08T18:55:45.264081+00:00",
+          "price_eur": 48
+        }
+      ]
+    }
+  }
 }
