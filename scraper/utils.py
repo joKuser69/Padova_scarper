@@ -118,6 +118,24 @@ def find_zone(text: str, known_zones: list):
     return None
 
 
+# Sotto queste soglie un prezzo è quasi certamente un errore di dati alla
+# fonte (es. campo prezzo mancante letto come valore residuo), non un vero
+# affare da 30€ per un appartamento di 60 m². Meglio trattarlo come
+# "sconosciuto" piuttosto che mostrarlo come un fatto — e soprattutto,
+# escluderlo dal calcolo della media di zona, dove un singolo valore assurdo
+# può falsare il confronto per TUTTI gli annunci futuri di quella zona.
+MIN_PLAUSIBLE_PRICE_PER_SQM = 200  # €/m²
+MIN_PLAUSIBLE_PRICE_EUR = 10_000    # € (per annunci senza mq noti)
+
+
+def price_is_plausible(price_eur, area_sqm) -> bool:
+    if price_eur is None:
+        return True
+    if area_sqm and area_sqm > 0:
+        return (price_eur / area_sqm) >= MIN_PLAUSIBLE_PRICE_PER_SQM
+    return price_eur >= MIN_PLAUSIBLE_PRICE_EUR
+
+
 def normalize_listing(listing: dict, known_zones: list) -> dict:
     """Riempie i campi strutturati standard (price_eur, area_sqm, rooms,
     zone) a partire dai campi grezzi disponibili, qualunque sia la fonte
@@ -152,5 +170,9 @@ def normalize_listing(listing: dict, known_zones: list) -> dict:
             combined_text = f"{listing.get('title', '')} {listing.get('description', '')}"
             zone = find_zone(combined_text, known_zones)
         listing["zone"] = zone
+
+    if not price_is_plausible(listing.get("price_eur"), listing.get("area_sqm")):
+        listing["price_suspect"] = True
+        listing["price_eur"] = None
 
     return listing

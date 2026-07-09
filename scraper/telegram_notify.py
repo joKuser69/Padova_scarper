@@ -136,6 +136,8 @@ def _format_listing(listing: dict) -> str:
             listing["price_per_sqm"] = price_per_sqm
             price_line += f"  (💹 {price_per_sqm:,.0f}€/m²)".replace(",", ".")
         lines.append(price_line)
+    elif listing.get("price_suspect"):
+        lines.append("💶 prezzo non affidabile alla fonte — controlla l'annuncio")
     elif listing.get("price"):
         lines.append(f"💶 {listing['price']}")
 

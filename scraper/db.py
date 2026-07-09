@@ -18,6 +18,8 @@ import json
 import os
 from datetime import datetime, timezone
 
+from scraper.utils import price_is_plausible
+
 
 def load_db(path: str) -> dict:
     if not os.path.exists(path):
@@ -57,6 +59,20 @@ def load_db(path: str) -> dict:
                 }
         print(f"[DB] Migrati {len(old_seen_ids)} id dal vecchio formato state.json")
 
+    # Autoguarigione: ripulisce schede salvate in precedenza con un prezzo
+    # implausibile (es. errori di dati alla fonte già inquinavano la media
+    # di zona prima che questo controllo esistesse). Si applica una sola
+    # volta per scheda: una volta pulita, price_eur resta None finché un
+    # prossimo avvistamento non porta un valore plausibile.
+    sanitized = 0
+    for entry in data["listings"].values():
+        if not price_is_plausible(entry.get("price_eur"), entry.get("area_sqm")):
+            entry["price_eur"] = None
+            entry["price_history"] = []
+            sanitized += 1
+    if sanitized:
+        print(f"[DB] Ripulite {sanitized} schede con prezzo implausibile (probabili errori di dati alla fonte)")
+
     return data
 
 
@@ -89,6 +105,11 @@ def upsert_listing(db: dict, listing: dict) -> dict:
     lid = listing["id"]
     now = datetime.now(timezone.utc).isoformat()
     new_price = listing.get("price_eur")
+
+    # Difesa extra (oltre a normalize_listing): non salvare mai un prezzo
+    # implausibile nel database, altrimenti inquinerebbe la media di zona.
+    if not price_is_plausible(new_price, listing.get("area_sqm")):
+        new_price = None
 
     result = {
         "is_new": lid not in listings,

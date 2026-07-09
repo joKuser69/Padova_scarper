@@ -63,10 +63,6 @@ EMAIL_SOURCES = {
 # ---------------------------------------------------------------------------
 MITULA_SEARCHES = [
     {
-        "name": "Appartamenti in affitto - Padova (Mitula)",
-        "url": "https://immobiliare.mitula.it/affitto-appartamento-padova",
-    },
-    {
         "name": "Appartamenti in vendita - Padova (Mitula)",
         "url": "https://immobiliare.mitula.it/vendita-appartamento-padova",
     },
