@@ -202,53 +202,155 @@ def _get_nearby_image(anchor, max_levels: int = 4) -> str:
     return ""
 
 
+def _canonicalize_url(url: str, tight_pattern) -> str:
+    """Per i pattern stretti (Idealista, Immobiliare.it), un annuncio ha
+    spesso più link (foto, indirizzo, 'vedi foto', contatta) che puntano
+    tutti allo stesso ID ma con parametri di tracciamento diversi (utm_link=
+    propertyLowPricePhoto vs propertyLowPriceLink vs propertyLowPriceContact,
+    ecc). Senza normalizzare, verrebbero trattati come annunci DIVERSI,
+    causando notifiche duplicate per lo stesso immobile. Togliamo la query
+    string per ottenere un id/url canonico e pulito."""
+    if not tight_pattern:
+        return url
+    match = tight_pattern.search(url)
+    if not match:
+        return url
+    base = match.group(0).split("?")[0]
+    if not base.endswith("/"):
+        base += "/"
+    return base
+
+
+def _common_ancestor(tags):
+    """Antenato comune più profondo di una lista di tag BeautifulSoup —
+    rappresenta la 'card' che contiene tutti i link relativi allo stesso
+    annuncio, qualunque sia la sua reale estensione nel layout a tabelle."""
+    if not tags:
+        return None
+    if len(tags) == 1:
+        return tags[0]
+
+    chains = []
+    for t in tags:
+        chain = []
+        node = t
+        while node is not None:
+            chain.append(node)
+            node = node.parent
+        chains.append(chain)
+
+    common_ids = set(id(n) for n in chains[0])
+    for chain in chains[1:]:
+        common_ids &= set(id(n) for n in chain)
+
+    for node in chains[0]:
+        if id(node) in common_ids:
+            return node
+    return tags[0]
+
+
+def _extract_price(text: str) -> str:
+    """Estrae il prezzo dal testo. Per gli alert di ribasso prezzo compaiono
+    DUE prezzi (vecchio barrato + nuovo), nell'ordine 'da X a Y': prendiamo
+    l'ULTIMO valore trovato, che è quello attuale. Escludiamo i valori
+    seguiti da /m² o /mq, che sono il prezzo al metro quadro, non il totale."""
+    candidates = []
+    for m in PRICE_PATTERN.finditer(text):
+        value = (m.group(1) or m.group(2) or "").strip()
+        if not value:
+            continue
+        tail = text[m.end(): m.end() + 6].lower()
+        if "/m²" in tail or "/mq" in tail or tail.strip().startswith(("m²", "mq")):
+            continue
+        candidates.append(value)
+    return candidates[-1] if candidates else ""
+
+
+def _pick_title(anchors, container_text: str, subject: str) -> str:
+    """Preferisce il testo proprio di uno dei link (es. l'indirizzo), se
+    sostanzioso: è quasi sempre più pulito e specifico del testo dell'intera
+    card, che può includere frasi di apertura generiche ('Ciao [nome]...')."""
+    for a in anchors:
+        own_text = a.get_text(strip=True)
+        if len(own_text) >= 15:
+            return own_text[:100]
+    if len(container_text) >= 15:
+        return container_text[:80]
+    return subject
+
+
 def _extract_from_html(source: str, subject: str, body: str) -> list:
     cfg = EMAIL_SOURCES[source]
     tight_pattern = cfg.get("listing_url_pattern")
 
     soup = BeautifulSoup(body, "html.parser")
 
-    listings = []
-    seen_urls = set()
+    # Raggruppiamo TUTTI i link per id/url canonico: più anchor per lo
+    # stesso annuncio finiscono nello stesso gruppo, invece di generare
+    # candidati duplicati.
+    groups = {}  # url_canonico -> lista di anchor tag
+    order = []   # per mantenere l'ordine di comparsa
 
     for anchor in soup.find_all("a", href=True):
-        url = _unwrap_redirect(anchor["href"])
+        raw_url = _unwrap_redirect(anchor["href"])
 
         if tight_pattern:
-            if not tight_pattern.search(url):
+            if not tight_pattern.search(raw_url):
                 continue
+            canonical = _canonicalize_url(raw_url, tight_pattern)
         else:
-            if looks_like_navigation_link(url):
+            if looks_like_navigation_link(raw_url) or not has_enough_specificity(raw_url):
                 continue
-            if not has_enough_specificity(url):
-                continue
+            canonical = raw_url.rstrip(".,;\"'")
 
-        url = url.rstrip(".,;\"'")
-        if url in seen_urls:
-            continue
-        seen_urls.add(url)
+        if canonical not in groups:
+            groups[canonical] = []
+            order.append(canonical)
+        groups[canonical].append(anchor)
 
-        nearby_text = _get_nearby_text(anchor)
-        image_url = _get_nearby_image(anchor)
+    listings = []
 
-        price_match = PRICE_PATTERN.search(nearby_text)
-        price = (price_match.group(1) or price_match.group(2) or "").strip() if price_match else ""
+    for canonical_url in order:
+        anchors = groups[canonical_url]
 
-        area_match = AREA_PATTERN.search(nearby_text)
+        if len(anchors) >= 2:
+            # Più link per lo stesso annuncio: l'antenato comune copre
+            # l'intera card (foto + prezzo + descrizione + bottoni),
+            # qualunque sia la sua estensione reale nel layout.
+            container = _common_ancestor(anchors)
+            nearby_text = container.get_text(separator=" ", strip=True)[:500] if container else ""
+        else:
+            nearby_text = _get_nearby_text(anchors[0])
+
+        image_url = ""
+        for a in anchors:
+            image_url = _get_nearby_image(a)
+            if image_url:
+                break
+
+        # Cerchiamo prezzo/mq sia nel testo della card SIA nel soggetto:
+        # per email "un annuncio per email" (es. Casa.it), il testo vicino al
+        # link è spesso troppo corto e mq/prezzo stanno nel soggetto stesso
+        # (es. "Un nuovo annuncio: 30 mq | Via Tullio Lombardo, Padova").
+        search_text = f"{nearby_text} {subject}"
+
+        price = _extract_price(search_text)
+
+        area_match = AREA_PATTERN.search(search_text)
         area = area_match.group(0) if area_match else ""
 
-        title = nearby_text[:80] if len(nearby_text) >= 15 else subject
+        title = _pick_title(anchors, nearby_text, subject)
 
         listings.append(
             {
-                "id": url,
+                "id": canonical_url,
                 "source": f"{source} (email)",
                 "title": title,
-                "description": nearby_text[:300],
+                "description": search_text.strip()[:300],
                 "price": price,
                 "area": area,
                 "image_url": image_url,
-                "url": url,
+                "url": canonical_url,
                 "raw": {},
             }
         )
@@ -281,8 +383,7 @@ def _extract_from_plain_text(source: str, subject: str, body: str) -> list:
         window = 250
         snippet = body[max(0, position - window): position + window] if position >= 0 else ""
 
-        price_match = PRICE_PATTERN.search(snippet)
-        price = (price_match.group(1) or price_match.group(2) or "").strip() if price_match else ""
+        price = _extract_price(snippet)
         area_match = AREA_PATTERN.search(snippet)
         area = area_match.group(0) if area_match else ""
         clean_snippet = re.sub(r"\s+", " ", snippet).strip()
