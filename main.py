@@ -141,13 +141,6 @@ def main():
 
     sent = telegram_notify.notify_new_listings(to_notify)
 
-    if candidates:
-        telegram_notify.notify_run_summary(
-            total_found=len(email_listings) + len(mitula_listings),
-            total_new=len(candidates),
-            total_sent=sent,
-        )
-
     db.save_db(STATE_FILE, database)
 
     print("=== Fine esecuzione ===")
