@@ -1951,7 +1951,51 @@
       "rooms": 6,
       "image_url": "https://images-1.casa.it/360x280-fit/listing/0/ae/8c/c9/818794438.jpg",
       "price_history": []
+    },
+    "https://www.idealista.it/immobile/36234513/": {
+      "first_seen": "2026-07-10T18:11:46.999403+00:00",
+      "last_seen": "2026-07-10T18:11:46.999403+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via Brigata Padova, San Giuseppe, Padova",
+      "url": "https://www.idealista.it/immobile/36234513/",
+      "zone": "Palestro",
+      "price_eur": 170000,
+      "area_sqm": 76.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/b0/8a/9b/818835541.jpg",
+      "price_history": [
+        {
+          "date": "2026-07-10T18:11:46.999403+00:00",
+          "price_eur": 170000
+        }
+      ]
+    },
+    "http://email.notifiche.wikicasa.it/c/eJw0js1ugzAQBp9muQX5Bxs4cGiEIuXQSm1O7aVa20uwguPIGJD69BX9ua2-0YzWdcYY0gV1vG5kzYTgvBg7zWtqbCuNtArRDrWUpm24VrYhx9RQ-I43iglWC6VKVXHVlv8B1irZQsUGIncIOGdKBzU464xTbXPQybpUTN2Y82MG-QTiBOK0bVu5-Zu3OGPp8z7KE9rs4x1k72g_V8x0wZUuhMmOIPQDEwbKlM49yJ4LWfFag9A53mjXXvXbODwvdPy42694qfzE30HoJYfPOS7JEsg-oJ9AHHGilP9YIOeXALKnX_gzWgwP9Nc9-7LE1YM4nkOIxk--SN2aCJf990BYMwYVu-5uaWMo1k58BwAA__--RnDg": {
+      "first_seen": "2026-07-10T18:11:46.999431+00:00",
+      "last_seen": "2026-07-10T18:11:46.999431+00:00",
+      "source": "Wikicasa (email)",
+      "title": "Questa ricerca Tutte le ricerche",
+      "url": "http://email.notifiche.wikicasa.it/c/eJw0js1ugzAQBp9muQX5Bxs4cGiEIuXQSm1O7aVa20uwguPIGJD69BX9ua2-0YzWdcYY0gV1vG5kzYTgvBg7zWtqbCuNtArRDrWUpm24VrYhx9RQ-I43iglWC6VKVXHVlv8B1irZQsUGIncIOGdKBzU464xTbXPQybpUTN2Y82MG-QTiBOK0bVu5-Zu3OGPp8z7KE9rs4x1k72g_V8x0wZUuhMmOIPQDEwbKlM49yJ4LWfFag9A53mjXXvXbODwvdPy42694qfzE30HoJYfPOS7JEsg-oJ9AHHGilP9YIOeXALKnX_gzWgwP9Nc9-7LE1YM4nkOIxk--SN2aCJf990BYMwYVu-5uaWMo1k58BwAA__--RnDg",
+      "zone": null,
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "",
+      "price_history": []
+    },
+    "http://email.notifiche.wikicasa.it/c/eJw8zEFuhSAQgOHTwE6DgyO4YNGk4RrN4Iw-Uo0E6Gt6--Yt2t3_bz4OKSVZtITJeesMwDTpR_DMzjsPFsTh7gH2ZUdHnBIn8jTrHCaPBowDxBHnCdfxDzAr2lXNZhfh4aLWpQ6488aJcfXDUjeu-gyP3ktT9k1BVBDLST_jcd_HKeN2Xwpi63cVBZFKaQoiS6d8NmVjZmXfcx-_82feqNF_fFApuoZnFfp6_SXkjFGzOS7K54vVzwC_AQAA___rm0pl": {
+      "first_seen": "2026-07-10T18:11:46.999438+00:00",
+      "last_seen": "2026-07-10T18:11:46.999438+00:00",
+      "source": "Wikicasa (email)",
+      "title": "Annuncio appena caricato  ⚡️",
+      "url": "http://email.notifiche.wikicasa.it/c/eJw8zEFuhSAQgOHTwE6DgyO4YNGk4RrN4Iw-Uo0E6Gt6--Yt2t3_bz4OKSVZtITJeesMwDTpR_DMzjsPFsTh7gH2ZUdHnBIn8jTrHCaPBowDxBHnCdfxDzAr2lXNZhfh4aLWpQ6488aJcfXDUjeu-gyP3ktT9k1BVBDLST_jcd_HKeN2Xwpi63cVBZFKaQoiS6d8NmVjZmXfcx-_82feqNF_fFApuoZnFfp6_SXkjFGzOS7K54vVzwC_AQAA___rm0pl",
+      "zone": null,
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://cdn.wk-cdn.it/_ui/img/email/google_play_store.png",
+      "price_history": []
     }
   },
-  "last_run": "2026-07-10T16:34:08.008946+00:00"
+  "last_run": "2026-07-10T18:11:53.763338+00:00"
 }
