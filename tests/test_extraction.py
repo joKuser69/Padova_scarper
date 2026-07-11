@@ -50,6 +50,7 @@ from scraper.utils import (
     looks_like_navigation_link,
     has_enough_specificity,
     detect_listing_type,
+    exclude_rentals,
 )
 from config import PADOVA_ZONES
 
@@ -330,6 +331,17 @@ class TestListingTypeClassification(unittest.TestCase):
 
     def test_auction_starting_bid_plausible(self):
         self.assertTrue(price_is_plausible(48000, 30.0, listing_type="asta"))
+
+    def test_exclude_rentals_keeps_sales_and_auctions(self):
+        listings = [
+            {"id": "1", "listing_type": "vendita"},
+            {"id": "2", "listing_type": "affitto"},
+            {"id": "3", "listing_type": "asta"},
+            {"id": "4", "listing_type": "affitto"},
+        ]
+        kept = exclude_rentals(listings)
+        kept_ids = {l["id"] for l in kept}
+        self.assertEqual(kept_ids, {"1", "3"})
 
 
 if __name__ == "__main__":

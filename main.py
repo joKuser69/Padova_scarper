@@ -4,13 +4,14 @@ Fonti: alert email (Idealista, Immobiliare.it, Casa.it, Bakeca, Wikicasa) +
 Mitula (scraping diretto, supplementare).
 
 Ogni annuncio (di qualunque fonte) passa da:
-1. normalizzazione campi (prezzo/mq/locali/zona in formato standard)
-2. upsert nel database persistente -> rileva se è nuovo o se il prezzo è
+1. normalizzazione campi (prezzo/mq/locali/zona/tipo in formato standard)
+2. esclusione affitti (se EXCLUDE_RENTALS=True in config.py)
+3. upsert nel database persistente -> rileva se è nuovo o se il prezzo è
    cambiato rispetto all'ultima volta che lo abbiamo visto
-3. filtro budget deterministico
-4. filtro IA (rilevanza + eventuale completamento zona/mq/locali mancanti)
-5. calcolo confronto con la media prezzo/mq della zona
-6. notifica Telegram (con foto se disponibile)
+4. filtro budget deterministico
+5. filtro IA (rilevanza + eventuale completamento zona/mq/locali mancanti)
+6. calcolo confronto con la media prezzo/mq della zona
+7. notifica Telegram (con foto se disponibile)
 """
 import os
 import sys
@@ -19,13 +20,14 @@ from config import (
     MITULA_SEARCHES,
     AI_FILTER_ENABLED,
     AI_MIN_SCORE,
+    EXCLUDE_RENTALS,
     MAX_BUDGET_EUR,
     MAX_NEW_LISTINGS_PER_RUN,
     PADOVA_ZONES,
     STATE_FILE,
 )
 from scraper import mitula_scraper, email_alerts, telegram_notify, db
-from scraper.utils import normalize_listing
+from scraper.utils import normalize_listing, exclude_rentals
 
 if AI_FILTER_ENABLED:
     from scraper.ai_filter import evaluate_all
@@ -84,10 +86,21 @@ def main():
     print(f"[Mitula] Totale annunci scansionati: {len(mitula_listings)}")
 
     # --- Normalizzazione: ogni annuncio, di qualunque fonte, ottiene gli
-    # stessi campi standard (price_eur, area_sqm, rooms, zone) ---
+    # stessi campi standard (price_eur, area_sqm, rooms, zone, listing_type) ---
     all_scanned = email_listings + mitula_listings
     for listing in all_scanned:
         normalize_listing(listing, PADOVA_ZONES)
+
+    # --- Esclusione affitti (se configurata): fuori dal flusso fin da
+    # subito, niente db, niente chiamate IA sprecate su annunci che non
+    # vuoi comunque vedere ---
+    if EXCLUDE_RENTALS:
+        before = len(email_listings) + len(mitula_listings)
+        email_listings = exclude_rentals(email_listings)
+        mitula_listings = exclude_rentals(mitula_listings)
+        dropped = before - len(email_listings) - len(mitula_listings)
+        if dropped:
+            print(f"Esclusi {dropped} annunci in affitto (EXCLUDE_RENTALS=True)")
 
     # --- Upsert nel database: rileva nuovi annunci e variazioni di prezzo ---
     # Mitula = scan dell'intero catalogo attuale: al primissimo run lo

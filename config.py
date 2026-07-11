@@ -21,6 +21,11 @@ PADOVA_ZONES = [
 # ---------------------------------------------------------------------------
 MAX_BUDGET_EUR = 250_000
 
+# Se True, gli annunci classificati come "affitto" vengono scartati subito,
+# prima ancora di finire nel database o passare dal filtro IA — non solo
+# etichettati, proprio esclusi dal flusso. Non riguarda le aste (restano).
+EXCLUDE_RENTALS = True
+
 # ---------------------------------------------------------------------------
 # FONTI VIA EMAIL ALERT
 # Per ogni portale: domini mittente per riconoscerlo, e (opzionale) un

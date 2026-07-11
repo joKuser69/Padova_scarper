@@ -185,6 +185,13 @@ def price_is_plausible(price_eur, area_sqm, listing_type: str = "vendita") -> bo
     return price_eur >= min_total
 
 
+def exclude_rentals(listings: list) -> list:
+    """Scarta gli annunci classificati come 'affitto'. Richiede che
+    normalize_listing sia già stato chiamato (altrimenti 'listing_type'
+    non è ancora impostato e nulla verrebbe scartato)."""
+    return [l for l in listings if l.get("listing_type") != "affitto"]
+
+
 def normalize_listing(listing: dict, known_zones: list) -> dict:
     """Riempie i campi strutturati standard (price_eur, area_sqm, rooms,
     zone) a partire dai campi grezzi disponibili, qualunque sia la fonte
