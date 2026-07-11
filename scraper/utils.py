@@ -5,20 +5,40 @@ import re
 
 
 def parse_price_eur(price_str: str):
-    """Converte una stringa prezzo (es. '250.000 €', '600 EUR', '1.200,50€')
-    in un intero euro. Ritorna None se non riesce a interpretarla."""
+    """Converte una stringa prezzo in un intero euro.
+
+    Gestisce sia il formato italiano ('250.000,50' punto=migliaia,
+    virgola=decimali) sia quello inglese, usato da Mitula ('30,000 EUR'
+    virgola=migliaia). Bug reale scoperto dai test automatici: assumere
+    solo il formato italiano troncava '30,000 EUR' a 30, invece di 30000 —
+    interessava praticamente ogni prezzo di vendita Mitula.
+
+    Euristica: se compaiono sia punto che virgola, l'ultimo dei due è il
+    separatore decimale. Se compare solo uno dei due, guardiamo quante
+    cifre lo seguono: 3 cifre = separatore delle migliaia, altrimenti
+    decimali (i prezzi immobiliari non hanno mai più di 2 cifre decimali).
+    """
     if not price_str:
         return None
 
-    cleaned = re.sub(r"[^\d.,]", "", price_str)
+    cleaned = re.sub(r"[^\d.,]", "", str(price_str))
     if not cleaned:
         return None
 
-    # Formato italiano: punto = separatore migliaia, virgola = decimali.
-    # Per un filtro di budget massimo i centesimi non contano, quindi
-    # teniamo solo la parte intera.
-    cleaned = cleaned.split(",")[0]
-    cleaned = cleaned.replace(".", "")
+    has_dot = "." in cleaned
+    has_comma = "," in cleaned
+
+    if has_dot and has_comma:
+        if cleaned.rfind(",") > cleaned.rfind("."):
+            cleaned = cleaned.replace(".", "").split(",")[0]
+        else:
+            cleaned = cleaned.replace(",", "").split(".")[0]
+    elif has_comma:
+        after = cleaned.split(",")[-1]
+        cleaned = cleaned.replace(",", "") if len(after) == 3 else cleaned.split(",")[0]
+    elif has_dot:
+        after = cleaned.split(".")[-1]
+        cleaned = cleaned.replace(".", "") if len(after) == 3 else cleaned.split(".")[0]
 
     try:
         return int(cleaned)
@@ -66,10 +86,12 @@ def has_enough_specificity(url: str) -> bool:
 
 
 def parse_area_sqm(area_str: str):
-    """Converte una stringa superficie ('40 m²', '80mq', '40 m2') in float."""
+    """Converte una stringa superficie ('40 m²', '80mq', '40 m2', '40 m 2')
+    in float. L'ultima variante (spazio tra m e 2) capita quando un apice
+    HTML (²) viene 'appiattito' in testo semplice."""
     if not area_str:
         return None
-    match = re.search(r"(\d+(?:[.,]\d+)?)\s*(?:m²|mq|m2)", str(area_str), re.IGNORECASE)
+    match = re.search(r"(\d+(?:[.,]\d+)?)\s*(?:m\s?²|mq|m\s?2)\b", str(area_str), re.IGNORECASE)
     if not match:
         return None
     try:
@@ -124,16 +146,43 @@ def find_zone(text: str, known_zones: list):
 # "sconosciuto" piuttosto che mostrarlo come un fatto — e soprattutto,
 # escluderlo dal calcolo della media di zona, dove un singolo valore assurdo
 # può falsare il confronto per TUTTI gli annunci futuri di quella zona.
-MIN_PLAUSIBLE_PRICE_PER_SQM = 200  # €/m²
-MIN_PLAUSIBLE_PRICE_EUR = 10_000    # € (per annunci senza mq noti)
+#
+# Soglie differenziate per tipo: un affitto legittimo ha un prezzo/mq molto
+# più basso di una vendita (es. 8€/mq/mese è normale in affitto, sarebbe
+# assurdo in vendita). Usare la soglia "vendita" su un affitto scarterebbe
+# erroneamente prezzi veri.
+MIN_PLAUSIBLE_PRICE_PER_SQM = 200  # €/m² (vendita/asta)
+MIN_PLAUSIBLE_PRICE_EUR = 10_000    # € (vendita/asta, senza mq noti)
+MIN_PLAUSIBLE_PRICE_PER_SQM_AFFITTO = 3  # €/m²/mese
+MIN_PLAUSIBLE_PRICE_EUR_AFFITTO = 150     # € (affitto, senza mq noti)
+
+AUCTION_PATTERN = re.compile(r"\basta\b|base\s+d.asta|vendita\s+giudiziaria", re.IGNORECASE)
+RENTAL_PATTERN = re.compile(r"\baffitto\b|\blocazione\b|canone\s+(?:mensile|di\s+locazione)", re.IGNORECASE)
 
 
-def price_is_plausible(price_eur, area_sqm) -> bool:
+def detect_listing_type(text: str, url: str = "") -> str:
+    """Ritorna 'asta', 'affitto' o 'vendita' (default) in base a parole
+    chiave nel testo/URL dell'annuncio. Un'asta giudiziaria mostra una BASE
+    D'ASTA, non un prezzo di vendita fisso — vale la pena saperlo prima di
+    considerarla un affare."""
+    combined = f"{text} {url}"
+    if AUCTION_PATTERN.search(combined):
+        return "asta"
+    if RENTAL_PATTERN.search(combined):
+        return "affitto"
+    return "vendita"
+
+
+def price_is_plausible(price_eur, area_sqm, listing_type: str = "vendita") -> bool:
     if price_eur is None:
         return True
+    if listing_type == "affitto":
+        min_per_sqm, min_total = MIN_PLAUSIBLE_PRICE_PER_SQM_AFFITTO, MIN_PLAUSIBLE_PRICE_EUR_AFFITTO
+    else:
+        min_per_sqm, min_total = MIN_PLAUSIBLE_PRICE_PER_SQM, MIN_PLAUSIBLE_PRICE_EUR
     if area_sqm and area_sqm > 0:
-        return (price_eur / area_sqm) >= MIN_PLAUSIBLE_PRICE_PER_SQM
-    return price_eur >= MIN_PLAUSIBLE_PRICE_EUR
+        return (price_eur / area_sqm) >= min_per_sqm
+    return price_eur >= min_total
 
 
 def normalize_listing(listing: dict, known_zones: list) -> dict:
@@ -171,7 +220,12 @@ def normalize_listing(listing: dict, known_zones: list) -> dict:
             zone = find_zone(combined_text, known_zones)
         listing["zone"] = zone
 
-    if not price_is_plausible(listing.get("price_eur"), listing.get("area_sqm")):
+    listing["listing_type"] = detect_listing_type(
+        f"{listing.get('title', '')} {listing.get('description', '')}",
+        listing.get("url", ""),
+    )
+
+    if not price_is_plausible(listing.get("price_eur"), listing.get("area_sqm"), listing["listing_type"]):
         listing["price_suspect"] = True
         listing["price_eur"] = None
 

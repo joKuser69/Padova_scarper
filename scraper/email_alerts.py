@@ -43,8 +43,8 @@ DEBUG_DIR = "debug"
 
 IMAP_SERVER = "imap.gmail.com"
 
-PRICE_PATTERN = re.compile(r"(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?)\s*€|€\s*(\d{1,3}(?:[.\s]\d{3})*(?:,\d+)?)")
-AREA_PATTERN = re.compile(r"(\d+(?:[.,]\d+)?)\s*(?:m²|mq|m2)", re.IGNORECASE)
+PRICE_PATTERN = re.compile(r"(\d{1,3}(?:\.\d{3})*(?:,\d+)?)\s*€|€\s*(\d{1,3}(?:\.\d{3})*(?:,\d+)?)")
+AREA_PATTERN = re.compile(r"(\d+(?:[.,]\d+)?)\s*(?:m\s?²|mq|m\s?2)\b", re.IGNORECASE)
 
 IMAGE_SKIP_KEYWORDS = ("pixel", "tracking", "1x1", "spacer", "logo", "icon")
 
@@ -141,11 +141,42 @@ def _identify_source(from_header: str) -> str:
     return ""
 
 
+def _decode_wikicasa_token(url: str) -> str:
+    """I link di Wikicasa (email.notifiche.wikicasa.it/c/...) non sono un
+    redirect con parametro di query, ma un token compresso: base64 url-safe
+    di dati compressi con zlib, contenente tra l'altro il parametro 'l' con
+    la vera destinazione. Scoperto analizzando email reali."""
+    import base64
+    import zlib
+    from urllib.parse import urlparse, parse_qs
+
+    try:
+        parsed = urlparse(url)
+        if "notifiche.wikicasa.it" not in parsed.netloc or "/c/" not in parsed.path:
+            return url
+
+        token = parsed.path.split("/c/")[-1]
+        padded = token + "=" * (-len(token) % 4)
+        raw = base64.urlsafe_b64decode(padded)
+        decompressed = zlib.decompressobj(15).decompress(raw)
+        qs = parse_qs(decompressed.decode("utf-8", errors="replace"))
+        destination = qs.get("l", [""])[0]
+        if destination.startswith("http://") or destination.startswith("https://"):
+            return destination
+    except Exception:
+        pass
+    return url
+
+
 def _unwrap_redirect(url: str) -> str:
     """Molti link di email marketing sono redirect di tracciamento che
     portano la vera destinazione in un parametro di query (es.
     '?u=https%3A%2F%2Fsito.it%2F...'). Se lo troviamo, usiamo direttamente
     quella destinazione."""
+    wikicasa_decoded = _decode_wikicasa_token(url)
+    if wikicasa_decoded != url:
+        return wikicasa_decoded
+
     from urllib.parse import urlparse, parse_qs
 
     try:

@@ -52,7 +52,7 @@ EMAIL_SOURCES = {
     },
     "Wikicasa": {
         "sender_domains": ["wikicasa.it"],
-        "listing_url_pattern": None,  # da affinare con email reale
+        "listing_url_pattern": re.compile(r"https?://(?:www\.)?wikicasa\.it/\d+/[^\s\"'<>]*"),
     },
 }
 

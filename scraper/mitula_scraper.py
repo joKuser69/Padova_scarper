@@ -6,10 +6,19 @@ Selettori verificati direttamente sull'HTML reale del sito (luglio 2026):
 ogni annuncio è un tag <article class="listing listing-card ..."> con i dati
 principali già disponibili come attributi data-* (niente bisogno di parsing
 fragile del testo visibile).
+
+NOTA SUL LINK: l'URL dell'annuncio NON si costruisce a mano concatenando
+"adclickdetail/{id}" — verificato che restituisce 401 (Unauthorized), perché
+manca il contesto/i parametri che il sito richiede. Il link giusto sta
+nell'attributo data-clickDestination di ogni card, codificato in base64:
+decodificato, contiene l'URL di tracciamento reale (clk.thribee.com/...) che
+il sito stesso usa per i click veri. Usiamo quello.
 """
+import base64
 import os
 import re
 import time
+import urllib.parse
 
 import requests
 from bs4 import BeautifulSoup
@@ -18,6 +27,17 @@ from config import USER_AGENT, REQUEST_DELAY_SECONDS
 
 DEBUG = os.environ.get("SCRAPER_DEBUG") == "1"
 DEBUG_DIR = "debug"
+
+
+def _decode_click_destination(article) -> str:
+    encoded = article.get("data-clickdestination") or article.get("data-clickDestination")
+    if not encoded:
+        return ""
+    try:
+        decoded = base64.b64decode(encoded).decode("utf-8", errors="replace")
+        return urllib.parse.unquote(decoded)
+    except Exception:
+        return ""
 
 
 def _extract_listings(soup: BeautifulSoup, base_name: str) -> list:
@@ -45,6 +65,8 @@ def _extract_listings(soup: BeautifulSoup, base_name: str) -> list:
         if img_el:
             image_url = img_el.get("data-src") or img_el.get("src") or img_el.get("data-srcset", "").split(" ")[0]
 
+        real_url = _decode_click_destination(article)
+
         # Titolo leggibile costruito dai dati strutturati (il sito non ha un
         # vero e proprio campo "titolo" separato dalla location)
         title_parts = [property_type, "-", location]
@@ -64,7 +86,7 @@ def _extract_listings(soup: BeautifulSoup, base_name: str) -> list:
                 "rooms": rooms,
                 "area": area,
                 "description": description,
-                "url": f"https://immobiliare.mitula.it/adclickdetail/{listing_id}",
+                "url": real_url or "",
                 "image_url": image_url,
                 "raw": {},
             }

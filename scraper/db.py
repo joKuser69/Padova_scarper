@@ -66,7 +66,8 @@ def load_db(path: str) -> dict:
     # prossimo avvistamento non porta un valore plausibile.
     sanitized = 0
     for entry in data["listings"].values():
-        if not price_is_plausible(entry.get("price_eur"), entry.get("area_sqm")):
+        entry_type = entry.get("listing_type", "vendita")
+        if not price_is_plausible(entry.get("price_eur"), entry.get("area_sqm"), entry_type):
             entry["price_eur"] = None
             entry["price_history"] = []
             sanitized += 1
@@ -105,10 +106,11 @@ def upsert_listing(db: dict, listing: dict) -> dict:
     lid = listing["id"]
     now = datetime.now(timezone.utc).isoformat()
     new_price = listing.get("price_eur")
+    listing_type = listing.get("listing_type", "vendita")
 
     # Difesa extra (oltre a normalize_listing): non salvare mai un prezzo
     # implausibile nel database, altrimenti inquinerebbe la media di zona.
-    if not price_is_plausible(new_price, listing.get("area_sqm")):
+    if not price_is_plausible(new_price, listing.get("area_sqm"), listing_type):
         new_price = None
 
     result = {
@@ -130,7 +132,7 @@ def upsert_listing(db: dict, listing: dict) -> dict:
         if new_price is not None:
             entry["price_eur"] = new_price
 
-        for field in ("area_sqm", "rooms", "zone", "title", "url", "image_url"):
+        for field in ("area_sqm", "rooms", "zone", "title", "url", "image_url", "listing_type"):
             value = listing.get(field)
             if value:
                 entry[field] = value
@@ -146,16 +148,18 @@ def upsert_listing(db: dict, listing: dict) -> dict:
             "area_sqm": listing.get("area_sqm"),
             "rooms": listing.get("rooms"),
             "image_url": listing.get("image_url"),
+            "listing_type": listing_type,
             "price_history": [{"date": now, "price_eur": new_price}] if new_price is not None else [],
         }
 
     return result
 
 
-def zone_price_per_sqm_stats(db: dict, zone: str, exclude_id: str = None):
-    """Ritorna (media_eur_per_mq, numero_annunci_usati) per una zona.
-    Ritorna (None, N) se ci sono meno di 3 annunci comparabili — non
-    abbastanza per una media affidabile."""
+def zone_price_per_sqm_stats(db: dict, zone: str, exclude_id: str = None, listing_type: str = "vendita"):
+    """Ritorna (media_eur_per_mq, numero_annunci_usati) per una zona,
+    calcolata SOLO su annunci dello stesso tipo (vendita/affitto/asta) — non
+    avrebbe senso mediare un prezzo di vendita con un canone di affitto.
+    Ritorna (None, N) se ci sono meno di 3 annunci comparabili."""
     if not zone:
         return None, 0
 
@@ -165,6 +169,8 @@ def zone_price_per_sqm_stats(db: dict, zone: str, exclude_id: str = None):
         if exclude_id and lid == exclude_id:
             continue
         if (entry.get("zone") or "").strip().lower() != zone_norm:
+            continue
+        if entry.get("listing_type", "vendita") != listing_type:
             continue
         price = entry.get("price_eur")
         area = entry.get("area_sqm")

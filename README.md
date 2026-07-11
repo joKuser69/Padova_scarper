@@ -10,21 +10,27 @@ stesso annuncio. Gira su GitHub Actions ogni 15 minuti, zero costi.
 ## Funzionalità
 
 - **Storico prezzi**: ogni annuncio è tracciato nel tempo in `data/state.json`
-  (ora un vero mini-database, non solo un elenco di id). Se lo stesso
-  annuncio ricompare con un prezzo diverso, te lo segnala esplicitamente
-  ("🔻 Prezzo sceso da 180.000€ a 165.000€").
-- **Media prezzo/mq per zona**: calcolata sugli annunci già tracciati nella
-  stessa zona. Serve un minimo di 3 annunci comparabili prima di mostrare
-  una media (altrimenti dice onestamente "dati insufficienti") — la qualità
-  di questo confronto migliora con il tempo, man mano che il bot accumula
-  storico.
-- **Foto**: se disponibile un'immagine (da Mitula o dall'email di alert),
-  viene inviata come foto con i dettagli come didascalia.
+  (un vero mini-database, non solo un elenco di id). Se lo stesso annuncio
+  ricompare con un prezzo diverso, te lo segnala esplicitamente.
+- **Media prezzo/mq per zona**: calcolata separatamente per vendita/affitto
+  (mediare i due insieme non avrebbe senso). Serve un minimo di 3 annunci
+  comparabili prima di mostrare una media.
+- **Distinzione vendita / affitto / asta**: un'asta giudiziaria mostra la
+  "base d'asta" (spesso molto sotto il valore di mercato, non un affare
+  diretto) — badge "⚖️ ASTA GIUDIZIARIA" in evidenza. Un affitto ha soglie
+  di prezzo plausibile completamente diverse da una vendita (8€/mq/mese è
+  normale in affitto, sarebbe assurdo in vendita) — badge "🔑 AFFITTO".
+- **Foto**: se disponibile un'immagine, viene inviata come foto con i
+  dettagli come didascalia (fallback automatico a solo testo se l'immagine
+  non è raggiungibile).
+- **Test automatici** (`tests/`): fixture con email/pagine REALI raccolte
+  durante lo sviluppo, non dati inventati. Girano da soli ad ogni modifica
+  del codice tramite `.github/workflows/tests.yml` — se una modifica rompe
+  l'estrazione di un sito, lo vedi subito come ❌ su GitHub, senza dover
+  aspettare un run reale e mandare log avanti e indietro.
 - **Limite noto**: il numero di locali (es. "trilocale" = 3) è disponibile,
-  ma la suddivisione stanza per stanza (cucina/camere/bagno elencati
-  singolarmente) no — quel dettaglio esiste solo nella pagina protetta del
-  singolo annuncio, che il bot non visita di proposito (vedi sezione sotto
-  sul perché non facciamo scraping diretto di Idealista/Immobiliare.it).
+  ma la suddivisione stanza per stanza no — quel dettaglio esiste solo nella
+  pagina protetta del singolo annuncio, che il bot non visita di proposito.
 
 ## Come funziona (in breve)
 
@@ -138,10 +144,30 @@ scraper/
   ai_filter.py                 # valutazione IA (Groq/Gemini) + completamento zona/mq/locali
   telegram_notify.py          # invio notifiche (testo o foto), formattazione ricca
   db.py                        # database persistente: storico prezzi, media di zona
-  utils.py                     # parsing prezzi/mq/locali, normalizzazione annunci
+  utils.py                     # parsing prezzi/mq/locali/tipo, normalizzazione annunci
+tests/
+  test_extraction.py          # test automatici su email/pagine reali
+  fixtures/                    # le email/pagine vere usate dai test
 data/state.json                # database persistente (storico completo, non solo id)
-.github/workflows/scraper.yml   # schedulazione ogni 15 minuti
+.github/workflows/
+  scraper.yml                  # schedulazione bot ogni 15 minuti
+  tests.yml                    # test automatici ad ogni modifica del codice
 ```
+
+## Eseguire i test
+
+I test girano automaticamente su GitHub ad ogni push (niente da fare). Se
+un giorno avrai un ambiente Python a disposizione, si eseguono anche a mano:
+
+```
+python -m unittest discover tests -v
+```
+
+Quando trovi un nuovo caso limite (un'email che non si comporta come
+previsto), il modo più veloce per farmelo sistemare per sempre è: mandami
+l'artifact debug-html come hai già fatto finora — lo aggiungo ai test come
+fixture permanente, così quel caso specifico non si romperà mai più senza
+che tu te ne accorga subito.
 
 ## Se hai già un `data/state.json` dalla versione precedente
 

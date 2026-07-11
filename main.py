@@ -51,9 +51,13 @@ def apply_budget_filter(listings: list) -> list:
 
 def attach_zone_stats(listings: list, database: dict) -> None:
     """Aggiunge a ogni annuncio la media prezzo/mq della sua zona (se
-    disponibile), calcolata sul database storico."""
+    disponibile), calcolata sul database storico — solo tra annunci dello
+    stesso tipo (vendita/affitto/asta)."""
     for listing in listings:
-        avg, count = db.zone_price_per_sqm_stats(database, listing.get("zone"), exclude_id=listing.get("id"))
+        listing_type = listing.get("listing_type", "vendita")
+        avg, count = db.zone_price_per_sqm_stats(
+            database, listing.get("zone"), exclude_id=listing.get("id"), listing_type=listing_type
+        )
         listing["zone_avg_price_sqm"] = avg
         listing["zone_sample_count"] = count
 

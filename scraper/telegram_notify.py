@@ -83,15 +83,17 @@ def _format_zone_avg_note(listing: dict) -> str:
     avg = listing.get("zone_avg_price_sqm")
     sample_count = listing.get("zone_sample_count", 0)
     price_sqm = listing.get("price_per_sqm")
+    listing_type = listing.get("listing_type", "vendita")
+    type_suffix = " affitto" if listing_type == "affitto" else ""
 
     if avg is None:
         if sample_count > 0:
             noun = "annuncio tracciato" if sample_count == 1 else "annunci tracciati"
-            return f"📊 Zona {listing.get('zone')}: dati insufficienti per una media affidabile ({sample_count} {noun} finora)"
+            return f"📊 Zona {listing.get('zone')}{type_suffix}: dati insufficienti per una media affidabile ({sample_count} {noun} finora)"
         return ""
 
     if price_sqm is None:
-        return f"📊 Media zona {listing.get('zone')}: {avg:,.0f}€/m² (su {sample_count} annunci)".replace(",", ".")
+        return f"📊 Media zona{type_suffix} {listing.get('zone')}: {avg:,.1f}€/m² (su {sample_count} annunci)".replace(",", ".")
 
     diff_pct = (price_sqm - avg) / avg * 100
     if diff_pct <= -5:
@@ -101,7 +103,18 @@ def _format_zone_avg_note(listing: dict) -> str:
     else:
         verdict = "🟡 in linea con la media"
 
-    return f"📊 Media zona: {avg:,.0f}€/m² → questo annuncio {verdict}".replace(",", ".")
+    return f"📊 Media zona{type_suffix}: {avg:,.1f}€/m² → questo annuncio {verdict}".replace(",", ".")
+
+
+TYPE_BADGES = {
+    "asta": "⚖️ ASTA GIUDIZIARIA",
+    "affitto": "🔑 AFFITTO",
+}
+
+TYPE_PRICE_LABELS = {
+    "asta": "Base d'asta",
+    "affitto": "Canone mensile",
+}
 
 
 def _format_listing(listing: dict) -> str:
@@ -112,8 +125,13 @@ def _format_listing(listing: dict) -> str:
     rooms = listing.get("rooms")
     price_eur = listing.get("price_eur")
     url = listing.get("url", "")
+    listing_type = listing.get("listing_type", "vendita")
 
     lines = [f"🏠 <b>{title}</b>"]
+
+    badge = TYPE_BADGES.get(listing_type)
+    if badge:
+        lines.append(badge)
 
     meta_bits = []
     if zone:
@@ -129,17 +147,23 @@ def _format_listing(listing: dict) -> str:
     if detail_bits:
         lines.append("  ".join(detail_bits))
 
+    price_label = TYPE_PRICE_LABELS.get(listing_type, "💶")
+    price_prefix = f"{price_label}: " if listing_type in TYPE_PRICE_LABELS else "💶 "
+
     if price_eur:
-        price_line = f"💶 {price_eur:,}€".replace(",", ".")
+        price_line = f"{price_prefix}{price_eur:,}€".replace(",", ".")
+        if listing_type == "affitto":
+            price_line += "/mese"
         if area_sqm:
             price_per_sqm = price_eur / area_sqm
             listing["price_per_sqm"] = price_per_sqm
-            price_line += f"  (💹 {price_per_sqm:,.0f}€/m²)".replace(",", ".")
+            unit_label = "€/m²/mese" if listing_type == "affitto" else "€/m²"
+            price_line += f"  (💹 {price_per_sqm:,.1f}{unit_label})".replace(",", ".")
         lines.append(price_line)
     elif listing.get("price_suspect"):
         lines.append("💶 prezzo non affidabile alla fonte — controlla l'annuncio")
     elif listing.get("price"):
-        lines.append(f"💶 {listing['price']}")
+        lines.append(f"{price_prefix}{listing['price']}")
 
     zone_note = _format_zone_avg_note(listing)
     if zone_note:

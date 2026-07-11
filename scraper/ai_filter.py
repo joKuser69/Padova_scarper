@@ -45,24 +45,38 @@ Rispondi SOLO con un oggetto JSON, senza testo aggiuntivo, in questo formato esa
 """
 
 
-def _call_groq(prompt: str) -> str:
+def _call_groq(prompt: str, max_retries: int = 2) -> str:
     api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
         raise RuntimeError("GROQ_API_KEY non impostata")
 
-    resp = requests.post(
-        "https://api.groq.com/openai/v1/chat/completions",
-        headers={"Authorization": f"Bearer {api_key}"},
-        json={
-            "model": AI_MODEL_GROQ,
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.2,
-            "max_tokens": 200,
-        },
-        timeout=20,
-    )
-    resp.raise_for_status()
-    return resp.json()["choices"][0]["message"]["content"]
+    last_resp = None
+    for attempt in range(max_retries + 1):
+        resp = requests.post(
+            "https://api.groq.com/openai/v1/chat/completions",
+            headers={"Authorization": f"Bearer {api_key}"},
+            json={
+                "model": AI_MODEL_GROQ,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.2,
+                "max_tokens": 200,
+            },
+            timeout=20,
+        )
+
+        if resp.status_code == 429 and attempt < max_retries:
+            retry_after = resp.headers.get("retry-after")
+            wait = float(retry_after) if retry_after else float(2 ** (attempt + 1))
+            wait = min(wait, 15)  # tetto di sicurezza: non vogliamo sforare il timeout del job
+            print(f"[AI] Rate limit Groq (429), riprovo tra {wait:.1f}s (tentativo {attempt + 1}/{max_retries})")
+            time.sleep(wait)
+            last_resp = resp
+            continue
+
+        resp.raise_for_status()
+        return resp.json()["choices"][0]["message"]["content"]
+
+    last_resp.raise_for_status()  # tutti i tentativi falliti: solleva l'ultimo errore
 
 
 def _call_gemini(prompt: str) -> str:
@@ -148,5 +162,5 @@ def evaluate_all(listings: list) -> list:
     for i, listing in enumerate(listings):
         results.append(evaluate_listing(listing))
         if i < len(listings) - 1:
-            time.sleep(2)  # rispetta il rate-limit del tier gratuito
+            time.sleep(2.5)  # margine di sicurezza sotto il limite di 30 richieste/minuto di Groq
     return results
