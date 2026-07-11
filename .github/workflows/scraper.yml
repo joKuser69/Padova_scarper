@@ -5,7 +5,7 @@ on:
     - cron: "*/15 * * * *"
   workflow_dispatch: {}  # permette l'avvio manuale da GitHub (Actions -> Run workflow)
 
-# Necessario per poter fare commit del file di stato aggiornato (dedup Mitula)
+# Necessario per poter fare commit del file di stato aggiornato (storico prezzi/zona)
 permissions:
   contents: write
 
@@ -50,7 +50,7 @@ jobs:
           retention-days: 3
           if-no-files-found: ignore
 
-      - name: Commit dello stato aggiornato (Mitula)
+      - name: Commit dello stato aggiornato
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "Padova Scraper Bot"
