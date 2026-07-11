@@ -1,4 +1,564 @@
 {
-  "listings": {},
-  "last_run": null
+  "listings": {
+    "https://www.idealista.it/immobile/36235947/": {
+      "first_seen": "2026-07-11T03:43:01.418555+00:00",
+      "last_seen": "2026-07-11T03:43:01.418555+00:00",
+      "source": "Idealista (email)",
+      "title": "Bilocale in Via Enrico Bernardi, 23, Arcella, Padova",
+      "url": "https://www.idealista.it/immobile/36235947/",
+      "zone": "Arcella",
+      "price_eur": 93750,
+      "area_sqm": 130.0,
+      "rooms": 2,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/93/62/8b/818913636.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418555+00:00",
+          "price_eur": 93750
+        }
+      ]
+    },
+    "mitula-IT-8420000783160205774": {
+      "first_seen": "2026-07-11T03:43:01.418588+00:00",
+      "last_seen": "2026-07-11T03:43:01.418588+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Pontevigodarzere, Padova (72 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000008420000783160205774&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=0&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-8420000783160205774?search_terms=vendita-appartamento-padova&page=1&pos=0&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-8420000783160205774&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=uI3gBbqKn8igcrtLY0Y+yA==",
+      "zone": "Pontevigodarzere, Padova",
+      "price_eur": 30000,
+      "area_sqm": 72.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418588+00:00",
+          "price_eur": 30000
+        }
+      ]
+    },
+    "mitula-IT-5800000781086716623": {
+      "first_seen": "2026-07-11T03:43:01.418594+00:00",
+      "last_seen": "2026-07-11T03:43:01.418594+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Sacra Famiglia, Padova (50 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000005800000781086716623&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=1&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-5800000781086716623?search_terms=vendita-appartamento-padova&page=1&pos=1&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-5800000781086716623&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=wEC1dXU2jAdlwZej7IHMQg==",
+      "zone": "Sacra Famiglia, Padova",
+      "price_eur": 88000,
+      "area_sqm": 50.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418594+00:00",
+          "price_eur": 88000
+        }
+      ]
+    },
+    "mitula-IT-7210000777543585937": {
+      "first_seen": "2026-07-11T03:43:01.418598+00:00",
+      "last_seen": "2026-07-11T03:43:01.418598+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Mortise, Padova (109 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000007210000777543585937&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=2&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-7210000777543585937?search_terms=vendita-appartamento-padova&page=1&pos=2&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=true&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-7210000777543585937&sectionRetis=true&decideClickType=1&hd=true&timestamp=1783741373&sign=T8ZOk4Icmh+6u48Rxp37oA==",
+      "zone": "Mortise, Padova",
+      "price_eur": 65639,
+      "area_sqm": 109.0,
+      "rooms": 5,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418598+00:00",
+          "price_eur": 65639
+        }
+      ]
+    },
+    "mitula-IT-7170000777285199278": {
+      "first_seen": "2026-07-11T03:43:01.418623+00:00",
+      "last_seen": "2026-07-11T03:43:01.418623+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Stanga, Padova (35 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000007170000777285199278&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=3&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-7170000777285199278?search_terms=vendita-appartamento-padova&page=1&pos=3&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=true&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-7170000777285199278&sectionRetis=true&decideClickType=1&hd=true&timestamp=1783741373&sign=CpHgXQK+uh+QodwOleQojA==",
+      "zone": "Stanga, Padova",
+      "price_eur": 25000,
+      "area_sqm": 35.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418623+00:00",
+          "price_eur": 25000
+        }
+      ]
+    },
+    "mitula-IT-2090002767178637192": {
+      "first_seen": "2026-07-11T03:43:01.418627+00:00",
+      "last_seen": "2026-07-11T03:43:01.418627+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - San Bellino, Padova (121 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000002090002767178637192&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=4&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-2090002767178637192?search_terms=vendita-appartamento-padova&page=1&pos=4&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=true&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-2090002767178637192&sectionRetis=true&decideClickType=1&hd=true&timestamp=1783741373&sign=/EduYSBaOja4jkXf60lraA==",
+      "zone": "San Bellino, Padova",
+      "price_eur": 66000,
+      "area_sqm": 121.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418627+00:00",
+          "price_eur": 66000
+        }
+      ]
+    },
+    "mitula-IT-7310000783678499982": {
+      "first_seen": "2026-07-11T03:43:01.418631+00:00",
+      "last_seen": "2026-07-11T03:43:01.418631+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - San Giuseppe, Padova (80 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000007310000783678499982&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=5&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-7310000783678499982?search_terms=vendita-appartamento-padova&page=1&pos=5&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-7310000783678499982&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=o2hi/hr8jZ+w4gnisl4yqg==",
+      "zone": "San Giuseppe, Padova",
+      "price_eur": null,
+      "area_sqm": 80.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": []
+    },
+    "mitula-IT-5160000783592159447": {
+      "first_seen": "2026-07-11T03:43:01.418637+00:00",
+      "last_seen": "2026-07-11T03:43:01.418637+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Voltabarozzo, Padova (105 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000005160000783592159447&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=6&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-5160000783592159447?search_terms=vendita-appartamento-padova&page=1&pos=6&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-5160000783592159447&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=DCL6bNPBYXcTfL/rhXQbYA==",
+      "zone": "Voltabarozzo, Padova",
+      "price_eur": 155000,
+      "area_sqm": 105.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418637+00:00",
+          "price_eur": 155000
+        }
+      ]
+    },
+    "mitula-IT-2540000783505787764": {
+      "first_seen": "2026-07-11T03:43:01.418641+00:00",
+      "last_seen": "2026-07-11T03:43:01.418641+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Voltabarozzo, Padova (80 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000002540000783505787764&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=7&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-2540000783505787764?search_terms=vendita-appartamento-padova&page=1&pos=7&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-2540000783505787764&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=kiFBRuPobGDNfQV2kmaHIg==",
+      "zone": "Voltabarozzo, Padova",
+      "price_eur": 68000,
+      "area_sqm": 80.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418641+00:00",
+          "price_eur": 68000
+        }
+      ]
+    },
+    "mitula-IT-1060000783073959572": {
+      "first_seen": "2026-07-11T03:43:01.418646+00:00",
+      "last_seen": "2026-07-11T03:43:01.418646+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Cave, Padova (98 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000001060000783073959572&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=8&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-1060000783073959572?search_terms=vendita-appartamento-padova&page=1&pos=8&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-1060000783073959572&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=Uikjdu62ZCtm7gAD5Le5QQ==",
+      "zone": "Cave, Padova",
+      "price_eur": 165000,
+      "area_sqm": 98.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418646+00:00",
+          "price_eur": 165000
+        }
+      ]
+    },
+    "mitula-IT-3460000782814549203": {
+      "first_seen": "2026-07-11T03:43:01.418649+00:00",
+      "last_seen": "2026-07-11T03:43:01.418649+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - San Carlo, Padova (100 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000003460000782814549203&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=9&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-3460000782814549203?search_terms=vendita-appartamento-padova&page=1&pos=9&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-3460000782814549203&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=VJK49C2EKzOD2Xwj94ERDQ==",
+      "zone": "San Carlo, Padova",
+      "price_eur": 144000,
+      "area_sqm": 100.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418649+00:00",
+          "price_eur": 144000
+        }
+      ]
+    },
+    "mitula-IT-3100000779358572658": {
+      "first_seen": "2026-07-11T03:43:01.418653+00:00",
+      "last_seen": "2026-07-11T03:43:01.418653+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (90 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000003100000779358572658&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=10&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-3100000779358572658?search_terms=vendita-appartamento-padova&page=1&pos=10&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-3100000779358572658&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=enDz2i3TziLiGGZRVKzhBQ==",
+      "zone": "Padova, Veneto",
+      "price_eur": 158000,
+      "area_sqm": 90.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418653+00:00",
+          "price_eur": 158000
+        }
+      ]
+    },
+    "mitula-IT-2260000778235416220": {
+      "first_seen": "2026-07-11T03:43:01.418656+00:00",
+      "last_seen": "2026-07-11T03:43:01.418656+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Brentelle di Sopra, Padova (106 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000002260000778235416220&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=11&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-2260000778235416220?search_terms=vendita-appartamento-padova&page=1&pos=11&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-2260000778235416220&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=Al7CTCK4xj0BJ/3VERCmdQ==",
+      "zone": "Brentelle di Sopra, Padova",
+      "price_eur": 150000,
+      "area_sqm": 106.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418656+00:00",
+          "price_eur": 150000
+        }
+      ]
+    },
+    "mitula-IT-2120000782901123914": {
+      "first_seen": "2026-07-11T03:43:01.418661+00:00",
+      "last_seen": "2026-07-11T03:43:01.418661+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - San Giuseppe, Padova (170 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000002120000782901123914&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=12&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-2120000782901123914?search_terms=vendita-appartamento-padova&page=1&pos=12&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-2120000782901123914&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=BLnyZnW4ft8y/E0fPwVsEw==",
+      "zone": "San Giuseppe, Padova",
+      "price_eur": null,
+      "area_sqm": 170.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": []
+    },
+    "mitula-IT-5600000782555422123": {
+      "first_seen": "2026-07-11T03:43:01.418664+00:00",
+      "last_seen": "2026-07-11T03:43:01.418664+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (119 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000005600000782555422123&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=13&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-5600000782555422123?search_terms=vendita-appartamento-padova&page=1&pos=13&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-5600000782555422123&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=MrsYqnqq6MiFLKFh4/cB/g==",
+      "zone": "Padova, Veneto",
+      "price_eur": null,
+      "area_sqm": 119.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": []
+    },
+    "mitula-IT-4270000782382689851": {
+      "first_seen": "2026-07-11T03:43:01.418666+00:00",
+      "last_seen": "2026-07-11T03:43:01.418666+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Voltabarozzo, Padova (100 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000004270000782382689851&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=14&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-4270000782382689851?search_terms=vendita-appartamento-padova&page=1&pos=14&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-4270000782382689851&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=hx7/EAyqRB+9e6irvWH4oQ==",
+      "zone": "Voltabarozzo, Padova",
+      "price_eur": 165000,
+      "area_sqm": 100.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418666+00:00",
+          "price_eur": 165000
+        }
+      ]
+    },
+    "mitula-IT-1270000781259518263": {
+      "first_seen": "2026-07-11T03:43:01.418669+00:00",
+      "last_seen": "2026-07-11T03:43:01.418669+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Pontevigodarzere, Padova (100 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000001270000781259518263&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=15&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-1270000781259518263?search_terms=vendita-appartamento-padova&page=1&pos=15&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-1270000781259518263&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=43LLl4SYK6eUD1JTb/ajNw==",
+      "zone": "Pontevigodarzere, Padova",
+      "price_eur": 170000,
+      "area_sqm": 100.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418669+00:00",
+          "price_eur": 170000
+        }
+      ]
+    },
+    "mitula-IT-8660001754045944542": {
+      "first_seen": "2026-07-11T03:43:01.418675+00:00",
+      "last_seen": "2026-07-11T03:43:01.418675+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (80 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000008660001754045944542&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=16&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-8660001754045944542?search_terms=vendita-appartamento-padova&page=1&pos=16&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-8660001754045944542&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=SFi51PPvv/mUtorrb6IDWg==",
+      "zone": "Padova, Veneto",
+      "price_eur": null,
+      "area_sqm": 80.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": []
+    },
+    "mitula-IT-1330000776507485778": {
+      "first_seen": "2026-07-11T03:43:01.418678+00:00",
+      "last_seen": "2026-07-11T03:43:01.418678+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Sant'Osvaldo, Padova (93 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000001330000776507485778&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=17&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-1330000776507485778?search_terms=vendita-appartamento-padova&page=1&pos=17&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-1330000776507485778&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=h4rk1NhGAdcmWi1yeYo4xA==",
+      "zone": "Sant'Osvaldo, Padova",
+      "price_eur": 185000,
+      "area_sqm": 93.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418678+00:00",
+          "price_eur": 185000
+        }
+      ]
+    },
+    "mitula-IT-7700000778840605369": {
+      "first_seen": "2026-07-11T03:43:01.418681+00:00",
+      "last_seen": "2026-07-11T03:43:01.418681+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Brusegana, Padova (81 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000007700000778840605369&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=18&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-7700000778840605369?search_terms=vendita-appartamento-padova&page=1&pos=18&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-7700000778840605369&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=/Ut9Et80uC4fILO77JXhmQ==",
+      "zone": "Brusegana, Padova",
+      "price_eur": 160000,
+      "area_sqm": 81.0,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418681+00:00",
+          "price_eur": 160000
+        }
+      ]
+    },
+    "mitula-IT-4180000776507240871": {
+      "first_seen": "2026-07-11T03:43:01.418684+00:00",
+      "last_seen": "2026-07-11T03:43:01.418684+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Sacro Cuore, Padova (21 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000004180000776507240871&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=19&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-4180000776507240871?search_terms=vendita-appartamento-padova&page=1&pos=19&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-4180000776507240871&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=E+isPa+JDZe4zIA8gInRWg==",
+      "zone": "Sacro Cuore, Padova",
+      "price_eur": 53000,
+      "area_sqm": 21.0,
+      "rooms": 1,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418684+00:00",
+          "price_eur": 53000
+        }
+      ]
+    },
+    "mitula-IT-6700000775642836435": {
+      "first_seen": "2026-07-11T03:43:01.418686+00:00",
+      "last_seen": "2026-07-11T03:43:01.418686+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Padova, Veneto (42 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000006700000775642836435&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=20&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-6700000775642836435?search_terms=vendita-appartamento-padova&page=1&pos=20&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-6700000775642836435&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=GRxkW9oRyJOf6fHr1iSjMw==",
+      "zone": "Padova, Veneto",
+      "price_eur": 39000,
+      "area_sqm": 42.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418686+00:00",
+          "price_eur": 39000
+        }
+      ]
+    },
+    "mitula-IT-1650000775297885400": {
+      "first_seen": "2026-07-11T03:43:01.418689+00:00",
+      "last_seen": "2026-07-11T03:43:01.418689+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Mortise, Padova (46 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000001650000775297885400&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=21&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-1650000775297885400?search_terms=vendita-appartamento-padova&page=1&pos=21&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-1650000775297885400&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=gLAREBQQohVgL+ZQeTkh9w==",
+      "zone": "Mortise, Padova",
+      "price_eur": 120000,
+      "area_sqm": 46.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418689+00:00",
+          "price_eur": 120000
+        }
+      ]
+    },
+    "mitula-IT-8000001761996084384": {
+      "first_seen": "2026-07-11T03:43:01.418692+00:00",
+      "last_seen": "2026-07-11T03:43:01.418692+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Stanga, Padova (105 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000008000001761996084384&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=22&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-8000001761996084384?search_terms=vendita-appartamento-padova&page=1&pos=22&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-8000001761996084384&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=JOMFRm/weBMI87zZMDJrGA==",
+      "zone": "Stanga, Padova",
+      "price_eur": null,
+      "area_sqm": 105.0,
+      "rooms": 6,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": []
+    },
+    "mitula-IT-7870000753355423696": {
+      "first_seen": "2026-07-11T03:43:01.418697+00:00",
+      "last_seen": "2026-07-11T03:43:01.418697+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Brusegana, Padova",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000007870000753355423696&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=23&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-7870000753355423696?search_terms=vendita-appartamento-padova&page=1&pos=23&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-7870000753355423696&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=2tYqNPIjcb5HuTOhSQdNmw==",
+      "zone": "Brusegana, Padova",
+      "price_eur": 270000,
+      "area_sqm": null,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418697+00:00",
+          "price_eur": 270000
+        }
+      ]
+    },
+    "mitula-IT-7780000753355423684": {
+      "first_seen": "2026-07-11T03:43:01.418700+00:00",
+      "last_seen": "2026-07-11T03:43:01.418700+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Brusegana, Padova",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000007780000753355423684&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=24&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-7780000753355423684?search_terms=vendita-appartamento-padova&page=1&pos=24&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-7780000753355423684&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=ATngrnT5jpZ5AqUweX0YwQ==",
+      "zone": "Brusegana, Padova",
+      "price_eur": 325000,
+      "area_sqm": null,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418700+00:00",
+          "price_eur": 325000
+        }
+      ]
+    },
+    "mitula-IT-7610000753355423652": {
+      "first_seen": "2026-07-11T03:43:01.418703+00:00",
+      "last_seen": "2026-07-11T03:43:01.418703+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Brusegana, Padova",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000007610000753355423652&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=25&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-7610000753355423652?search_terms=vendita-appartamento-padova&page=1&pos=25&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-7610000753355423652&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=QneaQXSE0QHgBKgdF0KvMQ==",
+      "zone": "Brusegana, Padova",
+      "price_eur": 255000,
+      "area_sqm": null,
+      "rooms": 3,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418703+00:00",
+          "price_eur": 255000
+        }
+      ]
+    },
+    "mitula-IT-4440001742477764626": {
+      "first_seen": "2026-07-11T03:43:01.418706+00:00",
+      "last_seen": "2026-07-11T03:43:01.418706+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - San Bellino, Padova (42 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000004440001742477764626&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=26&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-4440001742477764626?search_terms=vendita-appartamento-padova&page=1&pos=26&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-4440001742477764626&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=LptziZQC1vAxKM+3ow/HsQ==",
+      "zone": "San Bellino, Padova",
+      "price_eur": 75000,
+      "area_sqm": 42.0,
+      "rooms": 2,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418706+00:00",
+          "price_eur": 75000
+        }
+      ]
+    },
+    "mitula-IT-3140006726144759528": {
+      "first_seen": "2026-07-11T03:43:01.418709+00:00",
+      "last_seen": "2026-07-11T03:43:01.418709+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - San Giuseppe, Padova (203 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=68&thribeeId=26&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000003140006726144759528&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=27&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-3140006726144759528?search_terms=vendita-appartamento-padova&page=1&pos=27&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-3140006726144759528&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=wLRm1wDg6mpZTBNwIOC1Bw==",
+      "zone": "San Giuseppe, Padova",
+      "price_eur": null,
+      "area_sqm": 203.0,
+      "rooms": 5,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": []
+    },
+    "mitula-IT-5610002783592082554": {
+      "first_seen": "2026-07-11T03:43:01.418711+00:00",
+      "last_seen": "2026-07-11T03:43:01.418711+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Sacra Famiglia, Padova (103 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=375294&thribeeId=141&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000005610002783592082554&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=28&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-5610002783592082554?search_terms=vendita-appartamento-padova&page=1&pos=28&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-5610002783592082554&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=cjzKw48y/4A9tzuUtF+SfA==",
+      "zone": "Sacra Famiglia, Padova",
+      "price_eur": 329000,
+      "area_sqm": 103.0,
+      "rooms": 6,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418711+00:00",
+          "price_eur": 329000
+        }
+      ]
+    },
+    "mitula-IT-3800002777111966386": {
+      "first_seen": "2026-07-11T03:43:01.418714+00:00",
+      "last_seen": "2026-07-11T03:43:01.418714+00:00",
+      "source": "Appartamenti in vendita - Padova (Mitula)",
+      "title": "Appartamento - Sant'Osvaldo, Padova (102 m²)",
+      "url": "https://clk.thribee.com/?redir=1&brand=2&country=2&vertical=1&page=1&sourceId=375294&thribeeId=141&pageViewId=f436a4f4-0536-479b-a63e-2723f8415669&userIp=68.154.119.210&userAgent=Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/124.0+Safari/537.36&origin=1&browser=1&section=1&sectionType=1&isPremiumIndex=0&adId=0000003800002777111966386&what=vendita-appartamento-padova&cookieId=ae0acbab-44bd-4985-9f03-37397ef1ee58&isHuman=1&position=29&detailPageUrl=https://immobiliare.mitula.it/adclickdetail/mitula-IT-3800002777111966386?search_terms=vendita-appartamento-padova&page=1&pos=29&t_sec=1&t_pvid=f436a4f4-0536-479b-a63e-2723f8415669&clickin=false&hd=false&tracking={\"cmp\":\"u\"}&adIdRetis=mitula-IT-3800002777111966386&sectionRetis=true&decideClickType=1&hd=false&timestamp=1783741373&sign=3k6us/kJSRv4bBXbrMQb7Q==",
+      "zone": "Sant'Osvaldo, Padova",
+      "price_eur": 325000,
+      "area_sqm": 102.0,
+      "rooms": 4,
+      "image_url": "data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2220%22%20viewBox%3D%220%200%2010%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.899623%2018.9962C1.31172%2019.3638%201.94386%2019.3278%202.31155%2018.9157L9.74618%2010.583C10.0883%2010.1996%2010.0841%209.61929%209.73656%209.24083L2.23656%201.07361C1.863%200.666824%201.23041%200.639883%200.823625%201.01344C0.416839%201.38699%200.389898%202.01958%200.763453%202.42637L7.65121%209.92688L0.819196%2017.5842C0.451513%2017.9963%200.487521%2018.6285%200.899623%2018.9962Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-11T03:43:01.418714+00:00",
+          "price_eur": 325000
+        }
+      ]
+    }
+  },
+  "last_run": "2026-07-11T03:43:01.675108+00:00"
 }
