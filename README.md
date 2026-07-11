@@ -1,11 +1,15 @@
 # Bot monitoraggio annunci immobiliari Padova
 
 Legge gli alert email nativi di Idealista, Immobiliare.it, Casa.it, Bakeca e
-Wikicasa (più Mitula come fonte supplementare via scraping leggero), filtra
-per budget e con un'IA gratuita in base alle tue preferenze, e ti notifica
-su Telegram solo gli annunci rilevanti — con foto, mq, locali, prezzo/mq,
-confronto con la media di zona, e variazioni di prezzo nel tempo sullo
-stesso annuncio. Gira su GitHub Actions ogni 15 minuti, zero costi.
+Wikicasa, filtra per budget e con un'IA gratuita in base alle tue preferenze,
+e ti notifica su Telegram solo gli annunci rilevanti — con foto, mq, locali,
+prezzo/mq, confronto con la media di zona, e variazioni di prezzo nel tempo
+sullo stesso annuncio. Gira su GitHub Actions ogni 15 minuti, zero costi.
+
+Nota: Mitula è stato rimosso come fonte supplementare. Era quella con più
+problemi di affidabilità (link protetti da un sistema di tracciamento non
+sempre stabile, un bug di parsing prezzi scoperto solo dai test), mentre gli
+alert email arrivano direttamente e ufficialmente dai 5 portali.
 
 ## Funzionalità
 
@@ -68,7 +72,7 @@ Apri `config.py` (tramite l'editor web di GitHub, matita in alto a destra sul
 file) e modifica se vuoi:
 - `MAX_BUDGET_EUR`: già impostato a 250.000
 - `USER_PREFERENCES`: descrizione libera di cosa cerchi (per il filtro IA)
-- `MITULA_SEARCHES`: URL delle ricerche Mitula per Padova
+- `EXCLUDE_RENTALS`: già impostato a True (esclude gli affitti)
 
 ### 3. Crea la API key IA gratuita
 
@@ -128,7 +132,7 @@ Dopo il primo run reale:
    tipo `email_0_Casa_it.html`)
 2. Caricamelo qui in chat
 3. Ti scrivo un pattern regex preciso per quel portale, esattamente come
-   abbiamo già fatto per Mitula
+   abbiamo già fatto per Idealista e Wikicasa
 
 Stesso discorso se dopo un po' iniziano ad arrivare troppi falsi positivi
 (link non pertinenti): mandami un run recente e affiniamo il filtro.
@@ -140,7 +144,6 @@ config.py                    # fonti, budget, quartieri, preferenze IA
 main.py                      # orchestratore principale
 scraper/
   email_alerts.py             # legge Gmail via IMAP, estrae link+dati dagli alert
-  mitula_scraper.py           # requests + BeautifulSoup, fonte supplementare
   ai_filter.py                 # valutazione IA (Groq/Gemini) + completamento zona/mq/locali
   telegram_notify.py          # invio notifiche (testo o foto), formattazione ricca
   db.py                        # database persistente: storico prezzi, media di zona
@@ -169,13 +172,17 @@ l'artifact debug-html come hai già fatto finora — lo aggiungo ai test come
 fixture permanente, così quel caso specifico non si romperà mai più senza
 che tu te ne accorga subito.
 
-## Se hai già un `data/state.json` dalla versione precedente
+## Se hai già un `data/state.json` da una versione precedente
 
 Nessuna azione richiesta: il bot rileva automaticamente il vecchio formato
-(un semplice elenco di id) e lo converte al primo run col nuovo codice,
-senza notificarti di nuovo i 60 annunci Mitula già visti in blocco. Vedrai
+(un semplice elenco di id, senza prezzo/storico) e lo converte al primo run,
+senza notificarti di nuovo in blocco tutto quello che già conteneva. Vedrai
 un log tipo `[DB] Migrati N id dal vecchio formato state.json` — è normale,
 succede una volta sola.
+
+Le schede storiche con `source` contenente "Mitula" (da prima della
+rimozione) restano nel database e continuano a contribuire alle medie di
+zona — non serve ripulirle a mano, semplicemente non si aggiorneranno più.
 
 
 ## Nota su Subito.it

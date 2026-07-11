@@ -19,8 +19,15 @@ dentro corrisponde a un bug vero che abbiamo trovato e corretto:
   rispettava i confini di parola ("casa.it" combacia dentro "wikicasa.it")
 - Link pubblicitari (doubleclick) e di gestione account (autologin) scambiati
   per annunci
-- Mitula: l'URL costruito a mano ("adclickdetail/{id}") dava 401, va estratto
-  quello vero da data-clickDestination
+- Telegram: link di tracciamento lunghi facevano superare il limite di 1024
+  caratteri della didascalia foto, troncando l'URL a metà -> se il messaggio
+  è troppo lungo, salta la foto e manda testo (limite 4096)
+
+NOTA: Mitula è stato rimosso come fonte (era quella con più problemi di
+affidabilità — link protetti da anti-bot indiretto, bug di parsing prezzi —
+mentre gli alert email arrivano direttamente dai portali ufficiali). La
+funzione parse_price_eur gestisce comunque anche il formato con virgola come
+separatore delle migliaia, utile in generale e non solo per Mitula.
 
 ESECUZIONE (da GitHub Actions, automatico ad ogni push — vedi
 .github/workflows/tests.yml — oppure a mano se mai avrai un ambiente Python):
@@ -29,6 +36,7 @@ ESECUZIONE (da GitHub Actions, automatico ad ogni push — vedi
 import os
 import sys
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -40,7 +48,7 @@ from scraper.email_alerts import (
     _unwrap_redirect,
     _extract_price,
 )
-from scraper.mitula_scraper import _extract_listings as mitula_extract_listings
+from scraper.telegram_notify import _format_it_number, notify_new_listings
 from scraper.utils import (
     parse_price_eur,
     parse_area_sqm,
@@ -138,34 +146,7 @@ class TestCasaItAstaEmail(unittest.TestCase):
         self.assertEqual(self.listings[0]["price"], "48.000")
 
 
-class TestMitulaExtraction(unittest.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        html = load_fixture("mitula_search_results_sample.html")
-        soup = BeautifulSoup(html, "html.parser")
-        cls.listings = mitula_extract_listings(soup, "Test fixture")
 
-    def test_all_cards_extracted(self):
-        self.assertEqual(len(self.listings), 4)
-
-    def test_urls_are_real_tracking_links_not_broken_construction(self):
-        """L'URL costruito a mano ('adclickdetail/{id}') dava 401. Deve
-        usare invece il link vero decodificato da data-clickDestination."""
-        for listing in self.listings:
-            with self.subTest(listing_id=listing["id"]):
-                self.assertTrue(listing["url"].startswith("https://clk.thribee.com/"))
-
-    def test_all_have_plausible_prices(self):
-        for listing in self.listings:
-            price = parse_price_eur(listing["price"])
-            area = parse_area_sqm(listing["area"])
-            with self.subTest(listing_id=listing["id"]):
-                self.assertTrue(price_is_plausible(price, area))
-
-    def test_all_have_images(self):
-        for listing in self.listings:
-            with self.subTest(listing_id=listing["id"]):
-                self.assertTrue(listing["image_url"])
 
 
 class TestSourceIdentification(unittest.TestCase):
@@ -342,6 +323,79 @@ class TestListingTypeClassification(unittest.TestCase):
         kept = exclude_rentals(listings)
         kept_ids = {l["id"] for l in kept}
         self.assertEqual(kept_ids, {"1", "3"})
+
+
+class TestItalianNumberFormatting(unittest.TestCase):
+    """Bug reale segnalato dall'utente: 'formatta all'inglese poi sostituisci
+    le virgole con i punti' produceva '1.325.4€/m²' (due punti) invece di
+    '1.325,4€/m²', perché la sostituzione confondeva separatore delle
+    migliaia e separatore decimale."""
+
+    def test_thousands_with_decimal_no_double_dot(self):
+        self.assertEqual(_format_it_number(1325.4, 1), "1.325,4")
+
+    def test_below_thousand_uses_comma_decimal(self):
+        self.assertEqual(_format_it_number(804.2, 1), "804,2")
+
+    def test_integer_no_decimals(self):
+        self.assertEqual(_format_it_number(66750, 0), "66.750")
+
+    def test_millions_with_decimal(self):
+        self.assertEqual(_format_it_number(1200000, 0), "1.200.000")
+
+    def test_boundary_exactly_one_thousand(self):
+        self.assertEqual(_format_it_number(1000.0, 1), "1.000,0")
+
+
+class TestTelegramCaptionLengthFallback(unittest.TestCase):
+    """Bug reale segnalato dall'utente: un link di tracciamento Mitula (circa
+    850 caratteri) sommato al resto del messaggio superava i 1024 caratteri
+    del limite didascalia foto di Telegram. La didascalia veniva troncata a
+    metà URL, producendo un link rotto che 'non porta da nessuna parte'."""
+
+    def _make_listing(self, url_length: int) -> dict:
+        return {
+            "title": "Appartamento - Voltabarozzo, Padova (83 m²)",
+            "source": "Appartamenti in vendita - Padova (Mitula)",
+            "zone": "Voltabarozzo, Padova",
+            "area_sqm": 83.0,
+            "rooms": 5,
+            "price_eur": 66750,
+            "zone_avg_price_sqm": 1325.4,
+            "zone_sample_count": 5,
+            "ai_score": 6.0,
+            "ai_comment": "Zona centrale, 5 locali, 83 mq",
+            "image_url": "https://example.com/foto.jpg",
+            "url": "https://clk.thribee.com/?" + "x" * url_length,
+        }
+
+    def test_long_url_skips_photo_uses_text_message(self):
+        """Con un URL lungo come quello reale di Mitula, il messaggio totale
+        supera 1024 caratteri: NON deve tentare la foto (che troncherebbe
+        il link), deve andare diretto al messaggio di testo completo."""
+        listing = self._make_listing(url_length=800)  # produce un testo >1024 in totale
+
+        with patch("scraper.telegram_notify._send_photo") as mock_photo, \
+             patch("scraper.telegram_notify._send_message", return_value=True) as mock_text:
+            notify_new_listings([listing])
+
+        mock_photo.assert_not_called()
+        mock_text.assert_called_once()
+        sent_text = mock_text.call_args[0][0]
+        self.assertIn(listing["url"], sent_text)  # il link deve essere INTEGRO, non troncato
+
+    def test_short_url_still_tries_photo(self):
+        """Con un messaggio corto, il comportamento normale (foto con
+        didascalia) deve restare invariato — non vogliamo perdere le foto
+        per tutti gli annunci solo per sistemare il caso dei link lunghi."""
+        listing = self._make_listing(url_length=20)
+
+        with patch("scraper.telegram_notify._send_photo", return_value=True) as mock_photo, \
+             patch("scraper.telegram_notify._send_message") as mock_text:
+            notify_new_listings([listing])
+
+        mock_photo.assert_called_once()
+        mock_text.assert_not_called()
 
 
 if __name__ == "__main__":

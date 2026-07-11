@@ -62,18 +62,6 @@ EMAIL_SOURCES = {
 }
 
 # ---------------------------------------------------------------------------
-# FONTE SUPPLEMENTARE: MITULA (scraping diretto, requests + BeautifulSoup)
-# Aggrega anche annunci di Immobiliare.it/Subito.it, utile come copertura
-# extra oltre agli alert email. Nessuna protezione anti-bot nota.
-# ---------------------------------------------------------------------------
-MITULA_SEARCHES = [
-    {
-        "name": "Appartamenti in vendita - Padova (Mitula)",
-        "url": "https://immobiliare.mitula.it/vendita-appartamento-padova",
-    },
-]
-
-# ---------------------------------------------------------------------------
 # FILTRO IA (Groq o Gemini, entrambi gratuiti)
 # ---------------------------------------------------------------------------
 AI_FILTER_ENABLED = True
@@ -97,11 +85,6 @@ AI_MODEL_GEMINI = "gemini-1.5-flash"
 # ---------------------------------------------------------------------------
 # COMPORTAMENTO GENERALE
 # ---------------------------------------------------------------------------
-REQUEST_DELAY_SECONDS = 8
 MAX_NEW_LISTINGS_PER_RUN = 30
-USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-)
 
 STATE_FILE = "data/state.json"

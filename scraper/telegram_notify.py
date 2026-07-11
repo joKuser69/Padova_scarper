@@ -14,6 +14,24 @@ import time
 import requests
 
 
+def _format_it_number(value: float, decimals: int = 0) -> str:
+    """Formatta un numero in stile italiano: punto per le migliaia, virgola
+    per i decimali (es. 1234.5 -> '1.234,5').
+
+    Bug reale scoperto in produzione: il trucco 'formatta in stile inglese
+    (1,234.5) poi sostituisci tutte le virgole con i punti' si rompe quando
+    ci sono anche decimali, perché la sostituzione tocca sia il separatore
+    delle migliaia SIA quello dei decimali, producendo '1.234.5' (due punti)
+    invece di '1.234,5'. Qui separiamo esplicitamente parte intera e
+    decimale prima di convertire, così non c'è ambiguità."""
+    formatted = f"{value:,.{decimals}f}"
+    integer_part, _, decimal_part = formatted.partition(".")
+    integer_part = integer_part.replace(",", ".")
+    if decimals > 0:
+        return f"{integer_part},{decimal_part}"
+    return integer_part
+
+
 def _send_message(text: str) -> bool:
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID")
@@ -76,7 +94,7 @@ def _format_price_change_note(listing: dict) -> str:
     else:
         arrow, label = "🔺", "salito"
     diff_pct = abs(new_price - old_price) / old_price * 100
-    return f"{arrow} Prezzo {label}: da {old_price:,}€ a {new_price:,}€ ({diff_pct:.0f}%)".replace(",", ".")
+    return f"{arrow} Prezzo {label}: da {_format_it_number(old_price)}€ a {_format_it_number(new_price)}€ ({diff_pct:.0f}%)"
 
 
 def _format_zone_avg_note(listing: dict) -> str:
@@ -93,7 +111,7 @@ def _format_zone_avg_note(listing: dict) -> str:
         return ""
 
     if price_sqm is None:
-        return f"📊 Media zona{type_suffix} {listing.get('zone')}: {avg:,.1f}€/m² (su {sample_count} annunci)".replace(",", ".")
+        return f"📊 Media zona{type_suffix} {listing.get('zone')}: {_format_it_number(avg, 1)}€/m² (su {sample_count} annunci)"
 
     diff_pct = (price_sqm - avg) / avg * 100
     if diff_pct <= -5:
@@ -103,7 +121,7 @@ def _format_zone_avg_note(listing: dict) -> str:
     else:
         verdict = "🟡 in linea con la media"
 
-    return f"📊 Media zona{type_suffix}: {avg:,.1f}€/m² → questo annuncio {verdict}".replace(",", ".")
+    return f"📊 Media zona{type_suffix}: {_format_it_number(avg, 1)}€/m² → questo annuncio {verdict}"
 
 
 TYPE_BADGES = {
@@ -151,14 +169,14 @@ def _format_listing(listing: dict) -> str:
     price_prefix = f"{price_label}: " if listing_type in TYPE_PRICE_LABELS else "💶 "
 
     if price_eur:
-        price_line = f"{price_prefix}{price_eur:,}€".replace(",", ".")
+        price_line = f"{price_prefix}{_format_it_number(price_eur)}€"
         if listing_type == "affitto":
             price_line += "/mese"
         if area_sqm:
             price_per_sqm = price_eur / area_sqm
             listing["price_per_sqm"] = price_per_sqm
             unit_label = "€/m²/mese" if listing_type == "affitto" else "€/m²"
-            price_line += f"  (💹 {price_per_sqm:,.1f}{unit_label})".replace(",", ".")
+            price_line += f"  (💹 {_format_it_number(price_per_sqm, 1)}{unit_label})"
         lines.append(price_line)
     elif listing.get("price_suspect"):
         lines.append("💶 prezzo non affidabile alla fonte — controlla l'annuncio")
@@ -190,6 +208,8 @@ def notify_new_listings(listings: list) -> int:
         print("[Telegram] Nessun nuovo annuncio da notificare.")
         return 0
 
+    PHOTO_CAPTION_LIMIT = 1024
+
     sent = 0
     for listing in listings:
         try:
@@ -197,8 +217,14 @@ def notify_new_listings(listings: list) -> int:
             image_url = listing.get("image_url")
 
             success = False
-            if image_url:
+            if image_url and len(text) <= PHOTO_CAPTION_LIMIT:
                 success = _send_photo(image_url, text)
+            elif image_url:
+                print(
+                    f"[Telegram] Messaggio di {len(text)} caratteri supera il limite "
+                    f"didascalia ({PHOTO_CAPTION_LIMIT}): salto la foto, invio solo testo "
+                    "per non troncare il link a metà."
+                )
 
             if not success:
                 success = _send_message(text)
