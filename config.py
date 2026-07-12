@@ -59,6 +59,14 @@ EMAIL_SOURCES = {
         "sender_domains": ["wikicasa.it"],
         "listing_url_pattern": re.compile(r"https?://(?:www\.)?wikicasa\.it/\d+/[^\s\"'<>]*"),
     },
+    "TecnoCasa": {
+        "sender_domains": ["tecnocasa.it"],
+        "listing_url_pattern": None,  # da affinare con email reale
+    },
+    "Subito.it": {
+        "sender_domains": ["subito.it"],
+        "listing_url_pattern": None,  # da affinare con email reale
+    },
 }
 
 # ---------------------------------------------------------------------------

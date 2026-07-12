@@ -1,15 +1,16 @@
 # Bot monitoraggio annunci immobiliari Padova
 
-Legge gli alert email nativi di Idealista, Immobiliare.it, Casa.it, Bakeca e
-Wikicasa, filtra per budget e con un'IA gratuita in base alle tue preferenze,
-e ti notifica su Telegram solo gli annunci rilevanti — con foto, mq, locali,
-prezzo/mq, confronto con la media di zona, e variazioni di prezzo nel tempo
-sullo stesso annuncio. Gira su GitHub Actions ogni 15 minuti, zero costi.
+Legge gli alert email nativi di Idealista, Immobiliare.it, Casa.it, Bakeca,
+Wikicasa, TecnoCasa e Subito.it, filtra per budget e con un'IA gratuita in
+base alle tue preferenze, e ti notifica su Telegram solo gli annunci
+rilevanti — con foto, mq, locali, prezzo/mq, confronto con la media di zona,
+e variazioni di prezzo nel tempo sullo stesso annuncio. Gira su GitHub
+Actions ogni 15 minuti, zero costi.
 
 Nota: Mitula è stato rimosso come fonte supplementare. Era quella con più
 problemi di affidabilità (link protetti da un sistema di tracciamento non
 sempre stabile, un bug di parsing prezzi scoperto solo dai test), mentre gli
-alert email arrivano direttamente e ufficialmente dai 5 portali.
+alert email arrivano direttamente e ufficialmente dai portali stessi.
 
 ## Funzionalità
 
@@ -122,10 +123,12 @@ di Actions (2.000/mese) bastano ampiamente per un run leggero ogni 15 minuti.
 
 ## Se i link estratti dalle email non sono giusti
 
-Non avendo un esempio reale delle email di alert dei 5 portali, l'estrazione
-per Casa.it, Bakeca e Wikicasa parte con una logica generica (prende i link
-che sembrano puntare a un singolo annuncio, scarta quelli di navigazione).
-Dopo il primo run reale:
+Non avendo un esempio reale delle email di alert di ogni portale, l'estrazione
+per Casa.it, Bakeca, TecnoCasa e Subito.it parte con una logica generica
+(prende i link che sembrano puntare a un singolo annuncio, scarta quelli di
+navigazione). Wikicasa aveva lo stesso trattamento finché non abbiamo visto
+email reali e scritto un pattern preciso — probabile che serva lo stesso
+per le due fonti appena aggiunte. Dopo il primo run reale:
 
 1. Vai sul run completato in **Actions**, scarica l'artifact **debug-html**
    in fondo alla pagina (contiene l'HTML delle email processate, con nomi
