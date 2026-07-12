@@ -1,0 +1,31 @@
+name: Test automatici
+
+on:
+  push:
+    paths:
+      - "scraper/**"
+      - "config.py"
+      - "main.py"
+      - "tests/**"
+  pull_request: {}
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installa dipendenze
+        run: pip install -r requirements.txt
+
+      - name: Esegui i test
+        run: python -m unittest discover tests -v
