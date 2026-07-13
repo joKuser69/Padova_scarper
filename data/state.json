@@ -1034,8 +1034,350 @@
           "price_eur": 126000
         }
       ]
+    },
+    "https://www.wikicasa.it/30423006/": {
+      "first_seen": "2026-07-13T19:22:41.482192+00:00",
+      "last_seen": "2026-07-13T19:22:41.482192+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoPadova",
+      "url": "https://www.wikicasa.it/30423006/",
+      "zone": null,
+      "price_eur": 239000,
+      "area_sqm": 100.0,
+      "rooms": 4,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30423006/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482192+00:00",
+          "price_eur": 239000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30422961/": {
+      "first_seen": "2026-07-13T19:22:41.482237+00:00",
+      "last_seen": "2026-07-13T19:22:41.482237+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoPadova",
+      "url": "https://www.wikicasa.it/30422961/",
+      "zone": null,
+      "price_eur": 198000,
+      "area_sqm": 124.0,
+      "rooms": 5,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30422961/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482237+00:00",
+          "price_eur": 198000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30134284/": {
+      "first_seen": "2026-07-13T19:22:41.482243+00:00",
+      "last_seen": "2026-07-13T19:22:41.482297+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoPadova",
+      "url": "https://www.wikicasa.it/30134284/",
+      "zone": null,
+      "price_eur": 195000,
+      "area_sqm": 130.0,
+      "rooms": 4,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30134284/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482243+00:00",
+          "price_eur": 195000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30048373/": {
+      "first_seen": "2026-07-13T19:22:41.482251+00:00",
+      "last_seen": "2026-07-13T19:22:41.482251+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Monte Gallo 8, Padova",
+      "url": "https://www.wikicasa.it/30048373/",
+      "zone": null,
+      "price_eur": 224900,
+      "area_sqm": 78.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30048373/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482251+00:00",
+          "price_eur": 224900
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30159478/": {
+      "first_seen": "2026-07-13T19:22:41.482255+00:00",
+      "last_seen": "2026-07-13T19:22:41.482255+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Archimede, Padova",
+      "url": "https://www.wikicasa.it/30159478/",
+      "zone": null,
+      "price_eur": 259000,
+      "area_sqm": 125.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30159478/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482255+00:00",
+          "price_eur": 259000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/35835562/": {
+      "first_seen": "2026-07-13T19:22:41.482259+00:00",
+      "last_seen": "2026-07-13T19:22:41.482259+00:00",
+      "source": "Idealista (email)",
+      "title": "Villetta bifamiliare in Via Cà Panosso s.n.c, Altichiero, Padova",
+      "url": "https://www.idealista.it/immobile/35835562/",
+      "zone": null,
+      "price_eur": 198000,
+      "area_sqm": 110.0,
+      "rooms": null,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/90/id.pro.it.image.master/71/bf/ba/804552582.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482259+00:00",
+          "price_eur": 198000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36246839/": {
+      "first_seen": "2026-07-13T19:22:41.482262+00:00",
+      "last_seen": "2026-07-13T19:22:41.482262+00:00",
+      "source": "Idealista (email)",
+      "title": "Appartamento in Via Lucindo Faggin, Arcella, Padova",
+      "url": "https://www.idealista.it/immobile/36246839/",
+      "zone": "Arcella",
+      "price_eur": 93750,
+      "area_sqm": 149.0,
+      "rooms": null,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/4c/92/cb/819311474.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482262+00:00",
+          "price_eur": 93750
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36247276/": {
+      "first_seen": "2026-07-13T19:22:41.482268+00:00",
+      "last_seen": "2026-07-13T19:22:41.482268+00:00",
+      "source": "Idealista (email)",
+      "title": "Bilocale in Via Pietro Balan, 11, Madonna Pellegrina, Padova",
+      "url": "https://www.idealista.it/immobile/36247276/",
+      "zone": null,
+      "price_eur": 80000,
+      "area_sqm": 43.0,
+      "rooms": 2,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/d2/82/81/819325218.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482268+00:00",
+          "price_eur": 80000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36247680/": {
+      "first_seen": "2026-07-13T19:22:41.482272+00:00",
+      "last_seen": "2026-07-13T19:22:41.482272+00:00",
+      "source": "Idealista (email)",
+      "title": "Quadrilocale a Chiesanuova, Padova",
+      "url": "https://www.idealista.it/immobile/36247680/",
+      "zone": "Chiesanuova",
+      "price_eur": 239000,
+      "area_sqm": 100.0,
+      "rooms": 4,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/c9/bc/4d/819334741.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482272+00:00",
+          "price_eur": 239000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36247738/": {
+      "first_seen": "2026-07-13T19:22:41.482276+00:00",
+      "last_seen": "2026-07-13T19:22:41.482276+00:00",
+      "source": "Idealista (email)",
+      "title": "Vedi 34 foto e visita 3D",
+      "url": "https://www.idealista.it/immobile/36247738/",
+      "zone": null,
+      "price_eur": 260000,
+      "area_sqm": 163.0,
+      "rooms": 4,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/c5/c4/b5/819338135.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482276+00:00",
+          "price_eur": 260000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54395892/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-13T19:22:41.482279+00:00",
+      "last_seen": "2026-07-13T19:22:41.482279+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via Lucindo Faggin,",
+      "url": "https://www.casa.it/immobili/54395892/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "Arcella",
+      "price_eur": 93750,
+      "area_sqm": 149.0,
+      "rooms": 5,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/4c/92/cb/819311474.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482279+00:00",
+          "price_eur": 93750
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36248028/": {
+      "first_seen": "2026-07-13T19:22:41.482283+00:00",
+      "last_seen": "2026-07-13T19:22:41.482283+00:00",
+      "source": "Idealista (email)",
+      "title": "Bilocale in Via Fornace Morandi, 18, San Carlo, Padova",
+      "url": "https://www.idealista.it/immobile/36248028/",
+      "zone": "San Carlo",
+      "price_eur": 250000,
+      "area_sqm": 84.0,
+      "rooms": 2,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/6f/37/10/819345435.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482283+00:00",
+          "price_eur": 250000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54396358/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-13T19:22:41.482287+00:00",
+      "last_seen": "2026-07-13T19:22:41.482287+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via Pietro Balan 11,",
+      "url": "https://www.casa.it/immobili/54396358/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": null,
+      "price_eur": 80000,
+      "area_sqm": 43.0,
+      "rooms": 2,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/d2/82/81/819325218.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482287+00:00",
+          "price_eur": 80000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54396685/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-13T19:22:41.482290+00:00",
+      "last_seen": "2026-07-13T19:22:41.482290+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita",
+      "url": "https://www.casa.it/immobili/54396685/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "Chiesanuova",
+      "price_eur": 239000,
+      "area_sqm": 100.0,
+      "rooms": 4,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/c9/bc/4d/819334741.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482290+00:00",
+          "price_eur": 239000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30424956/": {
+      "first_seen": "2026-07-13T19:22:41.482294+00:00",
+      "last_seen": "2026-07-13T19:22:41.482294+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Caporello, Padova",
+      "url": "https://www.wikicasa.it/30424956/",
+      "zone": null,
+      "price_eur": 239000,
+      "area_sqm": 145.0,
+      "rooms": 5,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30424956/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482294+00:00",
+          "price_eur": 239000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/29305638/": {
+      "first_seen": "2026-07-13T19:22:41.482301+00:00",
+      "last_seen": "2026-07-13T19:22:41.482301+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoPadova",
+      "url": "https://www.wikicasa.it/29305638/",
+      "zone": null,
+      "price_eur": 219000,
+      "area_sqm": 155.0,
+      "rooms": 4,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/29305638/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482301+00:00",
+          "price_eur": 219000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30424149/": {
+      "first_seen": "2026-07-13T19:22:41.482305+00:00",
+      "last_seen": "2026-07-13T19:22:41.482305+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Luigi Lagrange 8, Padova",
+      "url": "https://www.wikicasa.it/30424149/",
+      "zone": null,
+      "price_eur": 260000,
+      "area_sqm": 163.0,
+      "rooms": 4,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30424149/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482305+00:00",
+          "price_eur": 260000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/29443489/": {
+      "first_seen": "2026-07-13T19:22:41.482309+00:00",
+      "last_seen": "2026-07-13T19:22:41.482309+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Monte Ceva, Padova",
+      "url": "https://www.wikicasa.it/29443489/",
+      "zone": null,
+      "price_eur": 275000,
+      "area_sqm": 170.0,
+      "rooms": 5,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/29443489/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-13T19:22:41.482309+00:00",
+          "price_eur": 275000
+        }
+      ]
     }
   },
-  "last_run": "2026-07-13T14:35:35.201787+00:00",
+  "last_run": "2026-07-13T19:23:50.980187+00:00",
   "telegram_last_update_id": 892738530
 }
