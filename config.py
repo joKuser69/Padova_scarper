@@ -93,6 +93,6 @@ AI_MODEL_GEMINI = "gemini-1.5-flash"
 # ---------------------------------------------------------------------------
 # COMPORTAMENTO GENERALE
 # ---------------------------------------------------------------------------
-MAX_NEW_LISTINGS_PER_RUN = 30
+MAX_NEW_LISTINGS_PER_RUN = 60  # alzato da 30: con cron ogni 6 ore (non più 15 min) si accumula di più tra un run e l'altro
 
 STATE_FILE = "data/state.json"
