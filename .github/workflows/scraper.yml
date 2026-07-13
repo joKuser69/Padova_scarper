@@ -2,7 +2,7 @@ name: Monitoraggio annunci Padova
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch: {}  # permette l'avvio manuale da GitHub (Actions -> Run workflow)
 
 # Necessario per poter fare commit del file di stato aggiornato (storico prezzi/zona)
@@ -16,7 +16,7 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
