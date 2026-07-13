@@ -1,9 +1,13 @@
 """
 Bot di monitoraggio annunci immobiliari Padova.
 Fonte unica: alert email nativi di Idealista, Immobiliare.it, Casa.it,
-Bakeca, Wikicasa (rimosso Mitula: era la fonte con più problemi di
-affidabilità — anti-bot indiretto sui link, bug di parsing prezzi — mentre
-gli alert email arrivano direttamente dai portali ufficiali).
+Bakeca, Wikicasa, TecnoCasa, Subito.it (rimosso Mitula: era la fonte con più
+problemi di affidabilità — anti-bot indiretto sui link, bug di parsing
+prezzi — mentre gli alert email arrivano direttamente dai portali ufficiali).
+
+Ogni run controlla anche se qualcuno ha scritto "/start" al bot dall'ultima
+volta: in quel caso gli manda gli ultimi 20 annunci tracciati, così chi
+inizia a usarlo non trova un canale vuoto in attesa del primo nuovo annuncio.
 
 Ogni annuncio passa da:
 1. normalizzazione campi (prezzo/mq/locali/zona/tipo in formato standard)
@@ -69,6 +73,14 @@ def main():
     print("=== Avvio monitoraggio annunci Padova ===")
 
     database = db.load_db(STATE_FILE)
+
+    # --- Comandi in arrivo (es. /start): il bot non ha un server sempre
+    # acceso, quindi controlliamo ad ogni run se qualcuno ha scritto dopo
+    # l'ultimo controllo, con un ritardo massimo di 15 minuti. ---
+    new_starters = telegram_notify.check_start_commands(database)
+    for chat_id in new_starters:
+        print(f"[Telegram] Nuovo /start da chat_id={chat_id}, invio storico recente")
+        telegram_notify.send_history_to_chat(chat_id, database, count=20)
 
     imap_email = os.environ.get("IMAP_EMAIL")
     imap_app_password = os.environ.get("IMAP_APP_PASSWORD")

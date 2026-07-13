@@ -27,7 +27,13 @@ alert email arrivano direttamente e ufficialmente dai portali stessi.
   normale in affitto, sarebbe assurdo in vendita) — badge "🔑 AFFITTO".
 - **Foto**: se disponibile un'immagine, viene inviata come foto con i
   dettagli come didascalia (fallback automatico a solo testo se l'immagine
-  non è raggiungibile).
+  non è raggiungibile, o se il messaggio è troppo lungo per una didascalia
+  — successo anche questo, con un link Mitula troncato a metà).
+- **Risposta a "/start"**: chi avvia il bot per la prima volta riceve subito
+  gli ultimi 20 annunci tracciati, invece di trovare un canale vuoto in
+  attesa del primo nuovo annuncio. Il bot non ha un server sempre acceso
+  (gira su GitHub Actions ogni 15 minuti), quindi la risposta non è
+  istantanea — arriva al run successivo, entro 15 minuti al massimo.
 - **Test automatici** (`tests/`): fixture con email/pagine REALI raccolte
   durante lo sviluppo, non dati inventati. Girano da soli ad ogni modifica
   del codice tramite `.github/workflows/tests.yml` — se una modifica rompe
