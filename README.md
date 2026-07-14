@@ -29,15 +29,18 @@ alert email arrivano direttamente e ufficialmente dai portali stessi.
   dettagli come didascalia (fallback automatico a solo testo se l'immagine
   non è raggiungibile, o se il messaggio è troppo lungo per una didascalia
   — successo anche questo, con un link Mitula troncato a metà).
-- **Risposta a "/start"**: chi avvia il bot per la prima volta riceve subito
-  gli ultimi 20 annunci tracciati, invece di trovare un canale vuoto in
-  attesa del primo nuovo annuncio. Il bot non ha un server sempre acceso
-  (gira su GitHub Actions ogni 6 ore), quindi la risposta non è
-  istantanea — arriva al run successivo, entro 6 ore al massimo.
+- **Risposta a "/start" e più destinatari**: chi avvia il bot per la prima
+  volta (anche da un account/dispositivo diverso dal tuo) riceve subito gli
+  ultimi 20 annunci tracciati, e da quel momento viene aggiunto anche alla
+  lista di chi riceve le notifiche live — non solo il `TELEGRAM_CHAT_ID`
+  configurato nei secret. Il bot non ha un server sempre acceso (gira su
+  GitHub Actions ogni 6 ore), quindi la risposta non è istantanea — arriva
+  al run successivo, entro 6 ore al massimo.
 - **Link mappa**: ogni notifica include un link diretto a Google Maps
   (nessuna API key richiesta, solo un URL di ricerca). Se il titolo
   contiene un indirizzo riconoscibile (via/piazza/corso...) lo usa per un
-  link più preciso, altrimenti usa la zona.
+  link più preciso (scartando parole come "Bilocale in" prima
+  dell'indirizzo, per non confondere la ricerca), altrimenti usa la zona.
 - **Test automatici** (`tests/`): fixture con email/pagine REALI raccolte
   durante lo sviluppo, non dati inventati. Girano da soli ad ogni modifica
   del codice tramite `.github/workflows/tests.yml` — se una modifica rompe
@@ -86,7 +89,7 @@ In ogni caso c'è un tetto di sicurezza (`MAX_NEW_LISTINGS_PER_RUN` in
 
 Apri `config.py` (tramite l'editor web di GitHub, matita in alto a destra sul
 file) e modifica se vuoi:
-- `MAX_BUDGET_EUR`: già impostato a 250.000
+- `MAX_BUDGET_EUR`: già impostato a 150.000
 - `USER_PREFERENCES`: descrizione libera di cosa cerchi (per il filtro IA)
 - `EXCLUDE_RENTALS`: già impostato a True (esclude gli affitti)
 

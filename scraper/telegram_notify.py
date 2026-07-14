@@ -47,17 +47,29 @@ STREET_PREFIXES = ("via ", "viale ", "piazza ", "corso ", "vicolo ", "largo ", "
 
 def _build_maps_link(listing: dict) -> str:
     """Link di ricerca Google Maps (nessuna API key richiesta). Preferisce
-    il titolo se sembra contenere un indirizzo vero (via/piazza/corso...),
-    più preciso della sola zona; altrimenti usa la zona. Aggiunge sempre
-    'Padova' per disambiguare se non già presente nel testo."""
+    l'indirizzo vero se riconoscibile nel titolo (via/piazza/corso...), più
+    preciso della sola zona; altrimenti usa la zona. Aggiunge sempre
+    'Padova' per disambiguare se non già presente nel testo.
+
+    Importante: se il titolo è tipo 'Bilocale in Via Roma, Padova', usiamo
+    SOLO da 'Via Roma' in poi, scartando 'Bilocale in' — altrimenti Google
+    Maps prova a cercare anche quelle parole insieme all'indirizzo,
+    peggiorando la precisione del risultato (bug reale riscontrato)."""
     title = listing.get("title", "") or ""
     zone = listing.get("zone", "") or ""
+    title_lower = title.lower()
 
-    if any(prefix in title.lower() for prefix in STREET_PREFIXES):
-        query = title
-    elif zone:
+    query = None
+    for prefix in STREET_PREFIXES:
+        idx = title_lower.find(prefix)
+        if idx != -1:
+            query = title[idx:]  # da 'Via/Piazza/...' in poi, non da 'Bilocale in'
+            break
+
+    if not query:
         query = zone
-    else:
+
+    if not query:
         return ""
 
     if "padova" not in query.lower():
@@ -266,18 +278,39 @@ def _send_listing(listing: dict, chat_id=None) -> bool:
     return success
 
 
-def notify_new_listings(listings: list) -> int:
-    """Ritorna il numero di notifiche EFFETTIVAMENTE inviate con successo."""
+def get_subscriber_chat_ids(database: dict) -> list:
+    """Chat_id a cui mandare le notifiche live: quello configurato via
+    secret (sempre incluso, per compatibilità con chi non ha mai premuto
+    /start attraverso questo sistema) più chiunque abbia premuto /start
+    da allora."""
+    primary = os.environ.get("TELEGRAM_CHAT_ID")
+    subscribers = {str(s) for s in database.get("telegram_subscribers", [])}
+    if primary:
+        subscribers.add(str(primary))
+    return list(subscribers)
+
+
+def notify_new_listings(listings: list, chat_ids: list = None) -> int:
+    """Ritorna il numero di annunci notificati con successo ad almeno un
+    destinatario. Se chat_ids non è specificato, usa solo TELEGRAM_CHAT_ID
+    (comportamento precedente, utile per compatibilità/test)."""
     if not listings:
         print("[Telegram] Nessun nuovo annuncio da notificare.")
         return 0
 
+    if not chat_ids:
+        chat_ids = [os.environ.get("TELEGRAM_CHAT_ID")]
+
     sent = 0
     for listing in listings:
         try:
-            if _send_listing(listing):
+            any_success = False
+            for chat_id in chat_ids:
+                if _send_listing(listing, chat_id=chat_id):
+                    any_success = True
+                time.sleep(1)  # rispetta i rate-limit di Telegram
+            if any_success:
                 sent += 1
-            time.sleep(1)  # rispetta i rate-limit di Telegram
         except Exception as e:
             print(f"[Telegram] Errore invio annuncio: {e}")
 
@@ -288,7 +321,9 @@ def notify_new_listings(listings: list) -> int:
             "bloccato e che TELEGRAM_CHAT_ID sia corretto."
         )
     else:
-        print(f"[Telegram] Inviate {sent}/{len(listings)} notifiche.")
+        n_recipients = len(chat_ids)
+        recipients_note = f" a {n_recipients} destinatari" if n_recipients > 1 else ""
+        print(f"[Telegram] Inviati {sent}/{len(listings)} annunci{recipients_note}.")
 
     return sent
 
@@ -329,8 +364,10 @@ def _get_updates(offset=None) -> list:
 def check_start_commands(database: dict) -> list:
     """Controlla se qualcuno ha mandato /start dall'ultimo controllo (usando
     l'offset salvato nel database, così non rispondiamo due volte allo
-    stesso comando). Ritorna la lista dei chat_id da cui è arrivato un nuovo
-    /start in questo run."""
+    stesso comando). Registra ogni nuovo chat_id tra gli iscritti alle
+    notifiche live (altrimenti riceverebbe solo lo storico una tantum, mai
+    i nuovi annunci — bug reale corretto). Ritorna la lista dei chat_id da
+    cui è arrivato un nuovo /start in questo run."""
     last_update_id = database.get("telegram_last_update_id")
     offset = (last_update_id + 1) if last_update_id is not None else None
 
@@ -340,6 +377,7 @@ def check_start_commands(database: dict) -> list:
 
     new_starters = []
     max_update_id = last_update_id
+    subscribers = set(database.get("telegram_subscribers", []))
 
     for update in updates:
         update_id = update.get("update_id")
@@ -352,9 +390,11 @@ def check_start_commands(database: dict) -> list:
 
         if chat_id and text.startswith("/start"):
             new_starters.append(chat_id)
+            subscribers.add(chat_id)
 
     if max_update_id is not None:
         database["telegram_last_update_id"] = max_update_id
+    database["telegram_subscribers"] = list(subscribers)
 
     return new_starters
 

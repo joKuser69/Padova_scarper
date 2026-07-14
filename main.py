@@ -6,8 +6,10 @@ problemi di affidabilità — anti-bot indiretto sui link, bug di parsing
 prezzi — mentre gli alert email arrivano direttamente dai portali ufficiali).
 
 Ogni run controlla anche se qualcuno ha scritto "/start" al bot dall'ultima
-volta: in quel caso gli manda gli ultimi 20 annunci tracciati, così chi
-inizia a usarlo non trova un canale vuoto in attesa del primo nuovo annuncio.
+volta: in quel caso gli manda gli ultimi 20 annunci tracciati (così chi
+inizia a usarlo non trova un canale vuoto) e lo aggiunge alla lista di chi
+riceve le notifiche live — il bot supporta più destinatari, non solo il
+TELEGRAM_CHAT_ID configurato nei secret.
 
 Ogni annuncio passa da:
 1. normalizzazione campi (prezzo/mq/locali/zona/tipo in formato standard)
@@ -139,7 +141,8 @@ def main():
     # --- Confronto con la media di zona ---
     attach_zone_stats(to_notify, database)
 
-    telegram_notify.notify_new_listings(to_notify)
+    chat_ids = telegram_notify.get_subscriber_chat_ids(database)
+    sent = telegram_notify.notify_new_listings(to_notify, chat_ids=chat_ids)
 
     db.save_db(STATE_FILE, database)
 

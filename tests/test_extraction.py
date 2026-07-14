@@ -54,6 +54,7 @@ from scraper.telegram_notify import (
     notify_new_listings,
     check_start_commands,
     send_history_to_chat,
+    get_subscriber_chat_ids,
 )
 from scraper.utils import (
     parse_price_eur,
@@ -468,6 +469,35 @@ class TestStartCommandHandling(unittest.TestCase):
         mock_msg.assert_called_once()
         self.assertEqual(mock_msg.call_args.kwargs.get("chat_id"), 999)
 
+    def test_start_registers_chat_id_as_subscriber(self):
+        """Bug reale segnalato dall'utente: chi premeva /start da un altro
+        dispositivo riceveva lo storico ma non veniva mai aggiunto alla
+        lista di chi riceve le notifiche future — il messaggio di benvenuto
+        prometteva 'da adesso in poi riceverai le notifiche', ma il codice
+        non lo faceva davvero."""
+        database = {}
+        fake_updates = [{"update_id": 1, "message": {"chat": {"id": 555}, "text": "/start"}}]
+        with patch("scraper.telegram_notify._get_updates", return_value=fake_updates):
+            check_start_commands(database)
+
+        self.assertIn(555, database.get("telegram_subscribers", []))
+
+    def test_subscriber_list_includes_configured_chat_id_and_starters(self):
+        with patch.dict(os.environ, {"TELEGRAM_CHAT_ID": "111"}):
+            database = {"telegram_subscribers": [222, 333]}
+            result = get_subscriber_chat_ids(database)
+
+        self.assertEqual(set(result), {"111", "222", "333"})
+
+    def test_notify_new_listings_sends_to_all_subscribers(self):
+        sent_to = []
+        with patch("scraper.telegram_notify._send_listing",
+                   side_effect=lambda l, chat_id=None: sent_to.append(chat_id) or True), \
+             patch("time.sleep"):
+            notify_new_listings([{"title": "test"}], chat_ids=["111", 555])
+
+        self.assertEqual(set(sent_to), {"111", 555})
+
 
 class TestMapsLink(unittest.TestCase):
     """Link Google Maps cliccabile nella notifica — nessuna API key
@@ -479,6 +509,25 @@ class TestMapsLink(unittest.TestCase):
         link = _build_maps_link(listing)
         self.assertIn("Via+Luigi+Pellizzo".replace("+", "%20"), link.replace("%2C", ","))
         self.assertTrue(link.startswith("https://www.google.com/maps/search/"))
+
+    def test_discards_property_type_prefix_before_address(self):
+        """Bug reale segnalato dall'utente: la query includeva anche
+        'Bilocale in' prima dell'indirizzo, facendo cercare a Google Maps
+        anche quelle parole insieme alla via, peggiorando la precisione."""
+        listing = {"title": "Bilocale in Via Luigi Pellizzo, Stanga, Padova", "zone": "Stanga"}
+        link = _build_maps_link(listing)
+        self.assertNotIn("Bilocale", link)
+        self.assertNotIn("bilocale", link.lower())
+
+    def test_discards_prefix_for_various_property_types(self):
+        for title in [
+            "Trilocale in Via Roma 5, Padova",
+            "Appartamento in Piazza Garibaldi, Padova",
+            "Casa indipendente in Corso Milano, Padova",
+        ]:
+            with self.subTest(title=title):
+                link = _build_maps_link({"title": title, "zone": ""})
+                self.assertNotIn("in+", link.lower())  # 'in ' non deve comparire prima dell'indirizzo
 
     def test_falls_back_to_zone_when_no_address_in_title(self):
         listing = {"title": "Un nuovo annuncio: 30 mq", "zone": "Arcella"}

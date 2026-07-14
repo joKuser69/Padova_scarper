@@ -19,7 +19,7 @@ PADOVA_ZONES = [
 # ---------------------------------------------------------------------------
 # BUDGET MASSIMO (filtro deterministico, applicato PRIMA dell'IA)
 # ---------------------------------------------------------------------------
-MAX_BUDGET_EUR = 250_000
+MAX_BUDGET_EUR = 150_000
 
 # Se True, gli annunci classificati come "affitto" vengono scartati subito,
 # prima ancora di finire nel database o passare dal filtro IA — non solo
@@ -81,7 +81,7 @@ Cerco un appartamento a Padova con queste caratteristiche, in ordine di importan
 - Piano preferibilmente non terra
 - Evita: annunci di sole camere singole, uffici, box/garage travestiti da "immobili"
 - Va bene sia da privato che da agenzia
-- Budget massimo 250.000€ (già filtrato automaticamente, ma tienilo presente
+- Budget massimo 150.000€ (già filtrato automaticamente, ma tienilo presente
   nella valutazione qualitativa)
 """
 
