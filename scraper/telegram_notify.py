@@ -11,14 +11,15 @@ valutazione IA. Se disponibile un'immagine, viene inviata come foto con
 questo testo come didascalia; altrimenti solo testo.
 
 GESTIONE COMANDI: il bot non ha un server sempre acceso (gira su GitHub
-Actions ogni 15 minuti), quindi non può "ascoltare" in tempo reale. Ad ogni
+Actions ogni 6 ore), quindi non può "ascoltare" in tempo reale. Ad ogni
 run controlliamo invece se sono arrivati nuovi messaggi dall'ultima volta
 (API getUpdates di Telegram, con lo stesso spirito del controllo email IMAP)
-e rispondiamo di conseguenza — con un ritardo massimo di 15 minuti, non
+e rispondiamo di conseguenza — con un ritardo massimo di 6 ore, non
 istantaneo, ma sufficiente per non lasciare "/start" senza risposta.
 """
 import os
 import time
+from urllib.parse import quote
 
 import requests
 
@@ -39,6 +40,30 @@ def _format_it_number(value: float, decimals: int = 0) -> str:
     if decimals > 0:
         return f"{integer_part},{decimal_part}"
     return integer_part
+
+
+STREET_PREFIXES = ("via ", "viale ", "piazza ", "corso ", "vicolo ", "largo ", "strada ")
+
+
+def _build_maps_link(listing: dict) -> str:
+    """Link di ricerca Google Maps (nessuna API key richiesta). Preferisce
+    il titolo se sembra contenere un indirizzo vero (via/piazza/corso...),
+    più preciso della sola zona; altrimenti usa la zona. Aggiunge sempre
+    'Padova' per disambiguare se non già presente nel testo."""
+    title = listing.get("title", "") or ""
+    zone = listing.get("zone", "") or ""
+
+    if any(prefix in title.lower() for prefix in STREET_PREFIXES):
+        query = title
+    elif zone:
+        query = zone
+    else:
+        return ""
+
+    if "padova" not in query.lower():
+        query = f"{query}, Padova"
+
+    return f"https://www.google.com/maps/search/?api=1&query={quote(query)}"
 
 
 def _send_message(text: str, chat_id=None) -> bool:
@@ -165,6 +190,10 @@ def _format_listing(listing: dict) -> str:
         meta_bits.append(f"📍 {zone}")
     meta_bits.append(f"🏙 {source}")
     lines.append("  ".join(meta_bits))
+
+    maps_link = _build_maps_link(listing)
+    if maps_link:
+        lines.append(f'🗺️ <a href="{maps_link}">Vedi su mappa</a>')
 
     detail_bits = []
     if area_sqm:

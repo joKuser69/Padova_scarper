@@ -5,7 +5,7 @@ Wikicasa, TecnoCasa e Subito.it, filtra per budget e con un'IA gratuita in
 base alle tue preferenze, e ti notifica su Telegram solo gli annunci
 rilevanti — con foto, mq, locali, prezzo/mq, confronto con la media di zona,
 e variazioni di prezzo nel tempo sullo stesso annuncio. Gira su GitHub
-Actions ogni 15 minuti, zero costi.
+Actions ogni 6 ore, zero costi.
 
 Nota: Mitula è stato rimosso come fonte supplementare. Era quella con più
 problemi di affidabilità (link protetti da un sistema di tracciamento non
@@ -32,8 +32,12 @@ alert email arrivano direttamente e ufficialmente dai portali stessi.
 - **Risposta a "/start"**: chi avvia il bot per la prima volta riceve subito
   gli ultimi 20 annunci tracciati, invece di trovare un canale vuoto in
   attesa del primo nuovo annuncio. Il bot non ha un server sempre acceso
-  (gira su GitHub Actions ogni 15 minuti), quindi la risposta non è
-  istantanea — arriva al run successivo, entro 15 minuti al massimo.
+  (gira su GitHub Actions ogni 6 ore), quindi la risposta non è
+  istantanea — arriva al run successivo, entro 6 ore al massimo.
+- **Link mappa**: ogni notifica include un link diretto a Google Maps
+  (nessuna API key richiesta, solo un URL di ricerca). Se il titolo
+  contiene un indirizzo riconoscibile (via/piazza/corso...) lo usa per un
+  link più preciso, altrimenti usa la zona.
 - **Test automatici** (`tests/`): fixture con email/pagine REALI raccolte
   durante lo sviluppo, non dati inventati. Girano da soli ad ogni modifica
   del codice tramite `.github/workflows/tests.yml` — se una modifica rompe
@@ -42,6 +46,11 @@ alert email arrivano direttamente e ufficialmente dai portali stessi.
 - **Limite noto**: il numero di locali (es. "trilocale" = 3) è disponibile,
   ma la suddivisione stanza per stanza no — quel dettaglio esiste solo nella
   pagina protetta del singolo annuncio, che il bot non visita di proposito.
+  Stesso discorso per le foto: ogni email di alert include **una sola
+  foto** per annuncio (verificato sui file reali di Idealista, Casa.it e
+  Wikicasa — è una scelta dei portali per non appesantire l'email, non un
+  limite della nostra estrazione). Più foto richiederebbero visitare la
+  pagina vera dell'annuncio.
 
 ## Come funziona (in breve)
 
@@ -120,8 +129,10 @@ differenza del vecchio approccio (solo scraping di pagine pubbliche), questo
 bot maneggia contenuti della tua posta elettronica. Su un repo pubblico, i
 log e gli artifact di GitHub Actions sono visibili a chiunque — meglio di
 no, anche se le password vere restano comunque mascherate come secret. I
-repository privati sono gratuiti e illimitati su GitHub, e i minuti gratuiti
-di Actions (2.000/mese) bastano ampiamente per un run leggero ogni 15 minuti.
+repository privati sono gratuiti e illimitati su GitHub. Sui minuti Actions:
+con cron ogni 6 ore (4 run/giorno) restano ampiamente sotto i 2.000
+minuti/mese gratuiti anche con largo margine — molto diverso da come
+sarebbe stato con il cron originale ogni 15 minuti, che li avrebbe superati.
 
 ### 7. Primo avvio
 
@@ -162,7 +173,7 @@ tests/
   fixtures/                    # le email/pagine vere usate dai test
 data/state.json                # database persistente (storico completo, non solo id)
 .github/workflows/
-  scraper.yml                  # schedulazione bot ogni 15 minuti
+  scraper.yml                  # schedulazione bot ogni 6 ore
   tests.yml                    # test automatici ad ogni modifica del codice
 ```
 

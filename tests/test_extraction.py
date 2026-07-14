@@ -48,7 +48,13 @@ from scraper.email_alerts import (
     _unwrap_redirect,
     _extract_price,
 )
-from scraper.telegram_notify import _format_it_number, notify_new_listings
+from scraper.telegram_notify import (
+    _format_it_number,
+    _build_maps_link,
+    notify_new_listings,
+    check_start_commands,
+    send_history_to_chat,
+)
 from scraper.utils import (
     parse_price_eur,
     parse_area_sqm,
@@ -403,6 +409,91 @@ class TestTelegramCaptionLengthFallback(unittest.TestCase):
 
         mock_photo.assert_called_once()
         mock_text.assert_not_called()
+
+
+class TestStartCommandHandling(unittest.TestCase):
+    """Il bot non ha un server sempre acceso: ad ogni run controlla se sono
+    arrivati nuovi comandi (es. /start) dall'ultima volta, tramite l'API
+    getUpdates di Telegram, e risponde con lo storico recente."""
+
+    def test_detects_new_start_and_ignores_other_messages(self):
+        fake_updates = [
+            {"update_id": 1001, "message": {"chat": {"id": 555}, "text": "ciao"}},
+            {"update_id": 1002, "message": {"chat": {"id": 777}, "text": "/start"}},
+        ]
+        database = {}
+        with patch("scraper.telegram_notify._get_updates", return_value=fake_updates):
+            starters = check_start_commands(database)
+
+        self.assertEqual(starters, [777])
+
+    def test_offset_advances_to_avoid_reprocessing(self):
+        """Bug da evitare: se non avanziamo l'offset, la stessa persona
+        riceverebbe lo storico ripetuto ad ogni run finché non scrive
+        qualcos'altro."""
+        database = {"telegram_last_update_id": 1002}
+        with patch("scraper.telegram_notify._get_updates", return_value=[]) as mock_get:
+            starters = check_start_commands(database)
+
+        mock_get.assert_called_once_with(offset=1003)
+        self.assertEqual(starters, [])
+
+    def test_history_sent_most_recent_first_respecting_count(self):
+        database = {
+            "listings": {
+                "a": {"title": "Vecchio", "last_seen": "2026-07-01T10:00:00", "zone": "Arcella",
+                      "price_eur": 100000, "area_sqm": 50, "listing_type": "vendita", "image_url": ""},
+                "b": {"title": "Recente", "last_seen": "2026-07-12T10:00:00", "zone": "Arcella",
+                      "price_eur": 150000, "area_sqm": 60, "listing_type": "vendita", "image_url": ""},
+                "c": {"title": "Medio", "last_seen": "2026-07-08T10:00:00", "zone": "Arcella",
+                      "price_eur": 120000, "area_sqm": 55, "listing_type": "vendita", "image_url": ""},
+            }
+        }
+        sent = []
+        with patch("scraper.telegram_notify._send_listing",
+                   side_effect=lambda listing, chat_id=None: sent.append((listing["title"], chat_id))), \
+             patch("scraper.telegram_notify._send_message", return_value=True), \
+             patch("time.sleep"):
+            send_history_to_chat(chat_id=999, database=database, count=2)
+
+        self.assertEqual(len(sent), 2)  # rispetta il count, non manda tutti e 3
+        self.assertEqual(sent[0][0], "Recente")  # dal più recente
+        self.assertTrue(all(chat_id == 999 for _, chat_id in sent))  # al destinatario giusto
+
+    def test_empty_history_sends_friendly_message_not_error(self):
+        database = {"listings": {}}
+        with patch("scraper.telegram_notify._send_message", return_value=True) as mock_msg:
+            send_history_to_chat(chat_id=999, database=database, count=20)
+
+        mock_msg.assert_called_once()
+        self.assertEqual(mock_msg.call_args.kwargs.get("chat_id"), 999)
+
+
+class TestMapsLink(unittest.TestCase):
+    """Link Google Maps cliccabile nella notifica — nessuna API key
+    richiesta, solo un URL di ricerca. Preferisce un indirizzo preciso nel
+    titolo (via/piazza/corso) alla sola zona, quando disponibile."""
+
+    def test_prefers_precise_address_in_title_over_zone(self):
+        listing = {"title": "Bilocale in Via Luigi Pellizzo, Stanga, Padova", "zone": "Stanga"}
+        link = _build_maps_link(listing)
+        self.assertIn("Via+Luigi+Pellizzo".replace("+", "%20"), link.replace("%2C", ","))
+        self.assertTrue(link.startswith("https://www.google.com/maps/search/"))
+
+    def test_falls_back_to_zone_when_no_address_in_title(self):
+        listing = {"title": "Un nuovo annuncio: 30 mq", "zone": "Arcella"}
+        link = _build_maps_link(listing)
+        self.assertIn("Arcella", link)
+        self.assertIn("Padova", link)
+
+    def test_no_link_when_nothing_to_search(self):
+        listing = {"title": "Annuncio generico", "zone": ""}
+        self.assertEqual(_build_maps_link(listing), "")
+
+    def test_does_not_duplicate_padova_if_already_present(self):
+        listing = {"title": "Bilocale in Via Roma, Padova", "zone": ""}
+        link = _build_maps_link(listing)
+        self.assertEqual(link.lower().count("padova"), 1)
 
 
 if __name__ == "__main__":
