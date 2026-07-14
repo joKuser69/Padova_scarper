@@ -1452,8 +1452,46 @@
           "price_eur": 198000
         }
       ]
+    },
+    "https://www.idealista.it/immobile/36250132/": {
+      "first_seen": "2026-07-14T08:02:59.669680+00:00",
+      "last_seen": "2026-07-14T08:02:59.669680+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via degli Arditi, Voltabarozzo, Padova",
+      "url": "https://www.idealista.it/immobile/36250132/",
+      "zone": "Voltabarozzo",
+      "price_eur": 66751,
+      "area_sqm": 80.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/a3/6f/54/819436681.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-07-14T08:02:59.669680+00:00",
+          "price_eur": 66751
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36249964/": {
+      "first_seen": "2026-07-14T08:02:59.669705+00:00",
+      "last_seen": "2026-07-14T08:02:59.669705+00:00",
+      "source": "Idealista (email)",
+      "title": "Villa in Via Jacopo da Montagnana, Arcella, Padova",
+      "url": "https://www.idealista.it/immobile/36249964/",
+      "zone": "Arcella",
+      "price_eur": 251251,
+      "area_sqm": 227.0,
+      "rooms": null,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/97/63/f6/819431178.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-07-14T08:02:59.669705+00:00",
+          "price_eur": 251251
+        }
+      ]
     }
   },
-  "last_run": "2026-07-14T02:26:16.699411+00:00",
+  "last_run": "2026-07-14T08:03:02.531952+00:00",
   "telegram_last_update_id": 892738530
 }
