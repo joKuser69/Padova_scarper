@@ -3935,9 +3935,308 @@
           "price_eur": 220000
         }
       ]
+    },
+    "https://www.wikicasa.it/30461415/": {
+      "first_seen": "2026-07-17T08:08:46.663658+00:00",
+      "last_seen": "2026-07-17T08:08:46.663658+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Roberto Ardigò 18, Padova",
+      "url": "https://www.wikicasa.it/30461415/",
+      "zone": null,
+      "price_eur": 168000,
+      "area_sqm": 71.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30461415/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663658+00:00",
+          "price_eur": 168000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30460878/": {
+      "first_seen": "2026-07-17T08:08:46.663687+00:00",
+      "last_seen": "2026-07-17T08:08:46.663687+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Ugo Foscolo, Padova",
+      "url": "https://www.wikicasa.it/30460878/",
+      "zone": null,
+      "price_eur": 110000,
+      "area_sqm": 40.0,
+      "rooms": 1,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30460878/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663687+00:00",
+          "price_eur": 110000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30081868/": {
+      "first_seen": "2026-07-17T08:08:46.663691+00:00",
+      "last_seen": "2026-07-17T08:08:46.663691+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Francesco Bonafede 17, Padova",
+      "url": "https://www.wikicasa.it/30081868/",
+      "zone": null,
+      "price_eur": 165000,
+      "area_sqm": 65.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30081868/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663691+00:00",
+          "price_eur": 165000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/29824174/": {
+      "first_seen": "2026-07-17T08:08:46.663695+00:00",
+      "last_seen": "2026-07-17T08:08:46.663695+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoPadova",
+      "url": "https://www.wikicasa.it/29824174/",
+      "zone": null,
+      "price_eur": 185000,
+      "area_sqm": 90.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/29824174/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663695+00:00",
+          "price_eur": 185000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/28730151/": {
+      "first_seen": "2026-07-17T08:08:46.663698+00:00",
+      "last_seen": "2026-07-17T08:08:46.663698+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoPadova",
+      "url": "https://www.wikicasa.it/28730151/",
+      "zone": null,
+      "price_eur": 158000,
+      "area_sqm": 84.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/28730151/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663698+00:00",
+          "price_eur": 158000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/villa-di-104-m178-994h298075032?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-07-17T08:08:46.663703+00:00",
+      "last_seen": "2026-07-17T08:08:46.663703+00:00",
+      "source": "Bakeca (email)",
+      "title": "17 Luglio 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/villa-di-104-m178-994h298075032?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 197000,
+      "area_sqm": 104.0,
+      "rooms": 3,
+      "image_url": "https://static.bakeca.it/immagini/824/8244022a536efd94b62986d9051ef6j8_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663703+00:00",
+          "price_eur": 197000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-96-m178-iwuu298074728?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-07-17T08:08:46.663706+00:00",
+      "last_seen": "2026-07-17T08:08:46.663706+00:00",
+      "source": "Bakeca (email)",
+      "title": "17 Luglio 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-96-m178-iwuu298074728?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 159000,
+      "area_sqm": 96.0,
+      "rooms": 3,
+      "image_url": "https://static.bakeca.it/immagini/a40/a4083ac8f7b31928b9ac32743f82dej9_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663706+00:00",
+          "price_eur": 159000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-a-padova-rif-8peh298054872?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-07-17T08:08:46.663711+00:00",
+      "last_seen": "2026-07-17T08:08:46.663711+00:00",
+      "source": "Bakeca (email)",
+      "title": "16 Luglio 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-a-padova-rif-8peh298054872?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/175/1753323cc8ea203a7a4f2712a0113aja_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": []
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/rifllp1-appartamento-ristrutturato-con-hu9b298049440?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-07-17T08:08:46.663715+00:00",
+      "last_seen": "2026-07-17T08:08:46.663715+00:00",
+      "source": "Bakeca (email)",
+      "title": "16 Luglio 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/rifllp1-appartamento-ristrutturato-con-hu9b298049440?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case",
+      "zone": "Pontevigodarzere",
+      "price_eur": 187000,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/8e3/8e3a39486b629c5b0b4539e7d2f7c6je_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663715+00:00",
+          "price_eur": 187000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/rifllp1-appartamento-ristrutturato-con-8bya298049278?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-07-17T08:08:46.663718+00:00",
+      "last_seen": "2026-07-17T08:08:46.663718+00:00",
+      "source": "Bakeca (email)",
+      "title": "16 Luglio 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/rifllp1-appartamento-ristrutturato-con-8bya298049278?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case",
+      "zone": "Pontevigodarzere",
+      "price_eur": 187000,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/47c/47c9c71515dd6f5ad71d9085f13b20jl_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663718+00:00",
+          "price_eur": 187000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/rifllp1-appartamento-ristrutturato-con-zg4k298049284?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-07-17T08:08:46.663721+00:00",
+      "last_seen": "2026-07-17T08:08:46.663721+00:00",
+      "source": "Bakeca (email)",
+      "title": "16 Luglio 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/rifllp1-appartamento-ristrutturato-con-zg4k298049284?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case",
+      "zone": "Pontevigodarzere",
+      "price_eur": 187000,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/457/4574f4a09c8ccfd2330d3e41afa193j1_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663721+00:00",
+          "price_eur": 187000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/rifllp1-appartamento-ristrutturato-con-97nv298049146?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-07-17T08:08:46.663724+00:00",
+      "last_seen": "2026-07-17T08:08:46.663724+00:00",
+      "source": "Bakeca (email)",
+      "title": "16 Luglio 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/rifllp1-appartamento-ristrutturato-con-97nv298049146?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case",
+      "zone": "Pontevigodarzere",
+      "price_eur": 187000,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/165/165ad548d8185592311ff98312c4e3ja_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663724+00:00",
+          "price_eur": 187000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/luminoso-tre-camere-nel-7j3x298049466?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-07-17T08:08:46.663726+00:00",
+      "last_seen": "2026-07-17T08:08:46.663726+00:00",
+      "source": "Bakeca (email)",
+      "title": "16 Luglio 2026  | Maserà di Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/luminoso-tre-camere-nel-7j3x298049466?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 170000,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/948/948e9d1ac6145b9c37084025352ea3j1_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663726+00:00",
+          "price_eur": 170000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/padova-8211-quartiere-paltana-7ypn298040010?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-07-17T08:08:46.663729+00:00",
+      "last_seen": "2026-07-17T08:08:46.663729+00:00",
+      "source": "Bakeca (email)",
+      "title": "15 Luglio 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/padova-8211-quartiere-paltana-7ypn298040010?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 248000,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/17d/17d58a4b3657dfbbf2de509aea718fjc_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663729+00:00",
+          "price_eur": 248000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-114-m178-nvt7296141876?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-07-17T08:08:46.663732+00:00",
+      "last_seen": "2026-07-17T08:08:46.663732+00:00",
+      "source": "Bakeca (email)",
+      "title": "15 Luglio 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-114-m178-nvt7296141876?utm_source=Alert&utm_medium=email&utm_content=dettaglio17-07-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 220000,
+      "area_sqm": 114.0,
+      "rooms": 4,
+      "image_url": "https://static.bakeca.it/immagini/dc1/dc10673e7ef3d63d6590c597e37e9fja_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663732+00:00",
+          "price_eur": 220000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/34716160/": {
+      "first_seen": "2026-07-17T08:08:46.663736+00:00",
+      "last_seen": "2026-07-17T08:08:46.663736+00:00",
+      "source": "Idealista (email)",
+      "title": "Quadrilocale in Via Jacopo Crescini, Madonna Pellegrina, Padova",
+      "url": "https://www.idealista.it/immobile/34716160/",
+      "zone": null,
+      "price_eur": 245000,
+      "area_sqm": 135.0,
+      "rooms": 4,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/47/6d/dd/766370171.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-17T08:08:46.663736+00:00",
+          "price_eur": 245000
+        }
+      ]
     }
   },
-  "last_run": "2026-07-17T02:33:51.800668+00:00",
+  "last_run": "2026-07-17T08:08:49.783423+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
