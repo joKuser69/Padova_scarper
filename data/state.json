@@ -5293,9 +5293,28 @@
           "price_eur": 219000
         }
       ]
+    },
+    "https://www.idealista.it/immobile/36295475/": {
+      "first_seen": "2026-07-19T08:15:46.449458+00:00",
+      "last_seen": "2026-07-19T08:15:46.449458+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via degli Arditi, Voltabarozzo, Padova",
+      "url": "https://www.idealista.it/immobile/36295475/",
+      "zone": "Voltabarozzo",
+      "price_eur": 66751,
+      "area_sqm": 80.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/d1/82/42/820826366.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-07-19T08:15:46.449458+00:00",
+          "price_eur": 66751
+        }
+      ]
     }
   },
-  "last_run": "2026-07-19T02:37:42.028483+00:00",
+  "last_run": "2026-07-19T08:15:48.239823+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
