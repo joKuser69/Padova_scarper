@@ -5426,9 +5426,47 @@
           "price_eur": 180000
         }
       ]
+    },
+    "https://www.idealista.it/immobile/36297317/": {
+      "first_seen": "2026-07-20T02:52:08.758726+00:00",
+      "last_seen": "2026-07-20T02:52:08.758726+00:00",
+      "source": "Idealista (email)",
+      "title": "Bilocale in Via Pietro Balan, 40, Madonna Pellegrina, Padova",
+      "url": "https://www.idealista.it/immobile/36297317/",
+      "zone": null,
+      "price_eur": 200000,
+      "area_sqm": 72.0,
+      "rooms": 2,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/5b/23/89/820922595.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-20T02:52:08.758726+00:00",
+          "price_eur": 200000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36297366/": {
+      "first_seen": "2026-07-20T02:52:08.758754+00:00",
+      "last_seen": "2026-07-20T02:52:08.758754+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via Antonio Bonardi s.n.c, Forcellini, Padova",
+      "url": "https://www.idealista.it/immobile/36297366/",
+      "zone": "Forcellini",
+      "price_eur": 170000,
+      "area_sqm": 92.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/24/f1/35/820922905.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-20T02:52:08.758754+00:00",
+          "price_eur": 170000
+        }
+      ]
     }
   },
-  "last_run": "2026-07-19T19:04:38.264519+00:00",
+  "last_run": "2026-07-20T02:52:08.758827+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
