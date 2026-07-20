@@ -467,7 +467,7 @@
     },
     "https://www.idealista.it/immobile/36243348/": {
       "first_seen": "2026-07-13T14:32:17.800480+00:00",
-      "last_seen": "2026-07-16T13:48:37.792914+00:00",
+      "last_seen": "2026-07-20T08:56:49.954543+00:00",
       "source": "Idealista (email)",
       "title": "Appartamento in Via degli Arditi s.n.c, Voltabarozzo, Padova",
       "url": "https://www.idealista.it/immobile/36243348/",
@@ -1626,7 +1626,7 @@
     },
     "https://www.idealista.it/immobile/36253648/": {
       "first_seen": "2026-07-14T13:41:11.510817+00:00",
-      "last_seen": "2026-07-15T13:41:50.064659+00:00",
+      "last_seen": "2026-07-20T08:56:49.954554+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale in Via degli Arditi, 102, Voltabarozzo, Padova",
       "url": "https://www.idealista.it/immobile/36253648/",
@@ -2305,7 +2305,7 @@
     },
     "https://www.idealista.it/immobile/36262645/": {
       "first_seen": "2026-07-15T13:41:50.064747+00:00",
-      "last_seen": "2026-07-16T13:48:37.792887+00:00",
+      "last_seen": "2026-07-20T08:56:49.954549+00:00",
       "source": "Idealista (email)",
       "title": "Appartamento in Via degli Arditi s.n.c, Voltabarozzo, Padova",
       "url": "https://www.idealista.it/immobile/36262645/",
@@ -5296,7 +5296,7 @@
     },
     "https://www.idealista.it/immobile/36295475/": {
       "first_seen": "2026-07-19T08:15:46.449458+00:00",
-      "last_seen": "2026-07-19T08:15:46.449458+00:00",
+      "last_seen": "2026-07-20T08:56:49.954534+00:00",
       "source": "Idealista (email)",
       "title": "Trilocale in Via degli Arditi, Voltabarozzo, Padova",
       "url": "https://www.idealista.it/immobile/36295475/",
@@ -5464,9 +5464,47 @@
           "price_eur": 170000
         }
       ]
+    },
+    "https://www.casa.it/immobili/54435179/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-20T08:56:49.954498+00:00",
+      "last_seen": "2026-07-20T08:56:49.954498+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via Giovanni da Cavino,",
+      "url": "https://www.casa.it/immobili/54435179/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "San Carlo",
+      "price_eur": 235000,
+      "area_sqm": 130.0,
+      "rooms": 5,
+      "image_url": "https://images-1.casa.it/360x265/mobileplaceholder.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-20T08:56:49.954498+00:00",
+          "price_eur": 235000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36297977/": {
+      "first_seen": "2026-07-20T08:56:49.954528+00:00",
+      "last_seen": "2026-07-20T08:56:49.954528+00:00",
+      "source": "Idealista (email)",
+      "title": "Appartamento in Via Giovanni da Cavino s.n.c, San Carlo, Padova",
+      "url": "https://www.idealista.it/immobile/36297977/",
+      "zone": "San Carlo",
+      "price_eur": 235000,
+      "area_sqm": 130.0,
+      "rooms": null,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/99/80/42/820955392.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-20T08:56:49.954528+00:00",
+          "price_eur": 235000
+        }
+      ]
     }
   },
-  "last_run": "2026-07-20T02:52:08.758827+00:00",
+  "last_run": "2026-07-20T08:56:59.920771+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
