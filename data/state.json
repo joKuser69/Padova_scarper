@@ -6105,9 +6105,104 @@
           "price_eur": 190000
         }
       ]
+    },
+    "https://www.idealista.it/immobile/36092644/": {
+      "first_seen": "2026-07-21T02:35:23.171680+00:00",
+      "last_seen": "2026-07-21T02:35:23.171680+00:00",
+      "source": "Idealista (email)",
+      "title": "Bilocale in Via Provenza, Camin, Padova",
+      "url": "https://www.idealista.it/immobile/36092644/",
+      "zone": "Camin",
+      "price_eur": 195000,
+      "area_sqm": 75.0,
+      "rooms": 2,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/99/19/40/821145142.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-21T02:35:23.171680+00:00",
+          "price_eur": 195000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36305657/": {
+      "first_seen": "2026-07-21T02:35:23.171706+00:00",
+      "last_seen": "2026-07-21T02:35:23.171706+00:00",
+      "source": "Idealista (email)",
+      "title": "Bilocale in Via Jacopo Facciolati, 92 a, Sant'Osvaldo, Padova",
+      "url": "https://www.idealista.it/immobile/36305657/",
+      "zone": null,
+      "price_eur": 125000,
+      "area_sqm": 35.0,
+      "rooms": 2,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/04/73/d9/821145232.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-21T02:35:23.171706+00:00",
+          "price_eur": 125000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36305693/": {
+      "first_seen": "2026-07-21T02:35:23.171716+00:00",
+      "last_seen": "2026-07-21T02:35:23.171716+00:00",
+      "source": "Idealista (email)",
+      "title": "Attico in Via Andrea Naccari, Chiesanuova, Padova",
+      "url": "https://www.idealista.it/immobile/36305693/",
+      "zone": "Chiesanuova",
+      "price_eur": 249000,
+      "area_sqm": 145.0,
+      "rooms": null,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/cc/c4/63/821145722.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-21T02:35:23.171716+00:00",
+          "price_eur": 249000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54441822/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-21T02:35:23.171721+00:00",
+      "last_seen": "2026-07-21T02:35:23.171721+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via Jacopo Facciolati 92A,",
+      "url": "https://www.casa.it/immobili/54441822/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": null,
+      "price_eur": 125000,
+      "area_sqm": 35.0,
+      "rooms": 2,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/04/73/d9/821145232.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-21T02:35:23.171721+00:00",
+          "price_eur": 125000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54441836/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-21T02:35:23.171725+00:00",
+      "last_seen": "2026-07-21T02:35:23.171725+00:00",
+      "source": "Casa.it (email)",
+      "title": "Attico/Mansarda in vendita in Via Andrea Naccari,",
+      "url": "https://www.casa.it/immobili/54441836/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "Chiesanuova",
+      "price_eur": 249000,
+      "area_sqm": 145.0,
+      "rooms": 5,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/cc/c4/63/821145722.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-21T02:35:23.171725+00:00",
+          "price_eur": 249000
+        }
+      ]
     }
   },
-  "last_run": "2026-07-20T19:43:36.678462+00:00",
+  "last_run": "2026-07-21T02:35:29.729047+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
