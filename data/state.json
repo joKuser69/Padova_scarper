@@ -6974,9 +6974,104 @@
           "price_eur": 192000
         }
       ]
+    },
+    "https://www.casa.it/immobili/54449562/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-22T02:33:58.779834+00:00",
+      "last_seen": "2026-07-22T02:33:58.779834+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita",
+      "url": "https://www.casa.it/immobili/54449562/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "Chiesanuova",
+      "price_eur": 165000,
+      "area_sqm": 115.0,
+      "rooms": 5,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/db/4a/71/821422291.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-22T02:33:58.779834+00:00",
+          "price_eur": 165000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36314646/": {
+      "first_seen": "2026-07-22T02:33:58.779862+00:00",
+      "last_seen": "2026-07-22T02:33:58.779862+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via Giacomo Ciamician, Brusegana, Padova",
+      "url": "https://www.idealista.it/immobile/36314646/",
+      "zone": null,
+      "price_eur": 140000,
+      "area_sqm": 90.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/a4/1a/a4/821434452.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-22T02:33:58.779862+00:00",
+          "price_eur": 140000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54449797/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-22T02:33:58.779873+00:00",
+      "last_seen": "2026-07-22T02:33:58.779873+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via Fabrici Girolamo d'Acquapendente 35,",
+      "url": "https://www.casa.it/immobili/54449797/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": null,
+      "price_eur": 192000,
+      "area_sqm": 98.0,
+      "rooms": 3,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/28/28/24/821428212.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-22T02:33:58.779873+00:00",
+          "price_eur": 192000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54450014/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-22T02:33:58.779877+00:00",
+      "last_seen": "2026-07-22T02:33:58.779877+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via Giacomo Ciamician,",
+      "url": "https://www.casa.it/immobili/54450014/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": null,
+      "price_eur": 140000,
+      "area_sqm": 90.0,
+      "rooms": 3,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/a4/1a/a4/821434452.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-22T02:33:58.779877+00:00",
+          "price_eur": 140000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/35953896/": {
+      "first_seen": "2026-07-22T02:33:58.779885+00:00",
+      "last_seen": "2026-07-22T02:33:58.779885+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via Giacomo Ciamician s.n.c, Brusegana, Padova",
+      "url": "https://www.idealista.it/immobile/35953896/",
+      "zone": null,
+      "price_eur": 180000,
+      "area_sqm": 90.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/92/bc/c9/813051224.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-22T02:33:58.779885+00:00",
+          "price_eur": 180000
+        }
+      ]
     }
   },
-  "last_run": "2026-07-21T19:20:46.366931+00:00",
+  "last_run": "2026-07-22T02:34:04.839799+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
