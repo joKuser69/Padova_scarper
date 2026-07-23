@@ -8004,9 +8004,104 @@
           "price_eur": 210000
         }
       ]
+    },
+    "https://www.casa.it/immobili/54456649/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-23T02:39:18.971924+00:00",
+      "last_seen": "2026-07-23T02:39:18.971924+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via degli Arditi,",
+      "url": "https://www.casa.it/immobili/54456649/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "Voltabarozzo",
+      "price_eur": 66750,
+      "area_sqm": 80.0,
+      "rooms": 4,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/c2/23/a2/821665286.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-07-23T02:39:18.971924+00:00",
+          "price_eur": 66750
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36322728/": {
+      "first_seen": "2026-07-23T02:39:18.971954+00:00",
+      "last_seen": "2026-07-23T02:39:18.971954+00:00",
+      "source": "Idealista (email)",
+      "title": "Quadrilocale in Via Ognissanti, Portello - Ospedali, Padova",
+      "url": "https://www.idealista.it/immobile/36322728/",
+      "zone": "Portello",
+      "price_eur": 200000,
+      "area_sqm": 50.0,
+      "rooms": 4,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/a8/0b/7a/821689198.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T02:39:18.971954+00:00",
+          "price_eur": 200000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36322851/": {
+      "first_seen": "2026-07-23T02:39:18.971964+00:00",
+      "last_seen": "2026-07-23T02:39:18.971964+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via Salvatore Vinciguerra, Torre, Padova",
+      "url": "https://www.idealista.it/immobile/36322851/",
+      "zone": "Torre",
+      "price_eur": 178000,
+      "area_sqm": 107.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/c4/f9/6c/821690229.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T02:39:18.971964+00:00",
+          "price_eur": 178000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36307922/": {
+      "first_seen": "2026-07-23T02:39:18.971969+00:00",
+      "last_seen": "2026-07-23T02:39:18.971969+00:00",
+      "source": "Idealista (email)",
+      "title": "Quadrilocale in Via Salvatore Vinciguerra s.n.c, Torre, Padova",
+      "url": "https://www.idealista.it/immobile/36307922/",
+      "zone": "Torre",
+      "price_eur": 178000,
+      "area_sqm": 106.0,
+      "rooms": 4,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/4a/c5/c2/821251068.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T02:39:18.971969+00:00",
+          "price_eur": 178000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36323656/": {
+      "first_seen": "2026-07-23T02:39:18.971973+00:00",
+      "last_seen": "2026-07-23T02:39:18.971973+00:00",
+      "source": "Idealista (email)",
+      "title": "Bilocale in Corso Giuseppe Garibaldi s.n.c, Santo, Padova",
+      "url": "https://www.idealista.it/immobile/36323656/",
+      "zone": "Santo",
+      "price_eur": 192000,
+      "area_sqm": 50.0,
+      "rooms": 2,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/e8/7c/71/821757516.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T02:39:18.971973+00:00",
+          "price_eur": 192000
+        }
+      ]
     }
   },
-  "last_run": "2026-07-22T19:17:28.327006+00:00",
+  "last_run": "2026-07-23T02:39:21.269447+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
