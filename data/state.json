@@ -4992,7 +4992,7 @@
     },
     "https://www.casa.it/immobili/54350310/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
       "first_seen": "2026-07-18T13:13:00.442191+00:00",
-      "last_seen": "2026-07-22T13:51:05.482844+00:00",
+      "last_seen": "2026-07-23T13:56:10.225266+00:00",
       "source": "Casa.it (email)",
       "title": "Appartamento in vendita in Via Citolo da Perugia,",
       "url": "https://www.casa.it/immobili/54350310/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
@@ -6749,7 +6749,7 @@
     },
     "https://www.casa.it/immobili/54437558/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
       "first_seen": "2026-07-21T13:47:27.182733+00:00",
-      "last_seen": "2026-07-22T13:51:05.482832+00:00",
+      "last_seen": "2026-07-23T13:56:10.225259+00:00",
       "source": "Casa.it (email)",
       "title": "Casa Bifamiliare in vendita in Via Giardinetto,",
       "url": "https://www.casa.it/immobili/54437558/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
@@ -7053,7 +7053,7 @@
     },
     "https://www.idealista.it/immobile/35953896/": {
       "first_seen": "2026-07-22T02:33:58.779885+00:00",
-      "last_seen": "2026-07-22T02:33:58.779885+00:00",
+      "last_seen": "2026-07-23T13:56:10.225378+00:00",
       "source": "Idealista (email)",
       "title": "Trilocale in Via Giacomo Ciamician s.n.c, Brusegana, Padova",
       "url": "https://www.idealista.it/immobile/35953896/",
@@ -7290,7 +7290,7 @@
     },
     "https://www.idealista.it/immobile/34967044/": {
       "first_seen": "2026-07-22T13:51:05.482753+00:00",
-      "last_seen": "2026-07-22T13:51:05.482753+00:00",
+      "last_seen": "2026-07-23T13:56:10.225383+00:00",
       "source": "Idealista (email)",
       "title": "Appartamento in Via Pigafetta, Montà - Sant'Ignazio, Padova",
       "url": "https://www.idealista.it/immobile/34967044/",
@@ -7298,7 +7298,7 @@
       "price_eur": 175000,
       "area_sqm": 120.0,
       "rooms": null,
-      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/cf/08/d6/775920981.jpg",
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/05/98/f9/821594064.jpg",
       "listing_type": "vendita",
       "price_history": [
         {
@@ -7404,26 +7404,30 @@
     },
     "https://www.idealista.it/immobile/36317561/": {
       "first_seen": "2026-07-22T13:51:05.482805+00:00",
-      "last_seen": "2026-07-22T13:51:05.482805+00:00",
+      "last_seen": "2026-07-23T13:56:10.225368+00:00",
       "source": "Idealista (email)",
       "title": "Bilocale in Via Beato Pellegrino, 116, Ferrovia, Padova",
       "url": "https://www.idealista.it/immobile/36317561/",
       "zone": null,
-      "price_eur": 99000,
+      "price_eur": 129000,
       "area_sqm": 35.0,
       "rooms": 2,
-      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/9d/46/5c/821556834.jpg",
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/a6/2a/13/821556782.jpg",
       "listing_type": "vendita",
       "price_history": [
         {
           "date": "2026-07-22T13:51:05.482805+00:00",
           "price_eur": 99000
+        },
+        {
+          "date": "2026-07-23T13:56:10.225368+00:00",
+          "price_eur": 129000
         }
       ]
     },
     "https://www.idealista.it/immobile/36317824/": {
       "first_seen": "2026-07-22T13:51:05.482811+00:00",
-      "last_seen": "2026-07-22T13:51:05.482811+00:00",
+      "last_seen": "2026-07-23T13:56:10.225364+00:00",
       "source": "Idealista (email)",
       "title": "Appartamento in Via Enrico Bernardi, 23, Arcella, Padova",
       "url": "https://www.idealista.it/immobile/36317824/",
@@ -7442,7 +7446,7 @@
     },
     "https://www.idealista.it/immobile/36318187/": {
       "first_seen": "2026-07-22T13:51:05.482816+00:00",
-      "last_seen": "2026-07-22T13:51:05.482816+00:00",
+      "last_seen": "2026-07-23T13:56:10.225359+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale in Via Isonzo s.n.c, Sacra Famiglia, Padova",
       "url": "https://www.idealista.it/immobile/36318187/",
@@ -7461,7 +7465,7 @@
     },
     "https://www.idealista.it/immobile/35726416/": {
       "first_seen": "2026-07-22T13:51:05.482821+00:00",
-      "last_seen": "2026-07-22T13:51:05.482821+00:00",
+      "last_seen": "2026-07-23T13:56:10.225387+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale a San Carlo, Padova",
       "url": "https://www.idealista.it/immobile/35726416/",
@@ -7480,7 +7484,7 @@
     },
     "https://www.idealista.it/immobile/36318505/": {
       "first_seen": "2026-07-22T13:51:05.482825+00:00",
-      "last_seen": "2026-07-22T13:51:05.482825+00:00",
+      "last_seen": "2026-07-23T13:56:10.225355+00:00",
       "source": "Idealista (email)",
       "title": "Bilocale in Via Giambattista Belzoni, 30, Portello - Ospedali, Padova",
       "url": "https://www.idealista.it/immobile/36318505/",
@@ -7594,7 +7598,7 @@
     },
     "https://www.idealista.it/immobile/36318661/": {
       "first_seen": "2026-07-22T13:51:05.482878+00:00",
-      "last_seen": "2026-07-22T13:51:05.482878+00:00",
+      "last_seen": "2026-07-23T13:56:10.225350+00:00",
       "source": "Idealista (email)",
       "title": "Bilocale in Via Pietro Bembo, 34, Crocifisso, Padova",
       "url": "https://www.idealista.it/immobile/36318661/",
@@ -7613,7 +7617,7 @@
     },
     "https://www.idealista.it/immobile/36318719/": {
       "first_seen": "2026-07-22T13:51:05.482881+00:00",
-      "last_seen": "2026-07-22T13:51:05.482881+00:00",
+      "last_seen": "2026-07-23T13:56:10.225346+00:00",
       "source": "Idealista (email)",
       "title": "Bilocale in Via Pietro Bembo, 34, Crocifisso, Padova",
       "url": "https://www.idealista.it/immobile/36318719/",
@@ -7632,11 +7636,11 @@
     },
     "https://www.idealista.it/immobile/36319021/": {
       "first_seen": "2026-07-22T13:51:05.482884+00:00",
-      "last_seen": "2026-07-22T13:51:05.482884+00:00",
+      "last_seen": "2026-07-23T13:56:10.225342+00:00",
       "source": "Idealista (email)",
-      "title": "Appartamento su due piani a Savonarola, Padova",
+      "title": "Appartamento su due piani a Arcella, Padova",
       "url": "https://www.idealista.it/immobile/36319021/",
-      "zone": null,
+      "zone": "Arcella",
       "price_eur": 259000,
       "area_sqm": 110.0,
       "rooms": null,
@@ -7727,9 +7731,9 @@
     },
     "https://www.idealista.it/immobile/36319617/": {
       "first_seen": "2026-07-22T13:51:05.482901+00:00",
-      "last_seen": "2026-07-22T13:51:05.482901+00:00",
+      "last_seen": "2026-07-23T13:56:10.225338+00:00",
       "source": "Idealista (email)",
-      "title": "Casa indipendente a Porta Trento, Padova",
+      "title": "Casa indipendente in Via Giacinto Carini, 4, Porta Trento, Padova",
       "url": "https://www.idealista.it/immobile/36319617/",
       "zone": null,
       "price_eur": 100000,
@@ -7746,7 +7750,7 @@
     },
     "https://www.idealista.it/immobile/36317022/": {
       "first_seen": "2026-07-22T13:51:05.482905+00:00",
-      "last_seen": "2026-07-22T13:51:05.482905+00:00",
+      "last_seen": "2026-07-23T13:56:10.225374+00:00",
       "source": "Idealista (email)",
       "title": "Appartamento in Via Enrico Bernardi, 23, Arcella, Padova",
       "url": "https://www.idealista.it/immobile/36317022/",
@@ -7798,7 +7802,7 @@
     },
     "https://www.idealista.it/immobile/36320928/": {
       "first_seen": "2026-07-22T19:17:06.773165+00:00",
-      "last_seen": "2026-07-22T19:17:06.773165+00:00",
+      "last_seen": "2026-07-23T13:56:10.225333+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale in Via Salboro s.n.c, Salboro, Padova",
       "url": "https://www.idealista.it/immobile/36320928/",
@@ -7817,7 +7821,7 @@
     },
     "https://www.idealista.it/immobile/36320932/": {
       "first_seen": "2026-07-22T19:17:06.773171+00:00",
-      "last_seen": "2026-07-22T19:17:06.773171+00:00",
+      "last_seen": "2026-07-23T13:56:10.225329+00:00",
       "source": "Idealista (email)",
       "title": "Trilocale in Via Decembrio Piercandido s.n.c, Guizza, Padova",
       "url": "https://www.idealista.it/immobile/36320932/",
@@ -7855,7 +7859,7 @@
     },
     "https://www.idealista.it/immobile/36321109/": {
       "first_seen": "2026-07-22T19:17:06.773179+00:00",
-      "last_seen": "2026-07-22T19:17:06.773179+00:00",
+      "last_seen": "2026-07-23T13:56:10.225324+00:00",
       "source": "Idealista (email)",
       "title": "Appartamento su due piani a Torre, Padova",
       "url": "https://www.idealista.it/immobile/36321109/",
@@ -7893,7 +7897,7 @@
     },
     "https://www.idealista.it/immobile/36321737/": {
       "first_seen": "2026-07-22T19:17:06.773204+00:00",
-      "last_seen": "2026-07-22T19:17:06.773204+00:00",
+      "last_seen": "2026-07-23T13:56:10.225320+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale in Via degli Arditi s.n.c, Voltabarozzo, Padova",
       "url": "https://www.idealista.it/immobile/36321737/",
@@ -8026,7 +8030,7 @@
     },
     "https://www.idealista.it/immobile/36322728/": {
       "first_seen": "2026-07-23T02:39:18.971954+00:00",
-      "last_seen": "2026-07-23T02:39:18.971954+00:00",
+      "last_seen": "2026-07-23T13:56:10.225315+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale in Via Ognissanti, Portello - Ospedali, Padova",
       "url": "https://www.idealista.it/immobile/36322728/",
@@ -8045,7 +8049,7 @@
     },
     "https://www.idealista.it/immobile/36322851/": {
       "first_seen": "2026-07-23T02:39:18.971964+00:00",
-      "last_seen": "2026-07-23T02:39:18.971964+00:00",
+      "last_seen": "2026-07-23T13:56:10.225310+00:00",
       "source": "Idealista (email)",
       "title": "Trilocale in Via Salvatore Vinciguerra, Torre, Padova",
       "url": "https://www.idealista.it/immobile/36322851/",
@@ -8360,9 +8364,598 @@
           "price_eur": 260000
         }
       ]
+    },
+    "https://www.idealista.it/immobile/36325190/": {
+      "first_seen": "2026-07-23T13:56:10.225174+00:00",
+      "last_seen": "2026-07-23T13:56:10.225174+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via Almagià, Ponterotto, Padova",
+      "url": "https://www.idealista.it/immobile/36325190/",
+      "zone": null,
+      "price_eur": 145000,
+      "area_sqm": 73.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/f7/aa/37/821831839.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225174+00:00",
+          "price_eur": 145000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36326096/": {
+      "first_seen": "2026-07-23T13:56:10.225207+00:00",
+      "last_seen": "2026-07-23T13:56:10.225207+00:00",
+      "source": "Idealista (email)",
+      "title": "Bilocale in Via Domenico Turazza, 48, Stanga - Pio X, Padova",
+      "url": "https://www.idealista.it/immobile/36326096/",
+      "zone": "Stanga",
+      "price_eur": 215000,
+      "area_sqm": 88.0,
+      "rooms": 2,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/09/48/a5/821851416.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225207+00:00",
+          "price_eur": 215000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30516906/": {
+      "first_seen": "2026-07-23T13:56:10.225213+00:00",
+      "last_seen": "2026-07-23T13:56:10.225213+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Domenico Turazza 48, Padova",
+      "url": "https://www.wikicasa.it/30516906/",
+      "zone": null,
+      "price_eur": 215000,
+      "area_sqm": 88.0,
+      "rooms": 2,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30516906/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225213+00:00",
+          "price_eur": 215000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/28383165/": {
+      "first_seen": "2026-07-23T13:56:10.225218+00:00",
+      "last_seen": "2026-07-23T13:56:10.225218+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Luigi Pellizzo 14, Padova",
+      "url": "https://www.wikicasa.it/28383165/",
+      "zone": null,
+      "price_eur": 239000,
+      "area_sqm": 85.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/28383165/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225218+00:00",
+          "price_eur": 239000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/29179671/": {
+      "first_seen": "2026-07-23T13:56:10.225222+00:00",
+      "last_seen": "2026-07-23T13:56:10.225222+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Antonio Salandra, Padova",
+      "url": "https://www.wikicasa.it/29179671/",
+      "zone": null,
+      "price_eur": 220000,
+      "area_sqm": 76.0,
+      "rooms": 2,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/29179671/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225222+00:00",
+          "price_eur": 220000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/29483593/": {
+      "first_seen": "2026-07-23T13:56:10.225226+00:00",
+      "last_seen": "2026-07-23T13:56:10.225226+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Luigi Pellizzo, Padova",
+      "url": "https://www.wikicasa.it/29483593/",
+      "zone": null,
+      "price_eur": 239000,
+      "area_sqm": 90.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/29483593/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225226+00:00",
+          "price_eur": 239000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30097747/": {
+      "first_seen": "2026-07-23T13:56:10.225230+00:00",
+      "last_seen": "2026-07-23T13:56:10.225230+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Domenico Turazza, Padova",
+      "url": "https://www.wikicasa.it/30097747/",
+      "zone": null,
+      "price_eur": 257000,
+      "area_sqm": 70.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30097747/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225230+00:00",
+          "price_eur": 257000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54459662/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-23T13:56:10.225236+00:00",
+      "last_seen": "2026-07-23T13:56:10.225236+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via Almagià,",
+      "url": "https://www.casa.it/immobili/54459662/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": null,
+      "price_eur": 145000,
+      "area_sqm": 73.0,
+      "rooms": 3,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/f7/aa/37/821831839.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225236+00:00",
+          "price_eur": 145000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30517746/": {
+      "first_seen": "2026-07-23T13:56:10.225242+00:00",
+      "last_seen": "2026-07-23T13:56:10.225242+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoRiviera Albertino Mussato, Padova",
+      "url": "https://www.wikicasa.it/30517746/",
+      "zone": null,
+      "price_eur": 235000,
+      "area_sqm": 30.0,
+      "rooms": 2,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30517746/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225242+00:00",
+          "price_eur": 235000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30517695/": {
+      "first_seen": "2026-07-23T13:56:10.225246+00:00",
+      "last_seen": "2026-07-23T13:56:10.225246+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Decembrio Piercandido 00, Padova",
+      "url": "https://www.wikicasa.it/30517695/",
+      "zone": null,
+      "price_eur": 110000,
+      "area_sqm": 100.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30517695/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225246+00:00",
+          "price_eur": 110000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/28838157/": {
+      "first_seen": "2026-07-23T13:56:10.225249+00:00",
+      "last_seen": "2026-07-23T13:56:10.225249+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia San Pietro, Padova",
+      "url": "https://www.wikicasa.it/28838157/",
+      "zone": null,
+      "price_eur": 235000,
+      "area_sqm": 30.0,
+      "rooms": 2,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/28838157/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225249+00:00",
+          "price_eur": 235000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30335529/": {
+      "first_seen": "2026-07-23T13:56:10.225252+00:00",
+      "last_seen": "2026-07-23T13:56:10.225252+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Beato Pellegrino, Padova",
+      "url": "https://www.wikicasa.it/30335529/",
+      "zone": null,
+      "price_eur": 249000,
+      "area_sqm": 38.0,
+      "rooms": 2,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30335529/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225252+00:00",
+          "price_eur": 249000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/22307186/": {
+      "first_seen": "2026-07-23T13:56:10.225256+00:00",
+      "last_seen": "2026-07-23T13:56:10.225256+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoRiviera Albertino Mussato, Padova",
+      "url": "https://www.wikicasa.it/22307186/",
+      "zone": null,
+      "price_eur": 249000,
+      "area_sqm": 30.0,
+      "rooms": 2,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/22307186/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225256+00:00",
+          "price_eur": 249000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54460656/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-23T13:56:10.225272+00:00",
+      "last_seen": "2026-07-23T13:56:10.225272+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via Domenico Turazza 48,",
+      "url": "https://www.casa.it/immobili/54460656/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "Stanga",
+      "price_eur": 215000,
+      "area_sqm": 88.0,
+      "rooms": 2,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/09/48/a5/821851416.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225272+00:00",
+          "price_eur": 215000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54459143/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-23T13:56:10.225276+00:00",
+      "last_seen": "2026-07-23T13:56:10.225276+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via Ansuino da Forlì,",
+      "url": "https://www.casa.it/immobili/54459143/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "San Carlo",
+      "price_eur": 79000,
+      "area_sqm": 45.0,
+      "rooms": 2,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/b0/63/b9/821817157.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225276+00:00",
+          "price_eur": 79000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54458997/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-23T13:56:10.225279+00:00",
+      "last_seen": "2026-07-23T13:56:10.225279+00:00",
+      "source": "Casa.it (email)",
+      "title": "Casa indipendente in vendita",
+      "url": "https://www.casa.it/immobili/54458997/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": null,
+      "price_eur": 169000,
+      "area_sqm": 130.0,
+      "rooms": 5,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/1a/b9/39/821813364.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225279+00:00",
+          "price_eur": 169000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54458288/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-23T13:56:10.225283+00:00",
+      "last_seen": "2026-07-23T13:56:10.225283+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Corso Giuseppe Garibaldi,",
+      "url": "https://www.casa.it/immobili/54458288/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": null,
+      "price_eur": 192000,
+      "area_sqm": 50.0,
+      "rooms": 2,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/e8/7c/71/821757516.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225283+00:00",
+          "price_eur": 192000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54458187/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-23T13:56:10.225286+00:00",
+      "last_seen": "2026-07-23T13:56:10.225286+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via Salvatore Vinciguerra,",
+      "url": "https://www.casa.it/immobili/54458187/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "Torre",
+      "price_eur": 178000,
+      "area_sqm": 106.0,
+      "rooms": 4,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/4a/c5/c2/821251068.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225286+00:00",
+          "price_eur": 178000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54457971/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-23T13:56:10.225290+00:00",
+      "last_seen": "2026-07-23T13:56:10.225290+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via Giovanni da Cavino,",
+      "url": "https://www.casa.it/immobili/54457971/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "San Carlo",
+      "price_eur": 220000,
+      "area_sqm": 120.0,
+      "rooms": 4,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/61/1d/40/821737981.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225290+00:00",
+          "price_eur": 220000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54456159/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-23T13:56:10.225293+00:00",
+      "last_seen": "2026-07-23T13:56:10.225293+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita",
+      "url": "https://www.casa.it/immobili/54456159/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "Torre",
+      "price_eur": 210000,
+      "area_sqm": 100.0,
+      "rooms": 4,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/11/52/ed/821648051.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225293+00:00",
+          "price_eur": 210000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54454689/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-23T13:56:10.225296+00:00",
+      "last_seen": "2026-07-23T13:56:10.225296+00:00",
+      "source": "Casa.it (email)",
+      "title": "Casa indipendente in vendita in Via Giacinto Carini 4,",
+      "url": "https://www.casa.it/immobili/54454689/?utm_source=alerts-casa&utm_medium=email&utm_campaign=daily_expressRecap_full_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": null,
+      "price_eur": 100000,
+      "area_sqm": 130.0,
+      "rooms": 5,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/25/e9/70/821611539.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225296+00:00",
+          "price_eur": 100000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36328882/": {
+      "first_seen": "2026-07-23T13:56:10.225300+00:00",
+      "last_seen": "2026-07-23T13:56:10.225300+00:00",
+      "source": "Idealista (email)",
+      "title": "Bilocale in Riviera San Benedetto, Savonarola, Padova",
+      "url": "https://www.idealista.it/immobile/36328882/",
+      "zone": null,
+      "price_eur": 235000,
+      "area_sqm": 30.0,
+      "rooms": 2,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/0a/7f/9a/821915793.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225300+00:00",
+          "price_eur": 235000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36328895/": {
+      "first_seen": "2026-07-23T13:56:10.225303+00:00",
+      "last_seen": "2026-07-23T13:56:10.225303+00:00",
+      "source": "Idealista (email)",
+      "title": "Appartamento su due piani in Via Dario Varotari, 13, Arcella, Padova",
+      "url": "https://www.idealista.it/immobile/36328895/",
+      "zone": "Arcella",
+      "price_eur": 259000,
+      "area_sqm": 110.0,
+      "rooms": null,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/88/df/10/821916137.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225303+00:00",
+          "price_eur": 259000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54460656/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-07-23T13:56:10.225306+00:00",
+      "last_seen": "2026-07-23T13:56:10.225306+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita in Via Domenico Turazza 48,",
+      "url": "https://www.casa.it/immobili/54460656/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "Stanga",
+      "price_eur": 215000,
+      "area_sqm": 88.0,
+      "rooms": 2,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/09/48/a5/821851416.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225306+00:00",
+          "price_eur": 215000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36196750/": {
+      "first_seen": "2026-07-23T13:56:10.225391+00:00",
+      "last_seen": "2026-07-23T13:56:10.225391+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via Citolo da Perugia, Ferrovia, Padova",
+      "url": "https://www.idealista.it/immobile/36196750/",
+      "zone": "Centro Storico",
+      "price_eur": 180000,
+      "area_sqm": 72.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/0a/70/dd/821533276.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225391+00:00",
+          "price_eur": 180000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/35477168/": {
+      "first_seen": "2026-07-23T13:56:10.225394+00:00",
+      "last_seen": "2026-07-23T13:56:10.225394+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via Isacco Newton s.n.c, Brusegana, Padova",
+      "url": "https://www.idealista.it/immobile/35477168/",
+      "zone": null,
+      "price_eur": 150000,
+      "area_sqm": 72.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/09/b8/ea/820171710.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225394+00:00",
+          "price_eur": 150000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30518664/": {
+      "first_seen": "2026-07-23T13:56:10.225397+00:00",
+      "last_seen": "2026-07-23T13:56:10.225397+00:00",
+      "source": "Wikicasa (email)",
+      "title": "Casa indipendenteVia Umbria, Padova",
+      "url": "https://www.wikicasa.it/30518664/",
+      "zone": null,
+      "price_eur": 239000,
+      "area_sqm": 220.0,
+      "rooms": 5,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30518664/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225397+00:00",
+          "price_eur": 239000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/29810029/": {
+      "first_seen": "2026-07-23T13:56:10.225401+00:00",
+      "last_seen": "2026-07-23T13:56:10.225401+00:00",
+      "source": "Wikicasa (email)",
+      "title": "Casa indipendenteVia Pier Maria Rosso di San Secondo, ...",
+      "url": "https://www.wikicasa.it/29810029/",
+      "zone": null,
+      "price_eur": 285000,
+      "area_sqm": 220.0,
+      "rooms": 6,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/29810029/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225401+00:00",
+          "price_eur": 285000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30072226/": {
+      "first_seen": "2026-07-23T13:56:10.225404+00:00",
+      "last_seen": "2026-07-23T13:56:10.225404+00:00",
+      "source": "Wikicasa (email)",
+      "title": "Casa indipendenteVia Gattamelata, Padova",
+      "url": "https://www.wikicasa.it/30072226/",
+      "zone": null,
+      "price_eur": 220000,
+      "area_sqm": 180.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30072226/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225404+00:00",
+          "price_eur": 220000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30113080/": {
+      "first_seen": "2026-07-23T13:56:10.225407+00:00",
+      "last_seen": "2026-07-23T13:56:10.225407+00:00",
+      "source": "Wikicasa (email)",
+      "title": "Casa indipendenteVia Giovanni Boccaccio, Padova",
+      "url": "https://www.wikicasa.it/30113080/",
+      "zone": null,
+      "price_eur": 220000,
+      "area_sqm": 180.0,
+      "rooms": null,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30113080/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225407+00:00",
+          "price_eur": 220000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30071626/": {
+      "first_seen": "2026-07-23T13:56:10.225411+00:00",
+      "last_seen": "2026-07-23T13:56:10.225411+00:00",
+      "source": "Wikicasa (email)",
+      "title": "Casa indipendenteVia Giovanni Boccaccio, Padova",
+      "url": "https://www.wikicasa.it/30071626/",
+      "zone": null,
+      "price_eur": 220000,
+      "area_sqm": 180.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30071626/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-23T13:56:10.225411+00:00",
+          "price_eur": 220000
+        }
+      ]
     }
   },
-  "last_run": "2026-07-23T08:28:59.882304+00:00",
+  "last_run": "2026-07-23T13:57:18.114429+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
