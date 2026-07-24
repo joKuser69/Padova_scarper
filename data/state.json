@@ -9067,9 +9067,66 @@
           "price_eur": 178000
         }
       ]
+    },
+    "https://www.idealista.it/immobile/36332720/": {
+      "first_seen": "2026-07-24T02:35:29.165695+00:00",
+      "last_seen": "2026-07-24T02:35:29.165695+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via Salvatore Vinciguerra, Torre, Padova",
+      "url": "https://www.idealista.it/immobile/36332720/",
+      "zone": "Torre",
+      "price_eur": 178000,
+      "area_sqm": 106.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/83/aa/43/822018833.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-24T02:35:29.165695+00:00",
+          "price_eur": 178000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/35450255/": {
+      "first_seen": "2026-07-24T02:35:29.165721+00:00",
+      "last_seen": "2026-07-24T02:35:29.165721+00:00",
+      "source": "Idealista (email)",
+      "title": "Casa indipendente in Via Umbria, Camin, Padova",
+      "url": "https://www.idealista.it/immobile/35450255/",
+      "zone": "Camin",
+      "price_eur": 239000,
+      "area_sqm": 220.0,
+      "rooms": null,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/e0/a1/c9/822019326.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-24T02:35:29.165721+00:00",
+          "price_eur": 239000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36332808/": {
+      "first_seen": "2026-07-24T02:35:29.165727+00:00",
+      "last_seen": "2026-07-24T02:35:29.165727+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via Bosco Wollemborg, Guizza, Padova",
+      "url": "https://www.idealista.it/immobile/36332808/",
+      "zone": "Guizza",
+      "price_eur": 140000,
+      "area_sqm": 100.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/9a/f4/29/822021080.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-07-24T02:35:29.165727+00:00",
+          "price_eur": 140000
+        }
+      ]
     }
   },
-  "last_run": "2026-07-23T19:15:42.179541+00:00",
+  "last_run": "2026-07-24T02:35:31.072753+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
