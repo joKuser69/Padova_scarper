@@ -9227,7 +9227,7 @@
     },
     "https://www.wikicasa.it/30527127/": {
       "first_seen": "2026-07-24T13:43:19.444423+00:00",
-      "last_seen": "2026-07-24T13:43:19.444423+00:00",
+      "last_seen": "2026-08-05T19:27:51.750639+00:00",
       "source": "Wikicasa (email)",
       "title": "AppartamentoVia Matteo Maria Boiardo, Padova",
       "url": "https://www.wikicasa.it/30527127/",
@@ -10935,7 +10935,7 @@
     },
     "https://www.wikicasa.it/30541368/": {
       "first_seen": "2026-07-27T09:50:23.736660+00:00",
-      "last_seen": "2026-07-31T19:22:49.993629+00:00",
+      "last_seen": "2026-08-05T19:27:51.750633+00:00",
       "source": "Wikicasa (email)",
       "title": "AppartamentoVia Faliero Ordelaffo, 12, Padova",
       "url": "https://www.wikicasa.it/30541368/",
@@ -11030,7 +11030,7 @@
     },
     "https://www.wikicasa.it/30542199/": {
       "first_seen": "2026-07-27T14:31:41.773347+00:00",
-      "last_seen": "2026-08-03T14:36:23.924827+00:00",
+      "last_seen": "2026-08-05T19:27:51.750659+00:00",
       "source": "Wikicasa (email)",
       "title": "AppartamentoVia Pietro Arduino, Padova",
       "url": "https://www.wikicasa.it/30542199/",
@@ -11068,7 +11068,7 @@
     },
     "https://www.wikicasa.it/28082355/": {
       "first_seen": "2026-07-27T14:31:41.773357+00:00",
-      "last_seen": "2026-08-03T14:36:23.924821+00:00",
+      "last_seen": "2026-08-05T19:27:51.750655+00:00",
       "source": "Wikicasa (email)",
       "title": "AppartamentoVia Bernardo Ramazzini, Padova",
       "url": "https://www.wikicasa.it/28082355/",
@@ -11087,7 +11087,7 @@
     },
     "https://www.wikicasa.it/29519020/": {
       "first_seen": "2026-07-27T14:31:41.773361+00:00",
-      "last_seen": "2026-08-03T14:36:23.924831+00:00",
+      "last_seen": "2026-08-05T19:27:51.750665+00:00",
       "source": "Wikicasa (email)",
       "title": "AppartamentoVia Giovanni Bertacchi, Padova",
       "url": "https://www.wikicasa.it/29519020/",
@@ -13692,7 +13692,7 @@
     },
     "https://www.wikicasa.it/30572598/": {
       "first_seen": "2026-07-30T08:25:04.253414+00:00",
-      "last_seen": "2026-08-03T14:36:23.924815+00:00",
+      "last_seen": "2026-08-05T19:27:51.750649+00:00",
       "source": "Wikicasa (email)",
       "title": "AppartamentoVia Marchesini 5, Padova",
       "url": "https://www.wikicasa.it/30572598/",
@@ -14992,9 +14992,9 @@
     },
     "https://www.wikicasa.it/30585852/": {
       "first_seen": "2026-07-31T19:22:49.993579+00:00",
-      "last_seen": "2026-07-31T19:22:49.993579+00:00",
+      "last_seen": "2026-08-05T19:27:51.750613+00:00",
       "source": "Wikicasa (email)",
-      "title": "AppartamentoVia Ordelaffo Faliero, Padova",
+      "title": "Nuove CostruzioniVia Ordelaffo Faliero, Padova",
       "url": "https://www.wikicasa.it/30585852/",
       "zone": null,
       "price_eur": 155000,
@@ -15011,9 +15011,9 @@
     },
     "https://www.wikicasa.it/30541422/": {
       "first_seen": "2026-07-31T19:22:49.993612+00:00",
-      "last_seen": "2026-07-31T19:22:49.993612+00:00",
+      "last_seen": "2026-08-05T19:27:51.750627+00:00",
       "source": "Wikicasa (email)",
-      "title": "AppartamentoVia Francesco Erizzo, Padova",
+      "title": "Nuove CostruzioniVia Francesco Erizzo, Padova",
       "url": "https://www.wikicasa.it/30541422/",
       "zone": null,
       "price_eur": 165000,
@@ -17438,9 +17438,47 @@
           "price_eur": 193000
         }
       ]
+    },
+    "https://www.wikicasa.it/30613093/": {
+      "first_seen": "2026-08-05T19:27:51.750583+00:00",
+      "last_seen": "2026-08-05T19:27:51.750583+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Emilio Salgari 00, Padova",
+      "url": "https://www.wikicasa.it/30613093/",
+      "zone": null,
+      "price_eur": 149000,
+      "area_sqm": 83.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30613093/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-08-05T19:27:51.750583+00:00",
+          "price_eur": 149000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30614293/": {
+      "first_seen": "2026-08-05T19:27:51.750645+00:00",
+      "last_seen": "2026-08-05T19:27:51.750645+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Giordano Bruno 54 Padova, Padova",
+      "url": "https://www.wikicasa.it/30614293/",
+      "zone": null,
+      "price_eur": 210000,
+      "area_sqm": 93.0,
+      "rooms": 2,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30614293/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-08-05T19:27:51.750645+00:00",
+          "price_eur": 210000
+        }
+      ]
     }
   },
-  "last_run": "2026-08-05T14:07:13.799338+00:00",
+  "last_run": "2026-08-05T19:27:54.207522+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
