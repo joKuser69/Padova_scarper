@@ -17970,9 +17970,123 @@
           "price_eur": 210000
         }
       ]
+    },
+    "https://www.idealista.it/immobile/36424990/": {
+      "first_seen": "2026-08-06T23:57:44.661550+00:00",
+      "last_seen": "2026-08-06T23:57:44.661550+00:00",
+      "source": "Idealista (email)",
+      "title": "Villa in Via Antonio Cantele s.n.c, Mortise, Padova",
+      "url": "https://www.idealista.it/immobile/36424990/",
+      "zone": "Mortise",
+      "price_eur": 187000,
+      "area_sqm": 87.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/c6/d2/71/825377869.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-08-06T23:57:44.661550+00:00",
+          "price_eur": 187000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54544910/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-08-06T23:57:44.661579+00:00",
+      "last_seen": "2026-08-06T23:57:44.661579+00:00",
+      "source": "Casa.it (email)",
+      "title": "Villa in vendita in Via Antonio Cantele,",
+      "url": "https://www.casa.it/immobili/54544910/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "Mortise",
+      "price_eur": 187000,
+      "area_sqm": 87.0,
+      "rooms": 3,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/c6/d2/71/825377869.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-08-06T23:57:44.661579+00:00",
+          "price_eur": 187000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36425682/": {
+      "first_seen": "2026-08-06T23:57:44.661585+00:00",
+      "last_seen": "2026-08-06T23:57:44.661585+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale a San Lazzaro, Padova",
+      "url": "https://www.idealista.it/immobile/36425682/",
+      "zone": "San Lazzaro",
+      "price_eur": 187000,
+      "area_sqm": 113.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/e1/60/dd/825395314.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-08-06T23:57:44.661585+00:00",
+          "price_eur": 187000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54545496/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-08-06T23:57:44.661590+00:00",
+      "last_seen": "2026-08-06T23:57:44.661590+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita",
+      "url": "https://www.casa.it/immobili/54545496/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": "San Lazzaro",
+      "price_eur": 187000,
+      "area_sqm": 113.0,
+      "rooms": 3,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/e1/60/dd/825395314.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-08-06T23:57:44.661590+00:00",
+          "price_eur": 187000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36425841/": {
+      "first_seen": "2026-08-06T23:57:44.661594+00:00",
+      "last_seen": "2026-08-06T23:57:44.661594+00:00",
+      "source": "Idealista (email)",
+      "title": "Quadrilocale a Ponte di Brenta, Padova",
+      "url": "https://www.idealista.it/immobile/36425841/",
+      "zone": null,
+      "price_eur": 158000,
+      "area_sqm": 90.0,
+      "rooms": 4,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/d3/7e/e9/825399822.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-08-06T23:57:44.661594+00:00",
+          "price_eur": 158000
+        }
+      ]
+    },
+    "https://www.casa.it/immobili/54545621/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds": {
+      "first_seen": "2026-08-06T23:57:44.661598+00:00",
+      "last_seen": "2026-08-06T23:57:44.661598+00:00",
+      "source": "Casa.it (email)",
+      "title": "Appartamento in vendita",
+      "url": "https://www.casa.it/immobili/54545621/?utm_source=alerts-casa&utm_medium=email&utm_campaign=express_newAd_noSugg_sale_saveSearch&aid=MTYwMzM3MDI%3D&utm_content=emailAlertAds",
+      "zone": null,
+      "price_eur": 158000,
+      "area_sqm": 90.0,
+      "rooms": 4,
+      "image_url": "https://images-1.casa.it/360x280-fit/listing/0/d3/7e/e9/825399822.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-08-06T23:57:44.661598+00:00",
+          "price_eur": 158000
+        }
+      ]
     }
   },
-  "last_run": "2026-08-06T14:06:31.653151+00:00",
+  "last_run": "2026-08-06T23:57:44.661683+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
