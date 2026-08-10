@@ -18899,9 +18899,23 @@
           "price_eur": 108000
         }
       ]
+    },
+    "https://www.wikicasa.it/30640690/": {
+      "first_seen": "2026-08-10T18:55:58.595252+00:00",
+      "last_seen": "2026-08-10T18:55:58.595252+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Santa Maria Assunta, Padova",
+      "url": "https://www.wikicasa.it/30640690/",
+      "zone": null,
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30640690/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": []
     }
   },
-  "last_run": "2026-08-10T13:04:45.542208+00:00",
+  "last_run": "2026-08-10T18:55:58.925051+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
