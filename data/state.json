@@ -4004,7 +4004,7 @@
     },
     "https://www.wikicasa.it/30081868/": {
       "first_seen": "2026-07-17T08:08:46.663691+00:00",
-      "last_seen": "2026-08-06T14:06:17.039023+00:00",
+      "last_seen": "2026-09-03T10:43:46.344596+00:00",
       "source": "Wikicasa (email)",
       "title": "AppartamentoVia Francesco Bonafede 17, Padova",
       "url": "https://www.wikicasa.it/30081868/",
@@ -4023,7 +4023,7 @@
     },
     "https://www.wikicasa.it/29824174/": {
       "first_seen": "2026-07-17T08:08:46.663695+00:00",
-      "last_seen": "2026-07-22T08:27:30.311246+00:00",
+      "last_seen": "2026-09-03T10:43:46.344602+00:00",
       "source": "Wikicasa (email)",
       "title": "AppartamentoPadova",
       "url": "https://www.wikicasa.it/29824174/",
@@ -4042,7 +4042,7 @@
     },
     "https://www.wikicasa.it/28730151/": {
       "first_seen": "2026-07-17T08:08:46.663698+00:00",
-      "last_seen": "2026-07-22T08:27:30.311252+00:00",
+      "last_seen": "2026-09-03T10:43:46.344606+00:00",
       "source": "Wikicasa (email)",
       "title": "AppartamentoPadova",
       "url": "https://www.wikicasa.it/28730151/",
@@ -6576,20 +6576,24 @@
     },
     "https://www.idealista.it/immobile/35448296/": {
       "first_seen": "2026-07-21T13:47:27.182678+00:00",
-      "last_seen": "2026-07-21T13:47:27.182678+00:00",
+      "last_seen": "2026-09-03T10:43:46.344727+00:00",
       "source": "Idealista (email)",
       "title": "Appartamento in Via Colonnello de Cristoforis s.n.c, Stanga - Pio X, P...",
       "url": "https://www.idealista.it/immobile/35448296/",
       "zone": "Stanga",
-      "price_eur": 245000,
+      "price_eur": 239000,
       "area_sqm": 100.0,
-      "rooms": null,
-      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/eb/b4/80/821031940.jpg",
+      "rooms": 5,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/e1/f5/96/825570552.jpg",
       "listing_type": "vendita",
       "price_history": [
         {
           "date": "2026-07-21T13:47:27.182678+00:00",
           "price_eur": 245000
+        },
+        {
+          "date": "2026-09-03T10:43:46.344727+00:00",
+          "price_eur": 239000
         }
       ]
     },
@@ -17761,7 +17765,7 @@
     },
     "https://www.wikicasa.it/30621364/": {
       "first_seen": "2026-08-06T14:06:17.039005+00:00",
-      "last_seen": "2026-08-16T06:37:10.462805+00:00",
+      "last_seen": "2026-09-03T10:43:46.344586+00:00",
       "source": "Wikicasa (email)",
       "title": "AppartamentoVia Giuseppe Perin, Padova",
       "url": "https://www.wikicasa.it/30621364/",
@@ -28323,7 +28327,7 @@
     },
     "https://www.idealista.it/immobile/36670762/": {
       "first_seen": "2026-08-31T22:30:41.438447+00:00",
-      "last_seen": "2026-09-02T10:41:49.161584+00:00",
+      "last_seen": "2026-09-03T10:43:46.344718+00:00",
       "source": "Idealista (email)",
       "title": "Bilocale in Riviera Paleocapa, Specola - Corso Milano, Padova",
       "url": "https://www.idealista.it/immobile/36670762/",
@@ -28342,7 +28346,7 @@
     },
     "https://www.idealista.it/immobile/36670767/": {
       "first_seen": "2026-08-31T22:30:41.438451+00:00",
-      "last_seen": "2026-09-02T10:41:49.161568+00:00",
+      "last_seen": "2026-09-03T10:43:46.344713+00:00",
       "source": "Idealista (email)",
       "title": "Trilocale in Riviera Paleocapa, Specola - Corso Milano, Padova",
       "url": "https://www.idealista.it/immobile/36670767/",
@@ -30265,7 +30269,7 @@
     },
     "https://www.idealista.it/immobile/36688156/": {
       "first_seen": "2026-09-02T10:41:49.161563+00:00",
-      "last_seen": "2026-09-02T10:41:49.161563+00:00",
+      "last_seen": "2026-09-03T10:43:46.344700+00:00",
       "source": "Idealista (email)",
       "title": "Trilocale in Via delle Rose, Madonna Pellegrina, Padova",
       "url": "https://www.idealista.it/immobile/36688156/",
@@ -30284,7 +30288,7 @@
     },
     "https://www.idealista.it/immobile/36683165/": {
       "first_seen": "2026-09-02T10:41:49.161573+00:00",
-      "last_seen": "2026-09-02T10:41:49.161573+00:00",
+      "last_seen": "2026-09-03T10:43:46.344709+00:00",
       "source": "Idealista (email)",
       "title": "Bilocale in Sacra Famiglia s.n.c, Sacra Famiglia, Padova",
       "url": "https://www.idealista.it/immobile/36683165/",
@@ -30292,7 +30296,7 @@
       "price_eur": 145000,
       "area_sqm": 60.0,
       "rooms": 2,
-      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/d4/59/15/833181178.jpg",
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/30/ea/4e/833181182.jpg",
       "listing_type": "vendita",
       "price_history": [
         {
@@ -30303,7 +30307,7 @@
     },
     "https://www.idealista.it/immobile/36688362/": {
       "first_seen": "2026-09-02T10:41:49.161576+00:00",
-      "last_seen": "2026-09-02T10:41:49.161576+00:00",
+      "last_seen": "2026-09-03T10:43:46.344697+00:00",
       "source": "Idealista (email)",
       "title": "Appartamento in Via Andrea Moroni, 1, San Carlo, Padova",
       "url": "https://www.idealista.it/immobile/36688362/",
@@ -30493,7 +30497,7 @@
     },
     "https://www.idealista.it/immobile/34115063/": {
       "first_seen": "2026-09-02T16:00:23.493517+00:00",
-      "last_seen": "2026-09-02T16:00:23.493517+00:00",
+      "last_seen": "2026-09-03T10:43:46.344723+00:00",
       "source": "Idealista (email)",
       "title": "Appartamento su due piani in Via Orlando Galante, San Lazzaro, Padova",
       "url": "https://www.idealista.it/immobile/34115063/",
@@ -30512,12 +30516,12 @@
     },
     "https://www.idealista.it/immobile/36687401/": {
       "first_seen": "2026-09-02T16:00:23.493520+00:00",
-      "last_seen": "2026-09-02T16:00:23.493520+00:00",
+      "last_seen": "2026-09-03T10:43:46.344704+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale in Via Giovanni d'Alemagna, 4 d, San Carlo, Padova",
       "url": "https://www.idealista.it/immobile/36687401/",
       "zone": "San Carlo",
-      "price_eur": 195000,
+      "price_eur": 200000,
       "area_sqm": 100.0,
       "rooms": 4,
       "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/eb/05/ae/833153184.jpg",
@@ -30526,12 +30530,16 @@
         {
           "date": "2026-09-02T16:00:23.493520+00:00",
           "price_eur": 195000
+        },
+        {
+          "date": "2026-09-03T10:43:46.344704+00:00",
+          "price_eur": 200000
         }
       ]
     },
     "https://www.idealista.it/immobile/36691479/": {
       "first_seen": "2026-09-02T16:00:23.493523+00:00",
-      "last_seen": "2026-09-02T16:00:23.493523+00:00",
+      "last_seen": "2026-09-03T10:43:46.344693+00:00",
       "source": "Idealista (email)",
       "title": "Trilocale in Via Giuseppe Perin s.n.c, Sant'Osvaldo, Padova",
       "url": "https://www.idealista.it/immobile/36691479/",
@@ -30550,9 +30558,9 @@
     },
     "https://www.idealista.it/immobile/36691857/": {
       "first_seen": "2026-09-02T16:00:23.493526+00:00",
-      "last_seen": "2026-09-02T16:00:23.493526+00:00",
+      "last_seen": "2026-09-03T10:43:46.344685+00:00",
       "source": "Idealista (email)",
-      "title": "Quadrilocale a Crocifisso, Padova",
+      "title": "Novità Quadrilocale a 169.000 € 2.112 €/m² Box compreso    4 locali     80,00 m²",
       "url": "https://www.idealista.it/immobile/36691857/",
       "zone": null,
       "price_eur": 169000,
@@ -30569,7 +30577,7 @@
     },
     "https://www.idealista.it/immobile/36692292/": {
       "first_seen": "2026-09-02T16:00:23.493530+00:00",
-      "last_seen": "2026-09-02T16:00:23.493530+00:00",
+      "last_seen": "2026-09-03T10:43:46.344681+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale in Via Francesco Redi, 12, Guizza, Padova",
       "url": "https://www.idealista.it/immobile/36692292/",
@@ -30588,13 +30596,13 @@
     },
     "https://www.idealista.it/immobile/36691850/": {
       "first_seen": "2026-09-02T16:00:23.493533+00:00",
-      "last_seen": "2026-09-02T16:00:23.493533+00:00",
+      "last_seen": "2026-09-03T10:43:46.344689+00:00",
       "source": "Idealista (email)",
-      "title": "Trilocale in Piazza dell'Insurrezione, Piazze, Padova",
+      "title": "Trilocale in Passaggio Elena Lucrezia Corner Piscopia, Piazze, Padova",
       "url": "https://www.idealista.it/immobile/36691850/",
       "zone": "Centro Storico",
       "price_eur": 260000,
-      "area_sqm": 63.0,
+      "area_sqm": 65.0,
       "rooms": 3,
       "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/39/b6/60/833263208.jpg",
       "listing_type": "vendita",
@@ -30607,7 +30615,7 @@
     },
     "https://www.idealista.it/immobile/36693068/": {
       "first_seen": "2026-09-02T16:00:23.493537+00:00",
-      "last_seen": "2026-09-02T16:00:23.493537+00:00",
+      "last_seen": "2026-09-03T10:43:46.344677+00:00",
       "source": "Idealista (email)",
       "title": "Bilocale in Via Luigi Pierobon s.n.c, San Carlo, Padova",
       "url": "https://www.idealista.it/immobile/36693068/",
@@ -30759,7 +30767,7 @@
     },
     "https://www.idealista.it/immobile/36694063/": {
       "first_seen": "2026-09-02T16:00:23.493582+00:00",
-      "last_seen": "2026-09-02T16:00:23.493582+00:00",
+      "last_seen": "2026-09-03T10:43:46.344672+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale in Via Luigi Lagrange s.n.c, Brusegana, Padova",
       "url": "https://www.idealista.it/immobile/36694063/",
@@ -30873,7 +30881,7 @@
     },
     "https://www.idealista.it/immobile/36696128/": {
       "first_seen": "2026-09-02T20:32:14.893836+00:00",
-      "last_seen": "2026-09-02T20:32:14.893836+00:00",
+      "last_seen": "2026-09-03T10:43:46.344668+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale in Via Carlo Cattaneo, Guizza, Padova",
       "url": "https://www.idealista.it/immobile/36696128/",
@@ -30892,7 +30900,7 @@
     },
     "https://www.idealista.it/immobile/36696163/": {
       "first_seen": "2026-09-02T20:32:14.893839+00:00",
-      "last_seen": "2026-09-02T20:32:14.893839+00:00",
+      "last_seen": "2026-09-03T10:43:46.344664+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale in Via Venanzio Fortunato, Guizza, Padova",
       "url": "https://www.idealista.it/immobile/36696163/",
@@ -30946,9 +30954,412 @@
           "price_eur": 239000
         }
       ]
+    },
+    "https://www.idealista.it/immobile/36698064/": {
+      "first_seen": "2026-09-03T10:43:46.344549+00:00",
+      "last_seen": "2026-09-03T10:43:46.344549+00:00",
+      "source": "Idealista (email)",
+      "title": "Appartamento in Via Luigi Lagrange, Brusegana, Padova",
+      "url": "https://www.idealista.it/immobile/36698064/",
+      "zone": null,
+      "price_eur": 75000,
+      "area_sqm": 126.0,
+      "rooms": 5,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/43/1f/ae/833484534.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344549+00:00",
+          "price_eur": 75000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36698404/": {
+      "first_seen": "2026-09-03T10:43:46.344576+00:00",
+      "last_seen": "2026-09-03T10:43:46.344576+00:00",
+      "source": "Idealista (email)",
+      "title": "Bilocale in Via Eugenio Curiel, Stanga - Pio X, Padova",
+      "url": "https://www.idealista.it/immobile/36698404/",
+      "zone": "Stanga",
+      "price_eur": 45000,
+      "area_sqm": 33.0,
+      "rooms": 2,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/12/1d/5d/833498623.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344576+00:00",
+          "price_eur": 45000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30738930/": {
+      "first_seen": "2026-09-03T10:43:46.344582+00:00",
+      "last_seen": "2026-09-03T10:43:46.344582+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Roberto Ardigò 18, Padova",
+      "url": "https://www.wikicasa.it/30738930/",
+      "zone": null,
+      "price_eur": 168000,
+      "area_sqm": 71.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30738930/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344582+00:00",
+          "price_eur": 168000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36701434/": {
+      "first_seen": "2026-09-03T10:43:46.344611+00:00",
+      "last_seen": "2026-09-03T10:43:46.344611+00:00",
+      "source": "Idealista (email)",
+      "title": "Trilocale in Via degli Arditi, Voltabarozzo, Padova",
+      "url": "https://www.idealista.it/immobile/36701434/",
+      "zone": "Voltabarozzo",
+      "price_eur": 66751,
+      "area_sqm": 80.0,
+      "rooms": 3,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/b8/be/a0/833603992.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344611+00:00",
+          "price_eur": 66751
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36702138/": {
+      "first_seen": "2026-09-03T10:43:46.344615+00:00",
+      "last_seen": "2026-09-03T10:43:46.344615+00:00",
+      "source": "Idealista (email)",
+      "title": "Appartamento in Via Enrico Bernardi, Arcella, Padova",
+      "url": "https://www.idealista.it/immobile/36702138/",
+      "zone": "Arcella",
+      "price_eur": null,
+      "area_sqm": 625.0,
+      "rooms": 7,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/ac/79/58/833627355.jpg",
+      "listing_type": "asta",
+      "price_history": []
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/asta-a-padova-8211-zd6k298688620?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-03T10:43:46.344619+00:00",
+      "last_seen": "2026-09-03T10:43:46.344619+00:00",
+      "source": "Bakeca (email)",
+      "title": "03 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/asta-a-padova-8211-zd6k298688620?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 93750,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/59d/59da6e40b7359b3a09827174753734jc_145_109_fit.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344619+00:00",
+          "price_eur": 93750
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/pontevigodarzerepadova-vendita-appartamento-45-eb48299072620?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-03T10:43:46.344622+00:00",
+      "last_seen": "2026-09-03T10:43:46.344622+00:00",
+      "source": "Bakeca (email)",
+      "title": "02 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/pontevigodarzerepadova-vendita-appartamento-45-eb48299072620?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": "Pontevigodarzere",
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": 5,
+      "image_url": "https://padova.bakeca.it/be/public/img/empty-thumb.gif",
+      "listing_type": "vendita",
+      "price_history": []
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-114-m178-wbjx298659074?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-03T10:43:46.344625+00:00",
+      "last_seen": "2026-09-03T10:43:46.344625+00:00",
+      "source": "Bakeca (email)",
+      "title": "02 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-114-m178-wbjx298659074?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 208000,
+      "area_sqm": 114.0,
+      "rooms": 4,
+      "image_url": "https://static.bakeca.it/immagini/168/168c84e74f954f2463532cd4bf31dcjl_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344625+00:00",
+          "price_eur": 208000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-44-m178-p9ud299049912?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-03T10:43:46.344628+00:00",
+      "last_seen": "2026-09-03T10:43:46.344628+00:00",
+      "source": "Bakeca (email)",
+      "title": "02 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-44-m178-p9ud299049912?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 123000,
+      "area_sqm": 44.0,
+      "rooms": 2,
+      "image_url": "https://static.bakeca.it/immagini/19c/19c0e1d76f7d397cc06cf3c2d72cabj5_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344628+00:00",
+          "price_eur": 123000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-110-m178-9im6298497066?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-03T10:43:46.344632+00:00",
+      "last_seen": "2026-09-03T10:43:46.344632+00:00",
+      "source": "Bakeca (email)",
+      "title": "01 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-110-m178-9im6298497066?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 169000,
+      "area_sqm": 110.0,
+      "rooms": 4,
+      "image_url": "https://static.bakeca.it/immagini/175/1752310e1261086efb7a1166bcd1f2jl_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344632+00:00",
+          "price_eur": 169000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-109-m178-y575298877382?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-03T10:43:46.344638+00:00",
+      "last_seen": "2026-09-03T10:43:46.344638+00:00",
+      "source": "Bakeca (email)",
+      "title": "01 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-109-m178-y575298877382?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 220000,
+      "area_sqm": 109.0,
+      "rooms": 3,
+      "image_url": "https://static.bakeca.it/immagini/86b/86b3a944fd77640751d382b7084becj3_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344638+00:00",
+          "price_eur": 220000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-115-m178-gm3m299023330?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-03T10:43:46.344642+00:00",
+      "last_seen": "2026-09-03T10:43:46.344642+00:00",
+      "source": "Bakeca (email)",
+      "title": "01 Settembre 2026  | Maserà di Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-115-m178-gm3m299023330?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 185000,
+      "area_sqm": 115.0,
+      "rooms": 3,
+      "image_url": "https://static.bakeca.it/immagini/65a/65a39712a5fbbb67ad1853ef4f9b87j7_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344642+00:00",
+          "price_eur": 185000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/palazzina-con-apparmamenti-per-t5dp284163526?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-03T10:43:46.344645+00:00",
+      "last_seen": "2026-09-03T10:43:46.344645+00:00",
+      "source": "Bakeca (email)",
+      "title": "31 Agosto 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/palazzina-con-apparmamenti-per-t5dp284163526?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/e38/e3883e69c39989eeb2eca77713ab5ajb_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": []
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/villa-di-65-m178-dpd5298279254?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-03T10:43:46.344648+00:00",
+      "last_seen": "2026-09-03T10:43:46.344648+00:00",
+      "source": "Bakeca (email)",
+      "title": "29 Agosto 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/villa-di-65-m178-dpd5298279254?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 218000,
+      "area_sqm": 65.0,
+      "rooms": 3,
+      "image_url": "https://static.bakeca.it/immagini/57c/57c04098baebbf7a158067d2fea7bajl_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344648+00:00",
+          "price_eur": 218000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-136-m178-9i9k298278576?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-03T10:43:46.344651+00:00",
+      "last_seen": "2026-09-03T10:43:46.344651+00:00",
+      "source": "Bakeca (email)",
+      "title": "29 Agosto 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-136-m178-9i9k298278576?utm_source=Alert&utm_medium=email&utm_content=dettaglio03-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 225000,
+      "area_sqm": 136.0,
+      "rooms": 3,
+      "image_url": "https://static.bakeca.it/immagini/6ae/6aeee1fa5ce5fbb7775740b7b7f8b9jl_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344651+00:00",
+          "price_eur": 225000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36702631/": {
+      "first_seen": "2026-09-03T10:43:46.344654+00:00",
+      "last_seen": "2026-09-03T10:43:46.344654+00:00",
+      "source": "Idealista (email)",
+      "title": "Villa in Via Jacopo da Montagnana, Arcella, Padova",
+      "url": "https://www.idealista.it/immobile/36702631/",
+      "zone": "Arcella",
+      "price_eur": 251251,
+      "area_sqm": 227.0,
+      "rooms": 7,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/54/3b/b0/833642613.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344654+00:00",
+          "price_eur": 251251
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36702667/": {
+      "first_seen": "2026-09-03T10:43:46.344657+00:00",
+      "last_seen": "2026-09-03T10:43:46.344657+00:00",
+      "source": "Idealista (email)",
+      "title": "Villa in Via Jacopo da Montagnana, Arcella, Padova",
+      "url": "https://www.idealista.it/immobile/36702667/",
+      "zone": "Arcella",
+      "price_eur": 251250,
+      "area_sqm": 227.0,
+      "rooms": 7,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/cd/e2/d5/833644835.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344657+00:00",
+          "price_eur": 251250
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36703241/": {
+      "first_seen": "2026-09-03T10:43:46.344661+00:00",
+      "last_seen": "2026-09-03T10:43:46.344661+00:00",
+      "source": "Idealista (email)",
+      "title": "Bilocale in Via Tullio Lombardo, Arcella, Padova",
+      "url": "https://www.idealista.it/immobile/36703241/",
+      "zone": "Arcella",
+      "price_eur": 48001,
+      "area_sqm": 38.0,
+      "rooms": 2,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/e6/83/a5/833663941.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344661+00:00",
+          "price_eur": 48001
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36169953/": {
+      "first_seen": "2026-09-03T10:43:46.344732+00:00",
+      "last_seen": "2026-09-03T10:43:46.344732+00:00",
+      "source": "Idealista (email)",
+      "title": "Quadrilocale a Santo, Padova",
+      "url": "https://www.idealista.it/immobile/36169953/",
+      "zone": "Santo",
+      "price_eur": 187000,
+      "area_sqm": 113.0,
+      "rooms": 4,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/48/f3/01/816664649.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344732+00:00",
+          "price_eur": 187000
+        }
+      ]
+    },
+    "https://www.idealista.it/immobile/36708002/": {
+      "first_seen": "2026-09-03T10:43:46.344736+00:00",
+      "last_seen": "2026-09-03T10:43:46.344736+00:00",
+      "source": "Idealista (email)",
+      "title": "Appartamento in Via San Biagio, Santo, Padova",
+      "url": "https://www.idealista.it/immobile/36708002/",
+      "zone": "Santo",
+      "price_eur": 238388,
+      "area_sqm": 228.0,
+      "rooms": 7,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/02/05/a0/833823461.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344736+00:00",
+          "price_eur": 238388
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30742410/": {
+      "first_seen": "2026-09-03T10:43:46.344742+00:00",
+      "last_seen": "2026-09-03T10:43:46.344742+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Isola di Torre, Padova",
+      "url": "https://www.wikicasa.it/30742410/",
+      "zone": "Torre",
+      "price_eur": 73000,
+      "area_sqm": 29.0,
+      "rooms": 2,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30742410/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344742+00:00",
+          "price_eur": 73000
+        }
+      ]
+    },
+    "https://www.wikicasa.it/30742428/": {
+      "first_seen": "2026-09-03T10:43:46.344745+00:00",
+      "last_seen": "2026-09-03T10:43:46.344745+00:00",
+      "source": "Wikicasa (email)",
+      "title": "AppartamentoVia Giuseppe Perin, Padova",
+      "url": "https://www.wikicasa.it/30742428/",
+      "zone": null,
+      "price_eur": 198000,
+      "area_sqm": 71.0,
+      "rooms": 3,
+      "image_url": "https://www.wikicasa.it/rest/realEstate/30742428/images/anteprima_foto-1_small.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-03T10:43:46.344745+00:00",
+          "price_eur": 198000
+        }
+      ]
     }
   },
-  "last_run": "2026-09-03T03:03:24.527330+00:00",
+  "last_run": "2026-09-03T10:44:42.177142+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
