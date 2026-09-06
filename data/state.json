@@ -1509,7 +1509,7 @@
     },
     "https://www.idealista.it/immobile/36251883/": {
       "first_seen": "2026-07-14T13:41:11.510792+00:00",
-      "last_seen": "2026-07-15T13:41:50.064664+00:00",
+      "last_seen": "2026-09-06T10:19:09.320872+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale a San Bellino, Padova",
       "url": "https://www.idealista.it/immobile/36251883/",
@@ -6016,7 +6016,7 @@
     },
     "https://www.idealista.it/immobile/36302620/": {
       "first_seen": "2026-07-20T19:42:47.551092+00:00",
-      "last_seen": "2026-08-05T08:33:59.582485+00:00",
+      "last_seen": "2026-09-06T10:19:09.320876+00:00",
       "source": "Idealista (email)",
       "title": "Quadrilocale in Via Carlo Crivelli, 4, San Bellino, Padova",
       "url": "https://www.idealista.it/immobile/36302620/",
@@ -32514,7 +32514,7 @@
     },
     "https://www.idealista.it/immobile/36724377/": {
       "first_seen": "2026-09-04T20:19:02.390270+00:00",
-      "last_seen": "2026-09-04T20:19:02.390270+00:00",
+      "last_seen": "2026-09-06T10:19:09.320862+00:00",
       "source": "Idealista (email)",
       "title": "Appartamento a San Bellino, Padova",
       "url": "https://www.idealista.it/immobile/36724377/",
@@ -32704,7 +32704,7 @@
     },
     "https://www.idealista.it/immobile/36735860/": {
       "first_seen": "2026-09-05T03:05:41.589888+00:00",
-      "last_seen": "2026-09-05T03:05:41.589888+00:00",
+      "last_seen": "2026-09-06T10:19:09.320857+00:00",
       "source": "Idealista (email)",
       "title": "Casa indipendente in Via Orlando Galante, 3, San Lazzaro, Padova",
       "url": "https://www.idealista.it/immobile/36735860/",
@@ -32946,7 +32946,7 @@
     },
     "https://www.idealista.it/immobile/36661798/": {
       "first_seen": "2026-09-05T10:00:00.004500+00:00",
-      "last_seen": "2026-09-05T10:00:00.004500+00:00",
+      "last_seen": "2026-09-06T10:19:09.320866+00:00",
       "source": "Idealista (email)",
       "title": "Bilocale in Vicolo Giordano Bruno, 1, Madonna Pellegrina, Padova",
       "url": "https://www.idealista.it/immobile/36661798/",
@@ -32954,7 +32954,7 @@
       "price_eur": 180000,
       "area_sqm": 38.0,
       "rooms": 2,
-      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/a9/3e/98/832155324.jpg",
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/c4/95/7a/834664597.jpg",
       "listing_type": "vendita",
       "price_history": [
         {
@@ -32965,7 +32965,7 @@
     },
     "https://www.idealista.it/immobile/36737990/": {
       "first_seen": "2026-09-05T14:38:45.020332+00:00",
-      "last_seen": "2026-09-05T14:38:45.020332+00:00",
+      "last_seen": "2026-09-06T10:19:09.320851+00:00",
       "source": "Idealista (email)",
       "title": "Appartamento in Via Valeggio, 7, San Giuseppe, Padova",
       "url": "https://www.idealista.it/immobile/36737990/",
@@ -33152,9 +33152,213 @@
           "price_eur": 159000
         }
       ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/villa-di-77-m178-dpd5298279254?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-06T10:19:09.320778+00:00",
+      "last_seen": "2026-09-06T10:19:09.320778+00:00",
+      "source": "Bakeca (email)",
+      "title": "05 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/villa-di-77-m178-dpd5298279254?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 218000,
+      "area_sqm": 77.0,
+      "rooms": 3,
+      "image_url": "https://static.bakeca.it/immagini/57c/57c04098baebbf7a158067d2fea7bajl_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-06T10:19:09.320778+00:00",
+          "price_eur": 218000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-136-m178-umtp299131874?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-06T10:19:09.320817+00:00",
+      "last_seen": "2026-09-06T10:19:09.320817+00:00",
+      "source": "Bakeca (email)",
+      "title": "05 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-136-m178-umtp299131874?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 218000,
+      "area_sqm": 136.0,
+      "rooms": 3,
+      "image_url": "https://static.bakeca.it/immagini/6be/6be82a6564abe50a9fc388e64eccb0jl_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-06T10:19:09.320817+00:00",
+          "price_eur": 218000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/altichiero-casa-indipendente-con-x8td299131856?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-06T10:19:09.320823+00:00",
+      "last_seen": "2026-09-06T10:19:09.320823+00:00",
+      "source": "Bakeca (email)",
+      "title": "05 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/altichiero-casa-indipendente-con-x8td299131856?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 170000,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/2ad/2adf064fa29492c9b8e71e3b2b1a3dja_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-06T10:19:09.320823+00:00",
+          "price_eur": 170000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-66-m178-zxy5299131690?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-06T10:19:09.320827+00:00",
+      "last_seen": "2026-09-06T10:19:09.320827+00:00",
+      "source": "Bakeca (email)",
+      "title": "05 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-66-m178-zxy5299131690?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 143000,
+      "area_sqm": 66.0,
+      "rooms": 2,
+      "image_url": "https://static.bakeca.it/immagini/617/617d6d9b16636f639716d108231fd4j9_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-06T10:19:09.320827+00:00",
+          "price_eur": 143000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-108-m178-9efc297900624?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-06T10:19:09.320830+00:00",
+      "last_seen": "2026-09-06T10:19:09.320830+00:00",
+      "source": "Bakeca (email)",
+      "title": "04 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/appartamento-di-108-m178-9efc297900624?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 175000,
+      "area_sqm": 108.0,
+      "rooms": 4,
+      "image_url": "https://static.bakeca.it/immagini/54d/54d39e725b961ae6ad56c80e6efc8djd_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-06T10:19:09.320830+00:00",
+          "price_eur": 175000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/guizza-tricamere-con-terrazza-xykr299106504?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-06T10:19:09.320834+00:00",
+      "last_seen": "2026-09-06T10:19:09.320834+00:00",
+      "source": "Bakeca (email)",
+      "title": "04 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/guizza-tricamere-con-terrazza-xykr299106504?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": "Guizza",
+      "price_eur": 192000,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/f29/f298689aac7bc784e29cd4c0542b9dj6_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-06T10:19:09.320834+00:00",
+          "price_eur": 192000
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/immobile-in-asta-di-ihzh299107060?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-06T10:19:09.320837+00:00",
+      "last_seen": "2026-09-06T10:19:09.320837+00:00",
+      "source": "Bakeca (email)",
+      "title": "04 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/immobile-in-asta-di-ihzh299107060?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 123740,
+      "area_sqm": 190.0,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/c30/c30629577750e96e71686a587b68fcj9_145_109_fit.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-09-06T10:19:09.320837+00:00",
+          "price_eur": 123740
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/asta-a-padova-via-wgja298688708?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-06T10:19:09.320842+00:00",
+      "last_seen": "2026-09-06T10:19:09.320842+00:00",
+      "source": "Bakeca (email)",
+      "title": "03 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/asta-a-padova-via-wgja298688708?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 66750,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/63c/63c5c9e0a58368c6001ebcd7b83c54j5_145_109_fit.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-09-06T10:19:09.320842+00:00",
+          "price_eur": 66750
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/asta-a-padova-8211-zd6k298688620?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-06T10:19:09.320846+00:00",
+      "last_seen": "2026-09-06T10:19:09.320846+00:00",
+      "source": "Bakeca (email)",
+      "title": "03 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/asta-a-padova-8211-zd6k298688620?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": null,
+      "price_eur": 93750,
+      "area_sqm": null,
+      "rooms": null,
+      "image_url": "https://static.bakeca.it/immagini/59d/59da6e40b7359b3a09827174753734jc_145_109_fit.jpg",
+      "listing_type": "asta",
+      "price_history": [
+        {
+          "date": "2026-09-06T10:19:09.320846+00:00",
+          "price_eur": 93750
+        }
+      ]
+    },
+    "https://padova.bakeca.it/dettaglio/vendita-case/pontevigodarzerepadova-vendita-appartamento-45-eb48299072620?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case": {
+      "first_seen": "2026-09-06T10:19:09.320849+00:00",
+      "last_seen": "2026-09-06T10:19:09.320849+00:00",
+      "source": "Bakeca (email)",
+      "title": "02 Settembre 2026  | Padova",
+      "url": "https://padova.bakeca.it/dettaglio/vendita-case/pontevigodarzerepadova-vendita-appartamento-45-eb48299072620?utm_source=Alert&utm_medium=email&utm_content=dettaglio06-09-2026&utm_campaign=Alert-vendita-case",
+      "zone": "Pontevigodarzere",
+      "price_eur": null,
+      "area_sqm": null,
+      "rooms": 5,
+      "image_url": "https://static.bakeca.it/immagini/6ac/6ac68d43fce1e94a2ee9f9b176f37ej8_145_109_fit.jpg",
+      "listing_type": "vendita",
+      "price_history": []
+    },
+    "https://www.idealista.it/immobile/35228614/": {
+      "first_seen": "2026-09-06T10:19:09.320869+00:00",
+      "last_seen": "2026-09-06T10:19:09.320869+00:00",
+      "source": "Idealista (email)",
+      "title": "Quadrilocale in Via Parenzo, San Bellino, Padova",
+      "url": "https://www.idealista.it/immobile/35228614/",
+      "zone": "Arcella",
+      "price_eur": 175000,
+      "area_sqm": 83.0,
+      "rooms": 4,
+      "image_url": "https://img4.idealista.it/blur/500_375_mq/0/id.pro.it.image.master/d6/42/75/784718637.jpg",
+      "listing_type": "vendita",
+      "price_history": [
+        {
+          "date": "2026-09-06T10:19:09.320869+00:00",
+          "price_eur": 175000
+        }
+      ]
     }
   },
-  "last_run": "2026-09-06T03:05:40.206543+00:00",
+  "last_run": "2026-09-06T10:19:31.243984+00:00",
   "telegram_last_update_id": 892738531,
   "telegram_subscribers": []
 }
